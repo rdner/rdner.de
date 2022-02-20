@@ -1,0 +1,529 @@
+<!doctype html><html lang=en>
+<head>
+<link rel=stylesheet href=../../../../css/styles.css type=text/css>
+<link rel=apple-touch-icon sizes=180x180 href=../../../../apple-touch-icon.png>
+<link rel=icon type=image/svg+xml sizes=16x16 href=../../../../favicon-16x16.svg>
+<link rel=icon type=image/svg+xml sizes=32x32 href=../../../../favicon-32x32.svg>
+<link rel=icon type=image/svg+xml sizes=120x120 href=../../../../favicon-120x120.svg>
+<link rel=manifest href=../../../../site.webmanifest>
+<link rel=mask-icon href=../../../../safari-pinned-tab.svg color=#5a2673>
+<link rel=author href=https://rdner.de/about type=text/html>
+<link rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/ type=text/html>
+<title>rdner's blog: Denis Rechkunov – Paranoid Habits. Security Tips</title>
+<meta charset=utf-8>
+<meta name=apple-mobile-web-app-title content="rdner's blog">
+<meta name=application-name content="rdner's blog">
+<meta name=msapplication-TileColor content="#5a2673">
+<meta name=theme-color content="#5a2673">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=author content="Denis Rechkunov">
+<meta name=description content="This is another write up of my recent talk where I share what tools and techniques I use to protect myself from being hacked.">
+<meta name=keywords content="SSH,GPG,PGP,YubiKey,Authentication,Phishing,USB,Networking,Hacking,Cracking,Passwords">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="rdner's blog: Denis Rechkunov – Paranoid Habits. Security Tips">
+<meta name=twitter:description content="This is another write up of my recent talk where I share what tools and techniques I use to protect myself from being hacked.">
+<meta name=twitter:image content="https://rdner.de/posts/tech/security/security-tips/cover.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rdner.de/posts/tech/security/security-tips/">
+<meta property="og:title" content="rdner's blog: Denis Rechkunov – Paranoid Habits. Security Tips">
+<meta property="og:description" content="This is another write up of my recent talk where I share what tools and techniques I use to protect myself from being hacked.">
+<meta property="og:image" content="https://rdner.de/posts/tech/security/security-tips/cover.jpg">
+<link rel=next href=../../../../posts/tech/security/s3-aes256-backups/ type=text/html>
+<link rel=prev href=../../../../posts/tech/security/secure-web-apps/ type=text/html>
+</head>
+<body>
+<section class=site-header>
+<a class=logo href=https://rdner.de/>
+<img alt="website logo" src=../../../../images/logo.svg>
+</a>
+<nav>
+<a class=nav-item href=../../../../posts/ title="Blog posts">Posts</a>
+<a class=nav-item href=../../../../about/ title="About the author">About</a>
+<a class=nav-item href=https://github.com/rdner rel="nofollow noreferrer" target=_blank>
+<img alt="github account" class=icon src=../../../../images/github.svg>
+</a>
+<a class=nav-item href=../../../../index.xml target=_blank>
+<img alt="RSS feed" class=icon src=../../../../images/rss.svg>
+</a>
+</nav>
+</section>
+<main>
+<article>
+<header class=article-header style=background-image:url(/posts/tech/security/security-tips/cover.jpg)>
+<h1>Paranoid Habits. Security Tips</h1>
+<div class=article-header-bottom>
+<div class=article-summary-card>
+<a class=article-author-link href=../../../../about>
+<img alt="author picture" class=article-author-pic src="https://www.gravatar.com/avatar/0f18ade06d929797f7c7e418c509a0b1?s=512">
+</a>
+<div class=article-facts-container>
+<div class=article-author>
+Author:&nbsp;<a href=../../../../about>Denis Rechkunov</a>
+</div>
+<div class=article-facts>
+<span>Published&nbsp;on&nbsp;<time datetime="2019-03-23 12:01:16 +0100 +0100">Mar 23, 2019</time></span>
+<span>~5400&nbsp;words</span>
+<span>25&nbsp;min&nbsp;read</span>
+</div>
+</div>
+<p>This is another write up of my recent talk where I share what tools and techniques I use to protect myself from being hacked.</p>
+</div>
+</div>
+</header>
+<section class=content-container>
+<section class=content>
+<div class=breadcrumbs>
+<span class=breadcrumb><a href=../../../../>Home</a></span>
+<span class=breadcrumb><a href=../../../../posts/>Blog posts</a></span>
+<span class=breadcrumb><a href=../../../../posts/tech/>Technology</a></span>
+<span class=breadcrumb><a href=../../../../posts/tech/security/>Information Security</a></span>
+<span class=breadcrumb><a href=../../../../posts/tech/security/security-tips/>Paranoid Habits. Security Tips</a></span>
+</div>
+<aside class=content-toc>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#disclaimer>Disclaimer</a></li>
+<li><a href=#authentication>Authentication</a>
+<ul>
+<li><a href=#always-changing-requirements>Always changing requirements</a>
+<ul>
+<li><a href=#must-be-more-than-9-characters>Must be more than 9 characters</a></li>
+<li><a href=#can-not-contain-words-must-be-random>Can not contain words, must be random</a></li>
+<li><a href=#must-contain-numbers-and-special-characters>Must contain numbers and special characters</a></li>
+<li><a href=#must-be-different-for-each-service-web-site-system>Must be different for each service/web-site/system</a></li>
+</ul></li>
+<li><a href=#how-do-people-crack-passwords>How do people crack passwords?</a></li>
+<li><a href=#we-re-only-humans>We&rsquo;re only humans</a></li>
+<li><a href=#pass-the-standard-unix-password-manager>pass — the standard Unix password manager</a></li>
+<li><a href=#passwords-alone-are-not-secure-you-need-2fa>Passwords alone are not secure — you need 2FA</a>
+<ul>
+<li><a href=#what-are-the-options-for-2fa>What are the options for 2FA?</a></li>
+</ul></li>
+<li><a href=#in-the-future-we-won-t-need-passwords>In the future we won&rsquo;t need passwords</a></li>
+</ul></li>
+<li><a href=#phishing>Phishing</a></li>
+<li><a href=#pgp-pretty-good-privacy>PGP — Pretty Good Privacy</a>
+<ul>
+<li><a href=#modes>Modes</a>
+<ul>
+<li><a href=#symmetric>Symmetric</a></li>
+<li><a href=#encrypt-your-data>Encrypt your data</a></li>
+<li><a href=#decrypt-your-data>Decrypt your data</a></li>
+<li><a href=#asymmetric>Asymmetric</a>
+<ul>
+<li><a href=#generate-your-keys>Generate your keys</a></li>
+<li><a href=#encrypt-your-data-1>Encrypt your data</a></li>
+<li><a href=#decrypt-your-data-1>Decrypt your data</a></li>
+</ul></li>
+</ul></li>
+<li><a href=#attacks-against-pgp>Attacks against PGP</a></li>
+<li><a href=#smart-cards>Smart cards</a></li>
+</ul></li>
+<li><a href=#ssh-secure-shell>SSH — Secure SHell</a>
+<ul>
+<li><a href=#no-password-access-policy>No password access policy</a></li>
+<li><a href=#use-gpg-keys-as-ssh-keys>Use GPG keys as SSH keys</a></li>
+</ul></li>
+<li><a href=#yubikey>YubiKey</a></li>
+<li><a href=#usb-is-vulnerable>USB is vulnerable</a></li>
+<li><a href=#networking>Networking</a>
+<ul>
+<li><a href=#firewalls>Firewalls</a>
+<ul>
+<li><a href=#iptables>iptables</a></li>
+<li><a href=#mac>Mac</a></li>
+<li><a href=#observe-your-network-activity>Observe your network activity</a></li>
+</ul></li>
+</ul></li>
+<li><a href=#some-last-words>Some last words</a></li>
+<li><a href=#links>Links</a></li>
+</ul>
+</nav>
+</aside>
+<p>Recently I gave a talk to my colleagues where I shared some tools I use to secure my online presence and communication. Some of the listed things can be very technical but some of them I believe are crucial to know as a part of the daily life in the modern world.</p>
+<h1 id=disclaimer>Disclaimer</h1>
+<p>I&rsquo;m not a security expert, please check every word I write.</p>
+<p>Although, I have some experience in basic pen-testing and I have exposed some vulnerabilities in the past, I don&rsquo;t consider myself an expert in this area. There are people out there whose full-time job is information security and I&rsquo;m not going to pretend I&rsquo;m one of them. I just do some <a href=https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security rel="nofollow noreferrer" target=_blank>CTFs</a> as a hobby and build software as my daily job, so it gives me enough knowledge to write such articles and give such talks but does not make me an expert.</p>
+<h1 id=authentication>Authentication</h1>
+<p>Let&rsquo;s immediately start with one of the most important things in the modern world — <a href=https://en.wikipedia.org/wiki/Authentication rel="nofollow noreferrer" target=_blank>Authentication</a>. If you don&rsquo;t know what it is — simply speaking, this is what happens when you type in your login and password somewhere and then click &ldquo;Login&rdquo;. And a password is still the most common authentication method nowadays which is, in my opinion, a bit unfortunate.</p>
+<p>Why?</p>
+<h2 id=always-changing-requirements>Always changing requirements</h2>
+<p>You see, requirements for strong passwords depend on what hardware power is available at the moment and because of that the requirements are constantly changing. Same happens to the encryption and cryptography in general but this is hidden from us users by the software and tools. A password is something people used to create themselves based on their memory and association.</p>
+<p>So, the requirements in March 2019 are:</p>
+<h3 id=must-be-more-than-9-characters>Must be more than 9 characters</h3>
+<p><a href=https://twitter.com/TinkerSec/status/1096046635593928704 rel="nofollow noreferrer" target=_blank>The recent benchmark</a> showed that a random 9 character long password can be guessed within 4 days using the AWS cloud GPUs. In comparison, just around a month before this <a href=https://twitter.com/TinkerSec/status/1096046635593928704 rel="nofollow noreferrer" target=_blank>another benchmark was published</a> where it claimed that 8 character long passwords can be cracked in ~2.5 hours with modern desktop hardware.</p>
+<figure>
+<img src=1.jpg alt="tweet screenshot">
+<figcaption><a href=https://twitter.com/TinkerSec/status/1109202630830637056 rel="nofollow noreferrer" target=_blank>Tweet</a></figcaption>
+</figure>
+<h3 id=can-not-contain-words-must-be-random>Can not contain words, must be random</h3>
+<p>If you have words in your passwords it&rsquo;s likely to be used against you. There are dictionaries and software that can generate permutations of different words from these dictionaries to crack your password. So, it&rsquo;s better not have words in your passwords.</p>
+<h3 id=must-contain-numbers-and-special-characters>Must contain numbers and special characters</h3>
+<p>The larger your password alphabet the better. The complexity of password cracking depends on the size of the used alphabet, so don&rsquo;t limit yourself to using alphanumeric passwords only.</p>
+<p>However, <a href=https://arstechnica.com/information-technology/2013/04/why-your-password-cant-have-symbols-or-be-longer-than-16-characters/ rel="nofollow noreferrer" target=_blank>there are still web-sites</a> that require you not to use special characters or long passwords (surprisingly, even some banks) which is ridiculous and should not be a thing in 2019.</p>
+<h3 id=must-be-different-for-each-service-web-site-system>Must be different for each service/web-site/system</h3>
+<p>This one is <strong>extremely</strong> important. I can&rsquo;t emphasize enough how important it is and it&rsquo;s all because you don&rsquo;t know how different web-sites store and process your passwords.</p>
+<p>Typically, a password is transferred via encrypted data channels directly to the server where it&rsquo;s immediately hashed with a strong <a href=https://en.wikipedia.org/wiki/Cryptographic_hash_function rel="nofollow noreferrer" target=_blank>hash function</a> and <strong>the hash string</strong> (not your password) is stored in the database. In this flow, it&rsquo;s very unlikely for the service or their employees to know what exactly you put in that password field.</p>
+<p>If you don&rsquo;t know what a hash is — it&rsquo;s a cryptographic tool that converts your password to a different string and this operation is irreversible, so nobody can easily guess the initial content. But if two strings are the same they usually produce the same hash string and this is how you can compare if the user sent a correct password next time. However, some hash functions don&rsquo;t even produce the same string for the same password twice but they are still able to compare if the password value is the same as it was set previously. This is even more secure and supported by <a href=https://en.wikipedia.org/wiki/Bcrypt rel="nofollow noreferrer" target=_blank>bcrypt</a>, for example.</p>
+<p>Even if your password is 1 character different from another the hash will be a completely different string, so you can&rsquo;t tell seeing two hashes that 2 passwords are alike.</p>
+<p>This is how it should be properly done but you would not believe how often you can find web-sites where:</p>
+<ul>
+<li>Passwords are not transferred via encrypted channels and can be easily intercepted (no HTTPS)</li>
+<li>Strong hash functions are not used. It&rsquo;s important because old hash functions like <a href=https://en.wikipedia.org/wiki/MD5 rel="nofollow noreferrer" target=_blank>MD5</a> can be very weak for the current hardware and the passwords can be cracked in a matter of hours.</li>
+<li>Sometimes, passwords are even stored unhashed in plain-text and employees have direct access to them. They might also want to sell these passwords.</li>
+</ul>
+<p>You might think &ldquo;I&rsquo;m not using suspicious web-sites built by non-professionals, so I&rsquo;m safe&rdquo;.</p>
+<p>But are you? The fact is — you&rsquo;d never know:</p>
+<ul>
+<li><a href="https://www.reuters.com/article/us-twitter-passwords/twitter-says-glitch-exposed-substantial-number-of-users-passwords-idUSKBN1I42JG?il=0" rel="nofollow noreferrer" target=_blank>Twitter</a> was logging plain-text passwords till May 2018</li>
+<li><a href=https://gizmodo.com/github-tells-some-users-it-accidentally-stored-their-pa-1825702783 rel="nofollow noreferrer" target=_blank>GitHub</a> was also logging plain-text passwords till May 2018</li>
+<li><a href=https://www.theguardian.com/technology/2019/mar/21/facebook-admits-passwords-unprotected rel="nofollow noreferrer" target=_blank>Facebook</a> stored plain-text passwords for years</li>
+</ul>
+<p>In all these cases above your passwords were exposed to the employees of the listed companies, would you trust all these hundreds or maybe even thousands of people?</p>
+<p>This brings us to the point of having different passwords per service as a <strong>MUST</strong>. Yes, your password for Facebook can be compromised and someone else knows it but at least they don&rsquo;t know passwords for all the other services and web-sites you&rsquo;re using because there you have a different password.</p>
+<h2 id=how-do-people-crack-passwords>How do people crack passwords?</h2>
+<p>I talked much about cracking your password but how is it actually done?</p>
+<p>There is special software like <a href=https://hashcat.net/hashcat/ rel="nofollow noreferrer" target=_blank>hashcat</a> which is able to leverage the whole power of your hardware including GPUs and generate all the possible combinations of given characters or words. What is more important though, it can also generate any type of hash from this combination and test if it matches the given hash you already have.</p>
+<p>And, as far as I know, this is the main way the passwords get cracked. Most of the time people don&rsquo;t try to make millions of attempts to login on the real web-sites because they usually have protection against it (like <a href=https://en.wikipedia.org/wiki/CAPTCHA rel="nofollow noreferrer" target=_blank>CAPTCHA</a>). Instead, they get a hash from somewhere like database leaks or exploiting some vulnerabilities on a web-site and then run a cracking session with hashcat on a very powerful hardware.</p>
+<p>Again, if you use the same password everywhere it takes only one successful session like this to get access to all your services and data.</p>
+<p>To check if your password hash (or maybe even plain-text) has been ever leaked you can use this website <a href=https://haveibeenpwned.com/ rel="nofollow noreferrer" target=_blank>haveibeenpwned.com</a>. But I would not recommend to type your password on any similar web-site to test if it was leaked, this sound more like phishing to me.</p>
+<h2 id=we-re-only-humans>We&rsquo;re only humans</h2>
+<p>As you might have noticed, strong passwords are hard and we&rsquo;re only humans who can do so much. Creating and memorizing really strong passwords which are totally different for each use is impossible for most of the people.</p>
+<p>What is possible though is <strong>not writing down you passwords anywhere</strong>. I know, for some people it sounds funny but I&rsquo;m pretty sure for people who exposed their passwords on TV in live interviews it was not that funny. It happens quite often, by the way, check <a href=https://www.itgovernance.co.uk/blog/four-embarrassing-password-leaks-on-live-tv rel="nofollow noreferrer" target=_blank>this article</a> out.</p>
+<p>So, the solution is simple — password managers. Don&rsquo;t get me wrong, password managers are not 100% secure either and they also <a href=http://devd.me/papers/pwdmgr-usenix14.pdf rel="nofollow noreferrer" target=_blank>can leak your passwords</a> but in most situations it&rsquo;s much better than having an insecure password.</p>
+<p>To be completely honest, I was skeptical about password managers for a long time, mostly because they work using browser extensions and it&rsquo;s not clear how they store your passwords.</p>
+<h2 id=pass-the-standard-unix-password-manager>pass — the standard Unix password manager</h2>
+<p>But that was until I found <a href=https://www.passwordstore.org/ rel="nofollow noreferrer" target=_blank>pass</a> — the standard Unix password manager. It&rsquo;s basically a long bash script that works with GPG and Git. This is exactly what I was looking for — total control and transparency over storing and generating your passwords. I trust GPG, I trust Git and I can decide myself where to store my encrypted passwords and who is exactly able to decrypt my passwords. It&rsquo;s a very simple to use CLI tool which has a variety of 3rd party clients and extensions (e.g. for Android) which makes it possible to use this password manager anywhere you want if you decide so.</p>
+<p>Obviously, you need to have a pair of GPG encryption keys and a Git remote before you can use it. <a href=https://help.github.com/en/articles/generating-a-new-gpg-key rel="nofollow noreferrer" target=_blank>GitHub</a> has a simple tutorial how to generate GPG keys but I&rsquo;d recommend to understand the master key and sub-keys concept and be <a href=https://github.com/drduh/YubiKey-Guide rel="nofollow noreferrer" target=_blank>more advanced</a> about your keys, read further in the article.</p>
+<p>Once you have your keys generated, it&rsquo;s simple as:</p>
+<pre tabindex=0><code>pass init &lt;your-email-from-key-uid&gt;</code></pre>
+<p>You can also specify multiple key uids and it will be encrypting your passwords for all of them. This command is also used when you need to re-encrypt the whole password storage to use different encryption keys (you need to have both on your machine at the same time though).</p>
+<p>This command will create <code>~/.password-store</code> directory for you which is a Git repository and you can go and add your remote there.</p>
+<p>Generate a new password:</p>
+<pre tabindex=0><code>pass generate -c &lt;name-of-the-service&gt;</code></pre>
+<p>Noticed the <code>-c</code> flag? That means you won&rsquo;t see the password itself, it will be copied to the clipboard for 45 seconds and then erased. So, in fact I&rsquo;ve never seen my passwords.</p>
+<p>If you need the password again just:</p>
+<pre tabindex=0><code>pass -c &lt;name-of-the-service&gt;</code></pre>
+<p>Same here, it&rsquo;s copied to the clipboard for 45 seconds, then erased.</p>
+<p>As I said, the password store is a Git repository and each password generation or storage re-encryption is a Git commit. In order to back your storage up you use:</p>
+<pre tabindex=0><code>pass git push</code></pre>
+<p>So, the command performs some extra operations around Git if needed, therefore it&rsquo;s wrapped.</p>
+<p>If you&rsquo;re wondering how the command works just do:</p>
+<pre tabindex=0><code>less $(which pass)</code></pre>
+<p>As I said, it&rsquo;s just a long bash script and you can easily learn how it works.</p>
+<p>I like so much how simple and elegant it is. Highly recommended.</p>
+<h2 id=passwords-alone-are-not-secure-you-need-2fa>Passwords alone are not secure — you need 2FA</h2>
+<p>It&rsquo;s always good to have a strong password but unfortunately it&rsquo;s not enough, passwords alone would not prevent you from being hacked.</p>
+<p>But I have good news, there is an additional security tool that you can use — 2-factor authentication (or multi-factor authentication, in general).</p>
+<p>In my entire life, I&rsquo;ve never heard anyone saying &ldquo;My account was protected by 2-factor authentication and it got hacked&rdquo;. So, use it! Especially, because most of the services support it nowadays and if some don&rsquo;t — shame on them.</p>
+<h3 id=what-are-the-options-for-2fa>What are the options for 2FA?</h3>
+<ul>
+<li>SMS code — simple, does not require anything you don&rsquo;t already have but the least secure option on the list because <a href=https://security.stackexchange.com/questions/11493/how-hard-is-it-to-intercept-sms-two-factor-authentication rel="nofollow noreferrer" target=_blank>SMS can be intercepted</a>.</li>
+<li>Authentication App like <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=en_us" rel="nofollow noreferrer" target=_blank>Google Authenticator</a> — time-based codes that change every 30 seconds. Can be difficult to regain access if your smartphone dies or gets stolen though.</li>
+<li>Security token like <a href=https://www.yubico.com/products/yubikey-hardware/ rel="nofollow noreferrer" target=_blank>YubiKey</a> — is my favorite option that I use myself. In simple words, you plug a USB device in, touch it with a finger when a website asks you and it&rsquo;s done. So, you don&rsquo;t have to type in any code at all.</li>
+</ul>
+<p>All 3 options require you to set it up first, of course, and you can remove it anytime if you think it could be compromised (e.g. your security token got stolen).</p>
+<h2 id=in-the-future-we-won-t-need-passwords>In the future we won&rsquo;t need passwords</h2>
+<figure>
+<img src=2.jpg alt=future>
+<figcaption><a href=https://www.imdb.com/title/tt0096874/ rel="nofollow noreferrer" target=_blank>Back to the Future Part II (1989)</a></figcaption>
+</figure>
+<p>Recently the <a href=https://w3c.github.io/webauthn/ rel="nofollow noreferrer" target=_blank>WebAuthn specification</a> was finalized and it&rsquo;s a big deal because this is a type of web authentication based on <a href=https://en.wikipedia.org/wiki/Public-key_cryptography rel="nofollow noreferrer" target=_blank>asymmetric cryptography</a> (public/private key pair).</p>
+<p>Asymmetric cryptography is an extremely powerful tool and it&rsquo;s basically what GPG uses for encryption by default or what you use when you sign your commits in Git. The whole idea behind it is that you have a pair of keys not a single key or password. The pair of keys consists of <strong>public</strong> and <strong>private</strong> keys. I&rsquo;m not going to dive deep in details how it works, anyone can read it on <a href=https://en.wikipedia.org/wiki/Public-key_cryptography rel="nofollow noreferrer" target=_blank>Wikipedia</a> but here is a couple of use cases for you:</p>
+<ul>
+<li>You share your <strong>public</strong> key on the internet, everyone who get it can encrypt their data using this key, but nobody can decrypt the data unless they have a <strong>private</strong> key that corresponds to the used <strong>public</strong> key.</li>
+<li>You sign your data with a <strong>private</strong> key and share your <strong>public</strong> key on the internet. Everyone who has your <strong>public</strong> key can verify that this data has been genuinely signed and sent by you. This is exactly how <a href=https://git-scm.com/book/en/v2/Git-Tools-Signing-Your-Work rel="nofollow noreferrer" target=_blank>signing your Git commits</a> works.</li>
+</ul>
+<p>And this is the technology that stands behind the new <a href=https://w3c.github.io/webauthn/ rel="nofollow noreferrer" target=_blank>WebAuthn standard</a>. Your device (usually a security token, e.g. YubiKey) generates a new key pair and stores it sharing a <strong>public</strong> key with a website during registration. The websites stores the <strong>public</strong> key in its database and when you try to login it sends some data to your security token and asks to sign it with a <strong>private</strong> key, once the signed data is received back the website verifies using the <strong>public</strong> key that this data has been genuinely signed by the user who put the <strong>public</strong> key during the registration in the first place.</p>
+<p>Your device can ask for a second factor like a PIN code or can be even a biometric device like a fingerprint scanner. So, it&rsquo;s the most secure authentication method for the Web at the moment.</p>
+<p>The best thing is the information that the web-site stores is <strong>public</strong> because, you know, it&rsquo;s called &ldquo;public key&rdquo; after all and even if this information gets leaked some how it&rsquo;s useless for attackers because the only thing they can do with it — let you login somewhere.</p>
+<p>Despite the fact this standard is quite new it&rsquo;s supported by the majority of the browsers at the moment. All modern versions of desktop and mobile browsers <a href="https://caniuse.com/#search=webauthn" rel="nofollow noreferrer" target=_blank>support it right now</a>. Except Safari supports it in the experimental mode only but I hope not for long.</p>
+<p>If you happen to have a new YubiKey (5 gen) or an Android smartphone with a fingerprint reader go to the <a href=https://webauthn.io/ rel="nofollow noreferrer" target=_blank>webauthn.io</a> and try to register and login using their demo.</p>
+<p>Also, there is a cool and simple tutorial on <a href=https://webauthn.guide/ rel="nofollow noreferrer" target=_blank>webauthn.guide</a> that explains in simple words how it works.</p>
+<h1 id=phishing>Phishing</h1>
+<p>Okay, I hope we&rsquo;ve clarified some things about authentication now and we can talk about another very important topic — phishing. Yes, cracking passwords is a thing but most of the time attackers don&rsquo;t even need to crack passwords because they trick people into giving up their credentials.</p>
+<p>Do you remember that time when a lot of private pictures of celebrities got leaked all over the internet?</p>
+<p>People called this terrifying event <a href=https://en.wikipedia.org/wiki/ICloud_leaks_of_celebrity_photos rel="nofollow noreferrer" target=_blank>Celebgate</a> (because, you know pictures leaked from iCloud).</p>
+<p>According to <a href=https://www.washingtonpost.com/news/the-intersect/wp/2016/03/16/the-shockingly-simple-way-the-nude-photos-of-celebgate-were-stolen/ rel="nofollow noreferrer" target=_blank>Washington Post</a>, during the investigation process it was found that:</p>
+<blockquote>
+<p>Collins [person responsible for the attack] allegedly gained access by setting up emails designed to look like official accounts associated with the Google or Apple services used by his celebrity targets.</p>
+</blockquote>
+<p>So, basically this guy just used phishing emails and it made this huge data leak possible.</p>
+<p>Fortunately, for all of us it&rsquo;s very simple to avoid phishing attacks — <strong>just check the URL</strong>. When you see a page that asks for any input always check the URL in the address bar of the browser, it can look very similar and it can be just one character different but it&rsquo;s extremely important to check a URL and make sure it&rsquo;s a genuine page that asks for your credentials.</p>
+<p>You might be surprised to know that there are whole frameworks like <a href=https://github.com/thelinuxchoice/blackeye rel="nofollow noreferrer" target=_blank>this one</a> that serve attackers who want to impersonate or replicate existing social network login pages.</p>
+<h1 id=pgp-pretty-good-privacy>PGP — Pretty Good Privacy</h1>
+<p><a href=https://en.wikipedia.org/wiki/Pretty_Good_Privacy rel="nofollow noreferrer" target=_blank>PGP</a> is a set of cryptography tools mainly used for private communication.</p>
+<p>The more popular implementation though is <a href=https://en.wikipedia.org/wiki/GNU_Privacy_Guard rel="nofollow noreferrer" target=_blank>GNU Privacy Guard</a> (GnuPG/GPG). GPG is available for the majority of platforms and very commonly used, as I mentioned talking about pass (password manager) earlier.</p>
+<p>In my opinion, it&rsquo;s the most reliable cryptography suite at the moment.</p>
+<p>I think it&rsquo;s really important for everyone in the modern world to know how to use this tool because it&rsquo;s a trusted way to keep your data private and avoid its unauthorized usage, especially if you take into account how simple to use it.</p>
+<h2 id=modes>Modes</h2>
+<p>GPG can operate in 2 modes:</p>
+<ul>
+<li>Symmetric — when you just encrypt a file with a given passphrase that you come up with</li>
+<li>Asymmetric — that&rsquo;s something I&rsquo;ve already mentioned when talked about the password manager. You generate a pair of keys: private and public, you encrypt with a public key and decrypt with a private key.</li>
+</ul>
+<h3 id=symmetric>Symmetric</h3>
+<h3 id=encrypt-your-data>Encrypt your data</h3>
+<p>Let&rsquo;s create a file:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>echo <span style=color:#e6db74>&#34;The very secret text&#34;</span> &gt; secret</code></pre></div>
+<p>And then encrypt it, so we can store it somewhere safe:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cat secret | gpg -ac</code></pre></div>
+<ul>
+<li><code>-a</code> stands for &ldquo;armor&rdquo; which basically outputs a Base64 encoded format instead of binary, so you can copy-paste this text and send via any chat or email client. If you&rsquo;re fine with a binary format you can remove this flag and redirect the output to the file adding <code>> secret.aes</code> at the end.</li>
+<li><code>-c</code> stands for &ldquo;symmetric mode&rdquo;</li>
+</ul>
+<p>The command will prompt you to enter the encryption passphrase.</p>
+<p>Then you&rsquo;ll see the encrypted output, something like this:</p>
+<pre tabindex=0><code>-----BEGIN PGP MESSAGE-----
+
+jA0ECQMKexM2SxYG1FD20lABN/cH50hWiVv64aZBeOohfwJ6m1AvQdy/dcY3VOjO
+I7ZKahIccOYioxdBsdPIhvJiyOY54HDpJxVlaOq0bxly/eYghlKo3WYWwiE4MKee
+FA==
+=zN+h
+-----END PGP MESSAGE-----</code></pre>
+<p>By default, GPG uses &ldquo;AES with 256-bit key salted & iterated - SHA512&rdquo; encryption mode which is supposed to be the strongest symmetric encryption algorithm at the moment. So, you can store this encrypted text and only if you know the previously set passphrase you can decrypt this data back. I personally, encrypt all my backups like this and store them in the cloud.</p>
+<h3 id=decrypt-your-data>Decrypt your data</h3>
+<p>Simply use this command:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cat secret.aes | gpg -d</code></pre></div>
+<p><code>-d</code> stands for <code>decrypt</code></p>
+<p>You&rsquo;ll be prompted to enter the passphrase you&rsquo;ve set earlier and then you&rsquo;ll see the plain text data like this:</p>
+<pre tabindex=0><code>gpg: AES256 encrypted data
+gpg: encrypted with 1 passphrase
+The very secret text</code></pre>
+<h3 id=asymmetric>Asymmetric</h3>
+<h4 id=generate-your-keys>Generate your keys</h4>
+<p>As I mentioned earlier, there are some options how to generate your keys but the simplest way is just to follow the GitHub instructions <a href=https://help.github.com/en/articles/generating-a-new-gpg-key rel="nofollow noreferrer" target=_blank>here</a>. It&rsquo;s not the best practice though, the more advanced tutorial is <a href=https://github.com/drduh/YubiKey-Guide#creating-keys rel="nofollow noreferrer" target=_blank>here</a>.</p>
+<h4 id=encrypt-your-data-1>Encrypt your data</h4>
+<p>Again let&rsquo;s create a file that we&rsquo;re going to encrypt:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>echo <span style=color:#e6db74>&#34;The very secret text&#34;</span> &gt; secret</code></pre></div>
+<p>Then, in order to encrypt this file, you just need this short command:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cat secret | gpg -aer &lt;your-email-here&gt;</code></pre></div>
+<ul>
+<li><code>-a</code> stands for &ldquo;armor&rdquo; which basically outputs a Base64 encoded format instead of binary, so you can copy-paste this text and send via any chat or email client. If you&rsquo;re fine with a binary format you can remove this flag and redirect the output to the file adding <code>> secret.gpg</code> to the end.</li>
+<li><code>-e</code> stands for &ldquo;encrypt&rdquo;</li>
+<li><code>-r</code> stands for &ldquo;recipient&rdquo; which is a uid of a public key (usually a email address). If you want to encrypt data for someone else, you need to import their public key go GPG first. Usually <code>cat key.pub | gpg --import</code> is used for this.</li>
+</ul>
+<p>Then you&rsquo;ll see something like this:</p>
+<pre tabindex=0><code>-----BEGIN PGP MESSAGE-----
+
+hQIMAwY5gIYEiE39AQ//ZW0YWpItpvUU6uO6agKaft6/cyYKQDZfEdZFMRU/I/Te
+rVNwkAc3zv5uWSt5dDuOTRxqCLJ9Nfffnfqexv7mILbLMBkI39b3K7qBk7/+AtwZ
+1X8cciTd3LdU989yGdna3GydiGAjoiRyVfj6x0EgiiIfHpmB8Ij0aKFdGPTz3oMQ
+R6+Ffp3QBQbl4aM8KZ4kvLG5I4I3ABKjb8OIcl/exndk9i29lVv5kWWvc9QZUhrS
+1LcPUvdf6pa0kuenAGiR7dffCEWaT3SQHFtSN4yUtlgo+A8niaFuPGECdApP2ZQG
+CiPeZTeRxZPhBapKM7yR2ZN49igBe4zp1lNKKEUTzi9s3pCxZubYan/P8WlFJkLJ
+tmOXm7PT1noVkudZfbhOIZX+SsD2IhZxHD0AN/wvYeM62Mrr9NF2IztJSAabY2js
+24q+sPsgdqdqBNSbt5JPxwhEVAUTutfFRZCob5Pfjgz7e4WkkVVFVZbjFUcNWKgb
+hUMFgQ4CUOraR2dA4EYLeHDyIx0yf7yTGS2Ry6TxwbVFCkA8dVicwsERQEAEyLAN
+QtDmaYggkxj/+7J4jgSBYOm5M/JLn0civtVodQM1QxVHvrkxzLxwMc5o/YhunaHr
+JSyAbG7iw13QHHRERb0z6gqqbfpjHujNCb8eVQcLMChmVRFUobpxR2+SEekyNOjS
+UAFPqT4sqHbhM8SZYUyX+IXx4hT2s1tFajqjsFNJIH6phXzhEhHmKNNm1cdetJOi
+F9XODEWdphFWUFkemqE85TYVZv006gRO9vZ1C1bPtxGP
+=49lG
+-----END PGP MESSAGE-----</code></pre>
+<p>And this is actually our &ldquo;The very secret text&rdquo; encrypted with a public key. From now on the only way to decrypt this message is to use a private key that corresponds to the public key we used, so usually who owns the email address is the owner of the private key. So, we can send this cipher text to that person and they should be able to decrypt and read it.</p>
+<h4 id=decrypt-your-data-1>Decrypt your data</h4>
+<p>To decrypt, you use exactly the same command as you did for the symmetric mode:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>cat cipher-text | gpg -d</code></pre></div>
+<p>Which will return something like this:</p>
+<pre tabindex=0><code>gpg: encrypted with 4096-bit RSA key, ID 0x1234567890AB, created 2019-03-16
+      &#34;John Doe &lt;john.doe@example.com&gt;&#34;
+	  The very secret text</code></pre>
+<p><code>gpg -d</code> basically automatically detects how the data is encrypted and switches to a correct mode.</p>
+<p>That&rsquo;s it, you know how to use both GPG modes. Easy, right?</p>
+<h2 id=attacks-against-pgp>Attacks against PGP</h2>
+<p>As I said, the program itself is very reliable but turns out that other software that uses this program internally can be vulnerable. For example, security researcher <a href=https://sebastian-schinzel.de/ rel="nofollow noreferrer" target=_blank>Sebastian Schinzel</a> gave a <a href=https://media.ccc.de/v/35c3-9463-attacking_end-to-end_email_encryption rel="nofollow noreferrer" target=_blank>talk</a> at 35c3 in 2018 where found that some plugins for mail clients were not working properly and were vulnerable to certain attacks that could cause sending decrypted plain-text to the attacker. The talk is truly fascinating, highly recommended to watch.</p>
+<h2 id=smart-cards>Smart cards</h2>
+<p>GPG supports a class of devices called <a href=https://en.wikipedia.org/wiki/Smart_card rel="nofollow noreferrer" target=_blank>smart cards</a>. Simply speaking, you can buy a device like YubiKey and store all your private keys on that device removing them from your system.</p>
+<p>You can protect the smart card with a PIN code which if typed 3 times wrong locks the device and then you have to use a longer admin PIN to unlock it, if the admin PIN typed 3 times wrong the only thing you can do with the smart card is to reset it to the factory defaults and erase the stored keys.</p>
+<p>So, instead of typing a long password to unlock your private keys stored on your computer you can just plug your USB device in and dial your 6 digit PIN code. Smart cards are &ldquo;write-only devices&rdquo;, that means you can write a private key to a smart card but you&rsquo;ll never be able to extract it back. So, it means you need to export and back your private keys up first. Preferably, using the <a href=#symmetric>GPG symmetric mode</a>.</p>
+<p>There is a very comprehensive tutorial how to store your GPG keys on a YubiKey <a href=https://github.com/drduh/YubiKey-Guide rel="nofollow noreferrer" target=_blank>here</a>. I think there is no need to quote the whole tutorial here. Just when you&rsquo;re ready to spend a spare hour go and read it. It might look very complicated but once you generate the keys properly it becomes very easy to maintain such key chain.</p>
+<h1 id=ssh-secure-shell>SSH — Secure SHell</h1>
+<p>I think if you ever used a remote server you&rsquo;ve probably heard of SSH, this is how you login into a remote Linux server.</p>
+<h2 id=no-password-access-policy>No password access policy</h2>
+<p>In fact, you can use several authentication options with SSH and by default you&rsquo;re able to just use a login and password of the user that exists on the server. I hope I&rsquo;ve written enough to convince you that passwords are not very secure. So, I&rsquo;d recommend to turn them off after you generate and add your public key to the server using:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ssh-keygen -t rsa -b <span style=color:#ae81ff>4096</span> -C <span style=color:#e6db74>&#34;your_email@example.com&#34;</span></code></pre></div>
+<p>to generate (see the whole <a href=https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent rel="nofollow noreferrer" target=_blank>GitHub tutorial</a> on this) and:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>ssh-copy-id ~/.ssh/id_rsa.pub user@server.example.com</code></pre></div>
+<p>to add your public key to the server.</p>
+<p>Make sure you set a path to your <strong>public</strong> key.</p>
+<p>Then add this to the sshd config (<code>/etc/ssh/sshd_config</code>):</p>
+<pre tabindex=0><code>PasswordAuthentication no</code></pre>
+<p>And restart the sshd service using a command in the OS of your choice.</p>
+<h2 id=use-gpg-keys-as-ssh-keys>Use GPG keys as SSH keys</h2>
+<p>If you&rsquo;d like to use your SSH keys from a smart card device or just to have one key to rule them all, you can just use the GPG agent as your key provider for SSH. This is also fully described in the <a href=https://github.com/drduh/YubiKey-Guide#ssh rel="nofollow noreferrer" target=_blank>tutorial</a> I mentioned before.</p>
+<p>I personally prefer to use my YubiKey for the SSH authentication as well, so I don&rsquo;t store any private keys on my computer at all. If you decide not to use a smart card (YubiKey) and just use the locally stored private key you will need to add the &ldquo;keygrip&rdquo; of your private key to the <code>~/.gnupg/sshcontrol</code> file (more details <a href=https://www.gnupg.org/documentation/manuals/gnupg/Agent-Configuration.html#index-sshcontrol rel="nofollow noreferrer" target=_blank>here</a>). If you connect your smart card GPG uses the keys from there automatically, so you don&rsquo;t need to do anything. This is how you can find the keygrips:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>gpg -k --with-keygrip</code></pre></div>
+<h1 id=yubikey>YubiKey</h1>
+<p>A short disclaimer: I&rsquo;m not sponsored by or affiliated with Yubico. So, all I write here I do because I really like their product and sincerely recommend to use it.</p>
+<figure>
+<img src=3.jpg alt=yubikey>
+<figcaption><a href=https://www.yubico.com/products/yubikey-hardware/ rel="nofollow noreferrer" target=_blank>Yubico products page</a></figcaption>
+</figure>
+<p>So, what is it exactly?</p>
+<p>It&rsquo;s a multi-functional device that is used for security-related operations such as:</p>
+<ul>
+<li>2FA (<a href=https://en.wikipedia.org/wiki/Universal_2nd_Factor rel="nofollow noreferrer" target=_blank>U2F</a>/<a href=https://en.wikipedia.org/wiki/One-time_password rel="nofollow noreferrer" target=_blank>OTP</a>) — multi-factor authentication, you register the device in your account and when it&rsquo;s time to login after typing your password you connect YubiKey and touch it with your finger</li>
+<li>GPG Smart Card — you can store your GPG keys on a YubiKey</li>
+<li>SSH via GPG — since this is possible you can use the key for SSH authentication as well</li>
+<li><a href=https://en.wikipedia.org/wiki/FIDO2_Project rel="nofollow noreferrer" target=_blank>FIDO2</a> — can be used for the new <a href=https://webauthn.io/ rel="nofollow noreferrer" target=_blank>WebAuthn</a> standard I mentioned before.</li>
+<li>Comes in <a href=https://www.yubico.com/products/yubikey-hardware/ rel="nofollow noreferrer" target=_blank>different shapes and with different interfaces</a>: USB-A, USB-C and NFC. USB-C version works for smartphones as well.</li>
+<li>PIN-protected, requires a touch, so if connected can&rsquo;t be used by malware, user interaction required.</li>
+</ul>
+<p>Some people say 50 EUR is too expensive for this device but my opinion is: YubiKey is an extremely powerful tool which has so many features and if you&rsquo;re going to use all of them not just 2-factor authentication it&rsquo;s totally worth it. Otherwise, there are other similar devices on the market with less functionality.</p>
+<h1 id=usb-is-vulnerable>USB is vulnerable</h1>
+<p>It usually comes as a surprise when I tell people that their smartphone can be hacked when they plug a malicious USB device in and what is more surprising for them that public charging USB-outlets can be malicious. There are some known cases when public charging outlets were modified or replaced with some attacking hardware.</p>
+<p>Turns out that USB can be very dangerous and exploiting a device via USB is easier <a href=https://www.hackread.com/samsung-galaxy-devices-prone-to-hacking-via-usb-cable/ rel="nofollow noreferrer" target=_blank>than you might think</a>. Actually, there are <a href=https://blog.drhack.net/hidden-wifi-in-usb-cables-hack/ rel="nofollow noreferrer" target=_blank>many ways</a> to hack a device via USB.</p>
+<p>Fortunately again, there is a very simple solution to this problem, use a <strong>data blocker</strong>.</p>
+<p>For instance, this device from PortaPow:</p>
+<figure>
+<img src=4.jpg alt="PortaPow Data Blocker">
+<figcaption><a href=https://portablepowersupplies.co.uk/home/portapow-data-blocker-usb-adaptor rel="nofollow noreferrer" target=_blank>PortaPow. Data security and charging accessories</a></figcaption>
+</figure>
+<p>This device has only charging contacts, so all the USB data lanes are stripped off and you&rsquo;re totally safe using it with any USB charging outlet.</p>
+<h1 id=networking>Networking</h1>
+<p>Your network connection is your <a href=https://en.wikipedia.org/wiki/Attack_surface rel="nofollow noreferrer" target=_blank>attack surface</a>. This is how your machine is exposed to the rest of the world, nowadays we don&rsquo;t even use wires for this which makes it completely seamless.</p>
+<h2 id=firewalls>Firewalls</h2>
+<p>Especially, if you&rsquo;re a developer and work on some services/servers on your computer running some software which is not supposed to be exposed yet, you must use a firewall. Otherwise, your not ready software can be exploited and can let an attacker to run arbitrary code on your computer which won&rsquo;t end well. I saw this happening, trust me on this one.</p>
+<h3 id=iptables>iptables</h3>
+<p>For Linux it&rsquo;s quite a simple choice — iptables. This tool works with a kernel network stack defining rules how certain types of packets are handled. And I emphasize, it operate with packets and not connections. People get confused about it very easily.</p>
+<p>What&rsquo;s the difference?</p>
+<ul>
+<li>Connections can be initiated from your computer (outcoming) or from an external host to your computer (incoming), if you block all incoming connections, your computer will still be able to resolve domain names, load web-sites and communicate with the internet.</li>
+<li>Packets can be incoming (sent from an external host to you computer), outcoming (sent by your computer) and forwarded (sent through your computer to another host). If you drop all the incoming packets your computer will not be able to communicate with the internet properly. When your computer establishes a connection with a web-site it needs to receive packets from this web-site in order to load/receive data from it.</li>
+</ul>
+<p>For each type of packets iptables has a separate chain of rules:</p>
+<ul>
+<li>INPUT — incoming</li>
+<li>OUTPUT — outcoming</li>
+<li>FORWARD — forwarded</li>
+</ul>
+<p>So, your goal is to define rules what to do with packets which are coming to each of the chains. You can define your own chains as well but I&rsquo;ve never needed to do anything like this, to be honest.</p>
+<p>For example, this is my script I use for defining rules for my iptables:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=color:#75715e>#!/bin/sh
+</span><span style=color:#75715e></span>
+<span style=color:#75715e># Flushing all rules</span>
+ip6tables -F
+ip6tables -X
+iptables -F
+iptables -X
+
+<span style=color:#75715e># Setting default filter policy</span>
+iptables -P INPUT DROP
+iptables -P OUTPUT ACCEPT
+iptables -P FORWARD DROP
+
+ip6tables -P INPUT DROP
+ip6tables -P OUTPUT ACCEPT
+ip6tables -P FORWARD DROP
+
+<span style=color:#75715e># Allow unlimited traffic on loopback</span>
+ip6tables -A INPUT -i lo -j ACCEPT
+ip6tables -A OUTPUT -o lo -j ACCEPT
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A OUTPUT -o lo -j ACCEPT
+
+<span style=color:#75715e># Allow incoming packets only if they&#39;re coming for</span>
+<span style=color:#75715e># already established connections, opened by this machine</span>
+iptables -A INPUT -p tcp -m state --state ESTABLISHED -j ACCEPT
+iptables -A INPUT -p udp -m state --state ESTABLISHED -j ACCEPT
+ip6tables -A INPUT -p tcp -m state --state ESTABLISHED -j ACCEPT
+ip6tables -A INPUT -p udp -m state --state ESTABLISHED -j ACCEPT</code></pre></div>
+<p>You might have noticed that for IPv6 you need to use a different command <code>ip6tables</code>.</p>
+<p>This script basically says &ldquo;Allow all outcoming packages, drop all forwarded packages, drop all incoming packages unless they&rsquo;re coming via a connection that was established by this computer. For the localhost interface all packets are allowed.&rdquo;</p>
+<p>The most interesting part of the script is <code>--state ESTABLISHED</code> that does the trick accepting all the incoming packets that are received for already established connections.</p>
+<p>If you try to scan (e.g with <a href=https://nmap.org/ rel="nofollow noreferrer" target=_blank>nmap</a>) a computer that has this set of rules active it will be completely blank. Which is really good because attacker would not be able to enumerate what you have running on you machine. Most of them, would just choose an easier target.</p>
+<p>Be aware though, that some software like Docker can change the set of rules which makes it very hard to follow and control your network interface. So, keep your eye on it looking at the active rules using:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>sudo iptables -L</code></pre></div>
+<h3 id=mac>Mac</h3>
+<p>Mac OS has a decent firewall built-in as well but it does not have much configuration, it just asks some confirmations from a user when a new suspicious (from its perspective) network activity takes place.</p>
+<p>Once, I tried <a href=https://objective-see.com/products/lulu.html rel="nofollow noreferrer" target=_blank>LuLu</a> and I liked how powerful it was but I would not say I know enough to recommend it. At least there is something to start with. By the way, the developers of LuLu — <a href=https://objective-see.com rel="nofollow noreferrer" target=_blank>Objective-See</a> have a lot of cool programs that can be used to improve security and privacy on Mac.</p>
+<h3 id=observe-your-network-activity>Observe your network activity</h3>
+<p>Sometimes, it&rsquo;s important to just watch what connections you have active on your machine, at least for half an hour. It&rsquo;s very likely that if you have some malware installed it would try to contact its owner in this time span.</p>
+<p>The tools you can use for this are:</p>
+<ul>
+<li><code>iftop</code> — it&rsquo;s a nice real-time network activity monitoring tool that works in a terminal</li>
+<li><code>netstat -atulp</code> — gives you a list of processes that have open connections on your computer</li>
+</ul>
+<h1 id=some-last-words>Some last words</h1>
+<blockquote>
+<p>“Sorry, my account got hacked”
+is the new
+“The dog ate my homework”</p>
+</blockquote>
+<p><a href="https://www.youtube.com/watch?v=NEDeL3Q4WvI" rel="nofollow noreferrer" target=_blank>Linus Sebastian</a></p>
+<p>Yes, the attacker techniques and tools get better and more advanced over time but so do the protection techniques. I think, the knowledge how to protect your data and your system from being hacked is mandatory in the modern world, it&rsquo;s like digital hygiene. Also, I think it&rsquo;s our duty to educate ourselves, people surrounding us and our children how to do so. So, please do. I hope this post helped to understand this topic better.</p>
+<p>As usual, if you have any feedback or question feel free to write me an email to <a href=mailto:denis@rdner.de rel="nofollow noreferrer" target=_blank>denis@rdner.de</a>.</p>
+<h1 id=links>Links</h1>
+<ul>
+<li><a href=https://haveibeenpwned.com/ rel="nofollow noreferrer" target=_blank>have i been pwned?</a></li>
+<li><a href=https://www.passwordstore.org/ rel="nofollow noreferrer" target=_blank>pass</a> — the standard Unix password manager</li>
+<li><a href=https://www.itgovernance.co.uk/blog/four-embarrassing-password-leaks-on-live-tv rel="nofollow noreferrer" target=_blank>Four embarrassing password leaks on live TV</a></li>
+<li><a href=https://webauthn.guide/ rel="nofollow noreferrer" target=_blank>WebAuthn Guide</a></li>
+<li><a href=https://yubico.com/ rel="nofollow noreferrer" target=_blank>Yubico</a> (YubiKey manufacturer)</li>
+<li><a href=https://github.com/drduh/YubiKey-Guide rel="nofollow noreferrer" target=_blank>Guide to using YubiKey for GPG and SSH</a></li>
+<li><a href=https://media.ccc.de/v/35c3-9463-attacking_end-to-end_email_encryption rel="nofollow noreferrer" target=_blank>Attacking end-to-end email encryption</a></li>
+<li><a href=slides.pdf rel="nofollow noreferrer" target=_blank>My slides for this talk</a></li>
+</ul>
+<hr>
+<div class=tags>
+Tags:
+<a href=../../../../tags/privacy>privacy</a>
+<a href=../../../../tags/talks>talks</a>
+<a href=../../../../tags/encryption>encryption</a>
+</div>
+</section>
+<section class="content content-list">
+<h4 class=centered>Other posts</h4>
+<ul class=article-feed>
+<li>
+<a href=../../../../posts/tech/security/privacy-tips/>
+<article class="article-item with-cover" style=background-image:url(/posts/tech/security/privacy-tips/cover.jpg)>
+<header>
+<h3>Paranoid Habits. Privacy Tips</h3>
+</header>
+<div class=article-item-details>
+<time datetime="2021-03-10 12:01:16 +0100 +0100">Mar 10, 2021</time>
+<p>This is another write up of my recent talk where I share some information about the modern era of data collection and how you can keep your privacy at least partially.</p>
+</div>
+</article>
+</a>
+</li>
+<li>
+<a href=../../../../posts/motorcycle/granada-spain/>
+<article class="article-item with-cover" style=background-image:url(/posts/motorcycle/granada-spain/cover.jpg)>
+<header>
+<h3>Riding in Granada, Spain</h3>
+</header>
+<div class=article-item-details>
+<time datetime="2019-12-29 00:00:00 +0100 +0100">Dec 29, 2019</time>
+<p>This year comes to its end and it's time to summarize. The best thing that happened to me this year was the motorbike trip in Spain, I'd like to share what was so amazing about it. Videos included.</p>
+</div>
+</article>
+</a>
+</li>
+<li>
+<a href=../../../../posts/tech/security/s3-aes256-backups/>
+<article class="article-item with-cover" style=background-image:url(/posts/tech/security/s3-aes256-backups/cover.jpg)>
+<header>
+<h3>My automated backups to AWS S3 with client-side AES256</h3>
+</header>
+<div class=article-item-details>
+<time datetime="2019-12-08 00:00:00 +0000 UTC">Dec 8, 2019</time>
+<p>I'm very paranoid when it comes to my data. For me, the only backup solution that I could possibly use, must be simple and must have client-side AES256 encryption with the passphrase that only I would know.</p>
+</div>
+</article>
+</a>
+</li>
+</ul>
+</section>
+</section>
+</article>
+</main>
+<footer>
+<span xmlns:dct=http://purl.org/dc/terms/ href=http://purl.org/dc/dcmitype/Text property="dct:title" rel=dct:type>
+rdner's blog
+</span> by <a xmlns:cc=http://creativecommons.org/ns# href=https://rdner.de/about property="cc:attributionName" rel=cc:attributionurl>Denis Rechkunov</a>&nbsp;(<a href=mailto:denis@rdner.de>denis@rdner.de</a>) is licensed under a <a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a><a rel=license href=http://creativecommons.org/licenses/by-nc-sa/4.0/>&nbsp;<img alt="Creative Commons License" style=border-width:0 src=../../../../images/cc-by-nc-sa.png></a>
+</footer>
+</body>
+</html>

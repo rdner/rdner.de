@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang=en>
+	<head>
+		<title>Denis Rechkunov – Senior Software Engineer</title>
+		<meta charset=utf-8>
+		<meta name=viewport content="width=device-width,initial-scale=1">
+		<meta name=author content="Denis Rechkunov">
+		<meta name=description content="CV">
+	</head>
+	<style>
+		body {
+				margin: 0;
+				padding: 0;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+				display: flex;
+				justify-content: center;
+		}
+		main {
+				padding: 1rem;
+				width: 50rem;
+		}
+		main > section {
+				padding-bottom: 0.5rem;
+				border-bottom-width: 0.01rem;
+				border-bottom-style: solid;
+				border-color: #D7DADC;
+		}
+		header *:not(:first-child) {
+				font-size: 0.7rem;
+				color: #343536;
+		}
+		header *:first-child {
+				margin-bottom: 0;
+		}
+		p {
+				text-align: justify;
+		}
+		a, a:visited {
+				text-decoration-color: #ccc;
+				text-decoration-style: dashed;
+				color:#000;
+		}
+		a:hover {
+				text-decoration: none;
+				background-color: #5a2673;
+				color: #fff;
+		}
+		section.sub {
+				padding-left: 1rem;
+		}
+		@media print {
+				body {
+						font-size: 12px;
+				}
+				p, .no-break {
+						page-break-inside: avoid;
+				}
+		}
+	</style>
+	<script defer>
+		function calculateDuration(from, to) {
+				const d1 = new Date(from);
+				const d2 = new Date(to);
+
+				// calculate total difference in months
+				let months = (d2.getFullYear() - d1.getFullYear()) * 12;
+				months -= d1.getMonth();
+				months += d2.getMonth();
+
+				// round months if more than 2 weeks in a month
+				const days = d2.getDate() - d1.getDate();
+				if (days > 14) {
+						months++;
+				}
+
+				// turn back into years and months
+				const years = Math.floor(months / 12);
+				months %= 12;
+
+				let msgStr = "";
+
+				if (years >= 1) {
+						msgStr += years + " ";
+						if (years === 1) {
+								msgStr += "year";
+						} else {
+								msgStr += "years";
+						}
+				}
+				if (months > 0) {
+						if (years >= 1) {
+								msgStr += " ";
+						}
+						msgStr += months + " ";
+						if (months === 1) {
+								msgStr += "month";
+						} else {
+								msgStr += "months";
+						}
+				}
+				return msgStr;
+		}
+
+		function appendDuration(parent, msgStr) {
+				// append a span with the human readable time duration
+				const msgSpan = document.createElement("span");
+				msgSpan.innerText = " ("+msgStr+")";
+				parent.appendChild(msgSpan);
+		}
+
+		function appendDurations() {
+				const times = document.querySelectorAll("time:nth-child(2)");
+
+				for(let i=0; i<times.length; i++) {
+						const timeElement2 = times[i];
+						const timeElement1 = timeElement2.parentElement.querySelector("time");
+						const msgStr = calculateDuration(timeElement1.dateTime, timeElement2.dateTime)
+						if (msgStr == "") {
+								continue;
+						}
+						appendDuration(timeElement2.parentElement, msgStr);
+				}
+
+				const nows = document.querySelectorAll("span.now:nth-child(2)");
+				for(let i=0; i<nows.length; i++) {
+						const nowElement = nows[i]
+						const timeElement = nowElement.parentElement.querySelector("time");
+						const msgStr = calculateDuration(timeElement.dateTime, new Date())
+						if (msgStr == "") {
+								continue;
+						}
+						appendDuration(nowElement.parentElement, msgStr);
+				}
+		}
+
+		function setTotalYears() {
+				const totalElement = document.querySelector("span.total-years");
+				const times = document.querySelectorAll("section.work time");
+
+				let minTime = null;
+				let maxTime = null;
+
+				if (times.length == 0) {
+						return;
+				}
+
+				for(let i=0; i<times.length; i++) {
+						const timeElement = times[i]
+						const dateTime = new Date(timeElement.dateTime);
+
+						if (minTime == null || dateTime.getTime() < minTime.getTime()) {
+								minTime = dateTime;
+						}
+						if (maxTime == null || dateTime.getTime() > maxTime.getTime()) {
+								maxTime = dateTime;
+						}
+				}
+				totalElement.innerText = maxTime.getFullYear() - minTime.getFullYear() + " years";
+		}
+
+		document.addEventListener("DOMContentLoaded", function(){
+				appendDurations();
+				setTotalYears();
+		});
+	</script>
+	<body>
+		<main role="main">
+			<h1>Denis Rechkunov</h1>
+			<section>
+				<h2>Senior Software Engineer</h2>
+				<div>Berlin, Germany</div>
+				<p>
+					<address>
+						<div>Blog: <a href="https://rdner.de">rdner.de</a></div>
+						<div>GitHub: <a href="https://github.com/rdner">rdner</a></div>
+						<div>Email: <a href="mailto:denis@rdner.de">denis@rdner.de</a></div>
+					</address>
+				</p>
+				<p>I'm a software engineer with more than <span class="total-years">a decade</span> of experience.</p>
+				<p>My experience is quite diverse: it goes from binary protocols and communication with devices to back-end services and big front-end apps. Although I worked on user interfaces in the past, I found my passion in building complex distributed systems.</p>
+				<p>During my career I designed, built and led a variety of projects that turned out to be successful. In my working environment I value evidence-based decisions, attention to detail, personal responsibility and ownership. I always prioritise user experience and prefer pragmatic solutions with a focus on maintainability, performance and security.</p>
+			</section>
+			<section>
+				<h2>Experience</h2>
+
+				<section class="no-break">
+					<header>
+						<h3>
+							<a href="https://www.elastic.co" rel="nofollow noreferrer">Elastic</a>
+						</h3>
+						<div>Germany, Distributed / Remote</div>
+					</header>
+					<section class="work sub">
+						<header>
+							<h4>Senior Software Engineer</h4>
+							<div><time datetime="2021-11-22">November, 2021</time> – <span class="now">Present</span></div>
+						</header>
+						<p>Working on the <a href="https://www.elastic.co/observability" rel="nofollow noreferrer">Observability</a> product with the <a href="https://www.elastic.co/downloads/elastic-agent" rel="nofollow noreferrer">Elastic Agent</a> Data Plane team.</p>
+					</section>
+				</section>
+
+				<section class="no-break">
+					<header>
+						<h3>
+							<a href="https://www.contiamo.com" rel="nofollow noreferrer">Contiamo</a>
+						</h3>
+						<div><a href="https://en.wikipedia.org/wiki/Berlin" rel="nofollow noreferrer">Berlin, Germany</a> / Remote</div>
+					</header>
+					<section class="work sub">
+						<header>
+							<h4>Senior Software Engineer</h4>
+ 							<div><time datetime="2018-07-01">July, 2018</time> – <time datetime="2021-11-22">November, 2021</time></div>
+						</header>
+						<p>Worked on the platform team, mainly with Go (Golang), Kubernetes and PostgreSQL.</p>
+						<p>My team was responsible for building services that provide:
+							<ul>
+								<li>Data/Asset Catalog for large organisations to track their data landscape: search, tags, metadata, links, glossary etc.</li>
+								<li>IdP — identity provider for the whole platform: authentication, authorisation, user management, permission management.</li>
+								<li>Data Store — a service that enables uploading data in formats like CSV and integrating it in relational database models, so users are able to combine them with other relational databases using our Spark-based query engine.</li>
+								<li>PGQL — a service that allows to access any SQL-based data source via a GraphQL endpoint.</li>
+								<li><a href="https://github.com/contiamo/go-base/tree/main/pkg/queue" rel="nofollow noreferrer">Queue</a> and job system.</li>
+								<li>Notification system</li>
+								<li><a href="https://github.com/contiamo/openapi-generator-go" rel="nofollow noreferrer">Open API spec‐first code generator</a> that we've built our workflow around</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+
+				<section class="no-break">
+					<header>
+						<h3>
+							<a href="https://zalando.com" rel="nofollow noreferrer">Zalando</a>
+						</h3>
+						<div><a href="https://en.wikipedia.org/wiki/Berlin" rel="nofollow noreferrer">Berlin, Germany</a></div>
+					</header>
+					<section class="work sub">
+						<header>
+							<h4>Software Engineer</h4>
+ 							<div><time datetime="2017-01-01">January, 2017</time> – <time datetime="2018-07-01">July, 2018</time></div>
+						</header>
+						<p>Initially worked on the RESTful API that powers company's mobile apps (Scala, Play Framework).</p>
+						<p>Then moved to another team and worked on the API gateway for external partners which is an internally used fork of <a href="https://github.com/zalando/skipper" rel="nofollow noreferrer">Skipper</a> (Go/Golang). This gateway solved authorisation, throttling, routing, circuit breakers and other common problems that usually occur on the ingress level.</p>
+					</section>
+				</section>
+
+				<section class="no-break">
+					<header>
+						<h3>
+							<a href="https://aws.amazon.com" rel="nofollow noreferrer">Amazon Web Services</a>
+						</h3>
+						<div><a href="https://en.wikipedia.org/wiki/Berlin" rel="nofollow noreferrer">Berlin, Germany</a></div>
+					</header>
+					<section class="work sub">
+						<header>
+							<h4>Software Engineer</h4>
+ 							<div><time datetime="2015-12-01">December, 2015</time> – <time datetime="2017-01-01">January, 2017</time></div>
+						</header>
+						<p>First worked on a set of framework agnostic components. Adopting the idea of web‐components we created our own runtime library for using components with several frameworks like Angular, React and GWT. It was used for building AWS consoles using consistent and design guideline‐compliant UI‐components.</p>
+						<p>Then worked on the static website deployment flow in AWS (TypeScript/React). This enabled AWS customers to easily deploy a static web-site seemlessly using underlying AWS services like Route 53, S3 and CloudFront.</p>
+						<p>After that switched to some back-end work and helped to create a platform for running AWS consoles (Java, Spring). This solved common integration issues faced by internal developers when adding new services to the AWS family.</p>
+					</section>
+				</section>
+
+				<section class="no-break">
+					<header>
+						<h3>
+							<a href="https://2gis.ru" rel="nofollow noreferrer">2GIS</a>
+						</h3>
+						<div><a href="https://en.wikipedia.org/wiki/Novosibirsk" rel="nofollow noreferrer">Novosibirsk, Russia</a></div>
+					</header>
+					<section class="work sub">
+						<header>
+							<h4>Lead Software Engineer</h4>
+ 							<div><time datetime="2015-04-01">April, 2015</time> – <time datetime="2015-11-13">November, 2015</time></div>
+						</header>
+						<p>Working as a lead developer on the <a href="https://flamp.ru" rel="nofollow noreferrer">Flamp</a> front-end team.</p>
+					</section>
+					<section class="work sub">
+						<header>
+							<h4>Software Engineer</h4>
+ 							<div><time datetime="2014-03-03">March, 2014</time> – <time datetime="2015-04-01">April, 2015</time></div>
+						</header>
+						<p>Working as a part of the <a href="https://flamp.ru" rel="nofollow noreferrer">Flamp</a> team (review service). I was responsible for building a brand new version of the main web‐site which was supposed to become an isomorphic web‐application. This means the web-app would consist of 2 parts: a back-end that renders HTML for search crawlers and a front-end that runs a single page application in the browser without reloading the page – both parts are running the same JavaScript code and use the same service as a source of data. For this purpose I created <a href="https://catberry.github.io" rel="nofollow noreferrer">Catberry.js</a> – a framework for creating isomorphic apps using node.js which was eventually open-sourced on <a href="https://github.com/catberry" rel="nofollow noreferrer">GitHub</a> and got some attention from the JavaScript community. One feature to stand out was progressive rendering versus a common buffered rendering approach.</p>
+					</section>
+					<section class="work sub">
+						<header>
+							<h4>Software Engineer</h4>
+ 							<div><time datetime="2013-05-13">May, 2013</time> – <time datetime="2014-03-03">March, 2014</time></div>
+						</header>
+						<p>Working as a .NET‐developer building a high-load service for processing and modifying streams of data. The service was a part of the integration bus system between dozens of internal services/products.</p>
+					</section>
+				</section>
+
+				<section class="no-break">
+					<header>
+						<h3>
+							<a href="https://enterra-inc.com" rel="nofollow noreferrer">Enterra</a>
+						</h3>
+						<div><a href="https://en.wikipedia.org/wiki/Barnaul" rel="nofollow noreferrer">Barnaul, Russia</a></div>
+					</header>
+					<section class="work sub">
+						<header>
+							<h4>Software Engineer</h4>
+ 							<div><time datetime="2011-09-16">September, 2011</time> – <time datetime="2013-04-12">April, 2013</time></div>
+						</header>
+						<p>Worked in a team building custom contract-based projects (.NET, node.js).</p>
+						<p>
+							Among them:
+							<ul>
+								<li>Push‐notification service that notifies social network users about beginning of a tournament (node.js, Socket.io).</li>
+								<li>Administration console for a distributed gambling system (bet on sport events, etc). It allowed to view detailed analytics about the bets and to control the system remotely (ASP.net).</li>
+								<li>Web‐application for the text‐translation workflow. It was used as a tool for managing, assigning and solving tasks among professional translators (Ext JS 4).</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+
+				<section class="no-break">
+					<header>
+						<h3>
+							<a href="https://www.intel.com/" rel="nofollow noreferrer">Intel</a>
+						</h3>
+						<div><a href="https://en.wikipedia.org/wiki/Novosibirsk" rel="nofollow noreferrer">Novosibirsk, Russia</a></div>
+					</header>
+					<section class="work sub">
+						<header>
+							<h4>Software Engineer Intern</h4>
+ 							<div><time datetime="2011-07-04">July, 2011</time> – <time datetime="2011-08-25">September, 2011</time></div>
+						</header>
+						<p>My assignment was to build a plugin for Microsoft Visual Studio 2010 that would visualise results produced by Intel Static Security Analyser. I proposed a concept of the GUI for the tool, created a UI component for iteration‐based loading and parsing of the large amount of XML data (LINQ‐To‐XML) and built the plugin itself using WPF.</p>
+					</section>
+				</section>
+
+				<section class="no-break">
+					<header>
+						<h3>
+							FISSA Electronics
+						</h3>
+						<div><a href="https://en.wikipedia.org/wiki/Barnaul" rel="nofollow noreferrer">Barnaul, Russia</a></div>
+					</header>
+					<section class="work sub">
+						<header>
+							<h4>Software Engineer</h4>
+ 							<div><time datetime="2010-09-01">September, 2011</time> – <time datetime="2011-07-01">July, 2011</time></div>
+						</header>
+						<p>Worked as a lead developer of a WebSCADA system that made possible to remotely monitor and control water pumps and heating systems (any type of a system in theory).</p>
+						<p>The system worked as a subscription‐based web‐app. The subscription included necessary devices and sensors for the customer.</p>
+						<p>I was responsible for the initial architecture and communication protocols and built:
+							<ul>
+								<li>back-end service for real‐time data visualisation (node.js, Socket.io).</li>
+								<li>data visualisation dashboard UI.</li>
+								<li>back-end service for the management console that calculates analytics and generates reports (PHP).</li>
+								<li>management console UI (ExtJS).</li>
+							</ul>
+						</p>
+						<p>Later I used results of this work as my diploma thesis.</p>
+					</section>
+				</section>
+
+				<section class="no-break">
+					<header>
+						<h3>
+							<a href="https://www.intel.com/" rel="nofollow noreferrer">Intel</a>
+						</h3>
+						<div><a href="https://en.wikipedia.org/wiki/Novosibirsk" rel="nofollow noreferrer">Novosibirsk, Russia</a></div>
+					</header>
+					<section class="work sub">
+						<header>
+							<h4>Software Engineer Intern</h4>
+ 							<div><time datetime="2010-07-05">July, 2010</time> – <time datetime="2010-08-25">September, 2010</time></div>
+						</header>
+						<p>My assignment was to research the influence of a managed runtime environment (MRTE) on the Intel Math Kernel Library performance using JVM and CLR (.NET) as examples.</p>
+						<p>I've created a set of performance benchmarks for FFT‐related functions from MKL and proposed a validation algorithm for MKL FFT that allows to simply compare library‐produced results with the expected correct answer of the transformation.</p>
+					</section>
+				</section>
+			</section>
+
+			<section class="no-break">
+				<h2>Education</h2>
+				<section>
+					<header>
+						<h3>
+							<a href="https://en.altstu.ru" rel="nofollow noreferrer">Polzunov Altai State Technical University</a>
+						</h3>
+						<div><a href="https://en.wikipedia.org/wiki/Barnaul" rel="nofollow noreferrer">Barnaul, Russia</a></div>
+					</header>
+					<section class="sub">
+						<header>
+							<h4>Engineer at Specialty Software Development and Automated Systems</h4>
+							<div><a href="https://en.wikipedia.org/wiki/Engineer%27s_degree#Russia" rel="nofollow noreferrer">The degree is equal to Master's degree in Computer Science and Software Engineering</a></div>
+ 							<div><time datetime="2006-09-01">September, 2006</time> – <time datetime="2012-06-18">June, 2012</time></div>
+						</header>
+						<p>Diploma's thesis: "Developing a SCADA system using node.js platform".</p>
+						<p>Designing and developing a supervisory control and data acquisition system as a web-application using node.js platform, Knockout.js and Ext JS framework.</p>
+					</section>
+				</section>
+			</section>
+
+			<section class="no-break">
+				<h2>Courses</h2>
+
+				<section>
+					<header>
+						<h3>
+							<a href="https://www.coursera.org" rel="nofollow noreferrer">Coursera</a>
+						</h3>
+					</header>
+					<section class="sub">
+						<header>
+							<h4><a href="https://www.coursera.org/account/accomplishments/certificate/EHCHWHDF3PGG" rel="nofollow noreferrer">Functional Programming Principles in Scala</a></h4>
+ 							<div><time datetime="2017-09-02">February, 2017</time></div>
+						</header>
+					</section>
+				</section>
+
+				<section>
+					<header>
+						<h3>
+							<a href="https://www.intel.com/" rel="nofollow noreferrer">Intel</a>
+						</h3>
+					</header>
+					<section class="sub">
+						<header>
+							<h4>Intel Parallel Programming Professional</h4>
+ 							<div><time datetime="2011-08-25">August, 2011</time></div>
+						</header>
+					</section>
+				</section>
+			</section>
+
+			<section class="no-break">
+				<h2>Projects</h2>
+
+				<section>
+					<header>
+						<h3><a href="https://github.com/rdner/crdt" rel="nofollow noreferrer">Conflict-Free Replicated Data Types</a></h3>
+ 						<div><time datetime="2021-07-26">July, 2021</time></div>
+					</header>
+					<p>Last-Writer-Wins State-based Directional Graph implementation created for educational purposes.</p>
+				</section>
+
+				<section>
+					<header>
+						<h3><a href="https://github.com/rdner/q3-server-bot" rel="nofollow noreferrer">Quake 3 Server Bot for Telegram</a></h3>
+ 						<div><time datetime="2020-03-15">March, 2020</time></div>
+					</header>
+					<p>The purpose of this bot is to make it easier for Quake 3 players to know what's happening on the server.</p>
+				</section>
+
+				<section>
+					<header>
+						<h3><a href="https://github.com/rdner/x509bf" rel="nofollow noreferrer">X.509 Brute Force</a></h3>
+ 						<div><time datetime="2019-11-24">November, 2019</time></div>
+					</header>
+					<p>CLI tool for brute-forcing private keys with DEK headers. Was created for a Hack The Box challenge and used only for educational purposes.</p>
+				</section>
+
+				<section>
+					<header>
+						<h3><a href="https://catberry.github.io" rel="nofollow noreferrer">Catberry.js</a></h3>
+ 						<div><time datetime="2014-01-22">January, 2014</time> – <time datetime="2017-03-27">March, 2017</time></div>
+					</header>
+					<p>Catberry is an isomorphic framework for building universal front-end apps using components, Flux architecture and progressive rendering.</p>
+					<p>There are lots of related repositories in the <a href="https://github.com/catberry" rel="nofollow noreferrer">organisation on Github</a></p>
+				</section>
+
+			</section>
+		</main>
+	</body>
