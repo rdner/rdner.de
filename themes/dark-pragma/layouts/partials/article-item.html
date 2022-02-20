@@ -1,0 +1,12 @@
+{{ $cover := (.Resources.GetMatch "cover.*") }}
+<a href="{{ .RelPermalink }}">
+	<article class="article-item{{if $cover }} with-cover{{end}}"{{if $cover }} style="background-image: url('{{ $cover.RelPermalink }}')"{{end}}>
+		<header>
+			<h3>{{- .Title -}}</h3>
+		</header>
+		<div class="article-item-details">
+			<time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+			<p>{{ .Description | default .Summary }}</p>
+		</div>
+	</article>
+</a>

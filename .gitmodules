@@ -1,0 +1,3 @@
+[submodule "themes/dark-pragma"]
+	path = themes/dark-pragma
+	url = git@github.com:rdner/hugo-dark-pragma.git

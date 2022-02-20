@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="{{ .Page.Language.Lang }}">
+	<head>
+		{{partial "head.html" . }}
+		{{if .NextPage }}
+		<link rel="next" href="{{ .NextPage.RelPermalink }}" type="text/html">
+		{{end}}
+		{{if .PrevPage }}
+		<link rel="prev" href="{{ .PrevPage.RelPermalink }}" type="text/html">
+		{{end}}
+	</head>
+	<body>
+		{{partial "site-header.html" . }}
+		<main>
+			{{partial "article.html" . }}
+		</main>
+		{{partial "footer.html" . }}
+	</body>
+</html>

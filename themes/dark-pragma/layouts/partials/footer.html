@@ -1,0 +1,9 @@
+<footer>
+	<span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">
+		{{ .Site.Title }}
+	</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="{{ "about" | absURL }}" property="cc:attributionName" rel="cc:attributionURL">
+		{{- .Site.Params.AuthorName -}}
+	</a>&nbsp;(<a href="mailto:{{ .Site.Params.Email }}">
+		{{- .Site.Params.Email -}}
+	</a>) is licensed under {{ .Site.Params.License | safeHTML }}
+</footer>

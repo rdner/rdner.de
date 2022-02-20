@@ -1,0 +1,38 @@
+baseURL = "https://rdner.de/"
+languageCode = "en-us"
+title = "rdner's blog"
+theme = "dark-pragma"
+relativeURLs = true
+sectionPagesMenu = "main"
+enableRobotsTXT = true
+pygmentsCodefences = true
+
+[markup]
+	defaultMarkdownHandler = "blackFriday"
+  [markup.blackFriday]
+		hrefTargetBlank = true
+		nofollowLinks = true
+		noreferrerLinks = true
+
+
+[params]
+	UserPicture = "https://www.gravatar.com/avatar/0f18ade06d929797f7c7e418c509a0b1?s=512"
+	AuthorName = "Denis Rechkunov"
+	Description = "Personal stories and thoughts"
+	Github = "rdner"
+	Email = "denis@rdner.de"
+	License = "a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a><a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">&nbsp;<img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"/images/cc-by-nc-sa.png\" /></a>"
+
+[menu]
+	[[menu.main]]
+		identifier = "posts"
+		name = "Posts"
+		title = "Blog posts"
+		url = "/posts/"
+		weight = -120
+	[[menu.main]]
+		identifier = "about"
+		name = "About"
+		title = "About the author"
+		url = "/about/"
+		weight = -110

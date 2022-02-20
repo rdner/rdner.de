@@ -1,0 +1,4 @@
+<section class="content content-list">
+	<h1>{{if eq .Page.Kind "taxonomyTerm" }}{{ .Data.Plural | title }}{{else}}{{ .Data.Singular | title }}: "{{ .Title }}"{{end}}</h1>
+	{{partial "article-feed.html" .Pages }}
+</section>

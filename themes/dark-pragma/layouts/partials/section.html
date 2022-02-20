@@ -1,0 +1,32 @@
+<section>
+	{{if not .Parent.IsHome }}
+	<h2>
+		<a href="{{ .RelPermalink }}">
+			{{- .Title -}}
+		</a>
+		<a class="section-rss-link" href="{{ .RelPermalink }}index.xml">
+			<img alt="section RSS feed" class="icon" src="{{ "images/rss.svg" | relURL }}">
+		</a>
+	</h2>
+	{{end}}
+
+	{{ .Description }}
+
+	{{if .Pages }}
+	<ul class="article-list">
+		{{range .Pages}}
+		<li>
+			{{partial "article-item.html" . }}
+		</li>
+		{{end}}
+	</ul>
+	{{else}}
+	{{if not .Parent.IsHome }}
+	<h4>No posts yet.</h4>
+	{{end}}
+	{{end}}
+
+	{{range .Sections }}
+	{{partial "section.html" . }}
+	{{end}}
+</section>

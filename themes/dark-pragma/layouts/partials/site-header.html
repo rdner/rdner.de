@@ -1,0 +1,30 @@
+<section class="site-header">
+	<a class="logo" href="{{ .Site.BaseURL }}">
+		<img alt="website logo" src="{{ "images/logo.svg" | relURL }}">
+	</a>
+	<nav>
+		{{ $currentPage := . }}
+		{{ range .Site.Menus.main }}
+		<a class="nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+		{{ end }}
+
+		{{if .Site.Params.Github }}
+		<a class="nav-item" href="https://github.com/{{ .Site.Params.Github }}" rel="nofollow noreferrer" target="_blank">
+			<img alt="github account" class="icon" src="{{ "images/github.svg" | relURL }}">
+		</a>
+		{{end}}
+		{{if .Site.Params.Twitter }}
+		<a class="nav-item" href="https://twitter.com/{{ .Site.Params.Twitter }}" rel="nofollow noreferrer" target="_blank">
+			<img alt="twitter account" class="icon" src="{{ "images/twitter.svg" | relURL }}">
+		</a>
+		{{end}}
+		{{if .Site.Params.Reddit }}
+		<a class="nav-item" href="https://reddit.com/u/{{ .Site.Params.Reddit }}" rel="nofollow noreferrer" target="_blank">
+			<img alt="reddit profile" class="icon" src="{{ "images/reddit.svg" | relURL }}">
+		</a>
+		{{end}}
+		<a class="nav-item" href="{{ "index.xml" | relURL }}" target="_blank">
+			<img alt="RSS feed" class="icon" src="{{ "images/rss.svg" | relURL }}">
+		</a>
+	</nav>
+</section>

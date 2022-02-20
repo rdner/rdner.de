@@ -1,0 +1,12 @@
+name = "Dark Pragma"
+license = "MIT"
+licenselink = "https://github.com/rdner/hugo-dark-pragma/blob/master/LICENSE.md"
+description = "A nice purple theme for a blog."
+homepage = "https://github.com/rdner/hugo-dark-pragma"
+tags = ["dark", "purple", "blog"]
+features = []
+min_version = "0.37.1"
+
+[author]
+  name = "Denis Rechkunov"
+  homepage = "https://rdner.de"

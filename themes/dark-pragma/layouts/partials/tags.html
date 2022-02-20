@@ -1,0 +1,8 @@
+{{if . }}
+<div class="tags">
+	Tags:
+	{{range . }}
+	<a href="{{ "tags" | relURL }}/{{ . }}">{{ . }}</a>
+	{{end}}
+</div>
+{{end}}

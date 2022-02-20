@@ -1,0 +1,47 @@
+{{ $cover := (.Page.Resources.GetMatch "cover.*") }}
+<article>
+	<header{{if $cover }} class="article-header" style="background-image: url('{{ $cover.RelPermalink }}')"{{else}} class="article-header-no-cover"{{end}}>
+		<h1>{{ .Title }}</h1>
+		<div class="article-header-bottom">
+			<div class="article-summary-card">
+				{{if .Site.Params.UserPicture }}
+				<a class="article-author-link" href="{{ "about" | relURL }}">
+					<img alt="author picture" class="article-author-pic" src="{{ .Site.Params.UserPicture }}">
+				</a>
+				{{end}}
+				<div class="article-facts-container">
+					<div class="article-author">
+						Author:&nbsp;<a href="{{ "about" | relURL }}">{{ .Site.Params.AuthorName }}</a>
+					</div>
+					<div class="article-facts">
+						<span>Published&nbsp;on&nbsp;<time datetime="{{ .Page.PublishDate }}">{{ .Page.PublishDate.Format "Jan 2, 2006" }}</time></span>
+						<span>~{{ .FuzzyWordCount }}&nbsp;words</span>
+						<span>{{ .ReadingTime }}&nbsp;min&nbsp;read</span>
+					</div>
+				</div>
+				{{if .Page.Description }}
+				<p>{{ .Page.Description }}</p>
+				{{end}}
+			</div>
+			{{if .Params.coverCredit }}
+			<div class="article-header-credit">
+				Image credit: <a href="{{ .Params.coverCredit }}" rel="nofollow noreferrer" target="_blank">{{ .Params.coverCredit }}</a>
+			</div>
+			{{end}}
+		</div>
+	</header>
+
+	<section class="content-container">
+		{{partial "content.html" . }}
+		{{if .Site.Params.Email }}
+		{{end}}
+		{{ $posts := where .Site.RegularPages "Section" "posts" }}
+		{{ $recent := (where $posts "Permalink" "!=" .Permalink) | first 3 }}
+		{{if $recent }}
+		<section class="content content-list">
+			<h4 class="centered">Other posts</h4>
+			{{partial "article-feed.html" $recent }}
+		</section>
+		{{end}}
+	</section>
+</article>

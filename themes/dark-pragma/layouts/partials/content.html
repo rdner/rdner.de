@@ -1,0 +1,19 @@
+{{if .Content }}
+<section class="content">
+	{{if not .IsHome }}
+	<div class="breadcrumbs">
+		{{partial "breadcrumbs.html" . }}
+	</div>
+	{{end}}
+	{{if .Params.tocEnabled }}
+	<aside class="content-toc">
+		{{ .TableOfContents }}
+	</aside>
+	{{end}}
+	{{ .Content }}
+	{{if .Params.tags }}
+	<hr>
+	{{partial "tags.html" .Params.tags }}
+	{{end}}
+</section>
+{{end}}

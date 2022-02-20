@@ -1,0 +1,36 @@
+name: Rendering
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build
+        run: hugo --minify -d ./docs
+
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions (by ${GITHUB_ACTOR})"
+          git config user.email ""
+
+      - name: Commit
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            git add ./docs
+            git commit -m "$GITHUB_WORKFLOW on $GITHUB_EVENT_NAME" -m "SHA: $GITHUB_SHA"
+            git push origin main
+          fi
