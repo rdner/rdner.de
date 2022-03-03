@@ -20,7 +20,6 @@ When sending sensitive data to me, please, use [this public key](public-key.txt)
 # Contacts
 
 * [denis@rdner.de](mailto:denis@rdner.de)
-* [Telegram](https://telegram.me/den_rdner)
 * [Most recent CV](/cv.html)
 
 # Projects
