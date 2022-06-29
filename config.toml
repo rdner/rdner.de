@@ -27,12 +27,18 @@ pygmentsCodefences = true
 	[[menu.main]]
 		identifier = "posts"
 		name = "Posts"
-		title = "Blog posts"
+		title = "Blog Posts"
 		url = "/posts/"
 		weight = -120
 	[[menu.main]]
 		identifier = "about"
 		name = "About"
-		title = "About the author"
+		title = "About the Author"
 		url = "/about/"
 		weight = -110
+	[[menu.main]]
+		identifier = "cv"
+		name = "CV"
+		title = "Most Recent CV"
+		url = "/cv.html"
+		weight = -100
