@@ -13,3 +13,4 @@ In this blog I publish some thoughts and stories about things I'm interested in,
 * [Information security](/posts/tech/security/) or [tech](/posts/tech/) in general
 * [Music](/posts/music/)
 * [Motorcycles](/posts/motorcycle/)
+* [Sport](/posts/sport/)
