@@ -6,163 +6,163 @@
 		<meta name=viewport content="width=device-width,initial-scale=1">
 		<meta name=author content="Denis Rechkunov">
 		<meta name=description content="CV">
+		<style>
+			body {
+					margin: 0;
+					padding: 0;
+					font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+					display: flex;
+					justify-content: center;
+			}
+			main {
+					padding: 1rem;
+					width: 50rem;
+			}
+			main > section {
+					padding-bottom: 0.5rem;
+					border-bottom-width: 0.01rem;
+					border-bottom-style: solid;
+					border-color: #D7DADC;
+			}
+			header *:not(:first-child) {
+					font-size: 0.7rem;
+					color: #343536;
+			}
+			header *:first-child {
+					margin-bottom: 0;
+			}
+			p {
+					text-align: justify;
+			}
+			a, a:visited {
+					text-decoration-color: #ccc;
+					text-decoration-style: dashed;
+					color:#000;
+			}
+			a:hover {
+					text-decoration: none;
+					background-color: #5a2673;
+					color: #fff;
+			}
+			section.sub {
+					padding-left: 1rem;
+			}
+			@media print {
+					body {
+							font-size: 12px;
+					}
+					p, .no-break {
+							page-break-inside: avoid;
+					}
+			}
+		</style>
+		<script defer>
+			function calculateDuration(from, to) {
+					const d1 = new Date(from);
+					const d2 = new Date(to);
+
+					// calculate total difference in months
+					let months = (d2.getFullYear() - d1.getFullYear()) * 12;
+					months -= d1.getMonth();
+					months += d2.getMonth();
+
+					// round months if more than 2 weeks in a month
+					const days = d2.getDate() - d1.getDate();
+					if (days > 14) {
+							months++;
+					}
+
+					// turn back into years and months
+					const years = Math.floor(months / 12);
+					months %= 12;
+
+					let msgStr = "";
+
+					if (years >= 1) {
+							msgStr += years + " ";
+							if (years === 1) {
+									msgStr += "year";
+							} else {
+									msgStr += "years";
+							}
+					}
+					if (months > 0) {
+							if (years >= 1) {
+									msgStr += " ";
+							}
+							msgStr += months + " ";
+							if (months === 1) {
+									msgStr += "month";
+							} else {
+									msgStr += "months";
+							}
+					}
+					return msgStr;
+			}
+
+			function appendDuration(parent, msgStr) {
+					// append a span with the human readable time duration
+					const msgSpan = document.createElement("span");
+					msgSpan.innerText = " ("+msgStr+")";
+					parent.appendChild(msgSpan);
+			}
+
+			function appendDurations() {
+					const times = document.querySelectorAll("time:nth-child(2)");
+
+					for(let i=0; i<times.length; i++) {
+							const timeElement2 = times[i];
+							const timeElement1 = timeElement2.parentElement.querySelector("time");
+							const msgStr = calculateDuration(timeElement1.dateTime, timeElement2.dateTime)
+							if (msgStr == "") {
+									continue;
+							}
+							appendDuration(timeElement2.parentElement, msgStr);
+					}
+
+					const nows = document.querySelectorAll("span.now:nth-child(2)");
+					for(let i=0; i<nows.length; i++) {
+							const nowElement = nows[i]
+							const timeElement = nowElement.parentElement.querySelector("time");
+							const msgStr = calculateDuration(timeElement.dateTime, new Date())
+							if (msgStr == "") {
+									continue;
+							}
+							appendDuration(nowElement.parentElement, msgStr);
+					}
+			}
+
+			function setTotalYears() {
+					const totalElement = document.querySelector("span.total-years");
+					const times = document.querySelectorAll("section.work time");
+
+					let minTime = null;
+					let maxTime = null;
+
+					if (times.length == 0) {
+							return;
+					}
+
+					for(let i=0; i<times.length; i++) {
+							const timeElement = times[i]
+							const dateTime = new Date(timeElement.dateTime);
+
+							if (minTime == null || dateTime.getTime() < minTime.getTime()) {
+									minTime = dateTime;
+							}
+							if (maxTime == null || dateTime.getTime() > maxTime.getTime()) {
+									maxTime = dateTime;
+							}
+					}
+					totalElement.innerText = maxTime.getFullYear() - minTime.getFullYear() + " years";
+			}
+
+			document.addEventListener("DOMContentLoaded", function(){
+					appendDurations();
+					setTotalYears();
+			});
+		</script>
 	</head>
-	<style>
-		body {
-				margin: 0;
-				padding: 0;
-				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-				display: flex;
-				justify-content: center;
-		}
-		main {
-				padding: 1rem;
-				width: 50rem;
-		}
-		main > section {
-				padding-bottom: 0.5rem;
-				border-bottom-width: 0.01rem;
-				border-bottom-style: solid;
-				border-color: #D7DADC;
-		}
-		header *:not(:first-child) {
-				font-size: 0.7rem;
-				color: #343536;
-		}
-		header *:first-child {
-				margin-bottom: 0;
-		}
-		p {
-				text-align: justify;
-		}
-		a, a:visited {
-				text-decoration-color: #ccc;
-				text-decoration-style: dashed;
-				color:#000;
-		}
-		a:hover {
-				text-decoration: none;
-				background-color: #5a2673;
-				color: #fff;
-		}
-		section.sub {
-				padding-left: 1rem;
-		}
-		@media print {
-				body {
-						font-size: 12px;
-				}
-				p, .no-break {
-						page-break-inside: avoid;
-				}
-		}
-	</style>
-	<script defer>
-		function calculateDuration(from, to) {
-				const d1 = new Date(from);
-				const d2 = new Date(to);
-
-				// calculate total difference in months
-				let months = (d2.getFullYear() - d1.getFullYear()) * 12;
-				months -= d1.getMonth();
-				months += d2.getMonth();
-
-				// round months if more than 2 weeks in a month
-				const days = d2.getDate() - d1.getDate();
-				if (days > 14) {
-						months++;
-				}
-
-				// turn back into years and months
-				const years = Math.floor(months / 12);
-				months %= 12;
-
-				let msgStr = "";
-
-				if (years >= 1) {
-						msgStr += years + " ";
-						if (years === 1) {
-								msgStr += "year";
-						} else {
-								msgStr += "years";
-						}
-				}
-				if (months > 0) {
-						if (years >= 1) {
-								msgStr += " ";
-						}
-						msgStr += months + " ";
-						if (months === 1) {
-								msgStr += "month";
-						} else {
-								msgStr += "months";
-						}
-				}
-				return msgStr;
-		}
-
-		function appendDuration(parent, msgStr) {
-				// append a span with the human readable time duration
-				const msgSpan = document.createElement("span");
-				msgSpan.innerText = " ("+msgStr+")";
-				parent.appendChild(msgSpan);
-		}
-
-		function appendDurations() {
-				const times = document.querySelectorAll("time:nth-child(2)");
-
-				for(let i=0; i<times.length; i++) {
-						const timeElement2 = times[i];
-						const timeElement1 = timeElement2.parentElement.querySelector("time");
-						const msgStr = calculateDuration(timeElement1.dateTime, timeElement2.dateTime)
-						if (msgStr == "") {
-								continue;
-						}
-						appendDuration(timeElement2.parentElement, msgStr);
-				}
-
-				const nows = document.querySelectorAll("span.now:nth-child(2)");
-				for(let i=0; i<nows.length; i++) {
-						const nowElement = nows[i]
-						const timeElement = nowElement.parentElement.querySelector("time");
-						const msgStr = calculateDuration(timeElement.dateTime, new Date())
-						if (msgStr == "") {
-								continue;
-						}
-						appendDuration(nowElement.parentElement, msgStr);
-				}
-		}
-
-		function setTotalYears() {
-				const totalElement = document.querySelector("span.total-years");
-				const times = document.querySelectorAll("section.work time");
-
-				let minTime = null;
-				let maxTime = null;
-
-				if (times.length == 0) {
-						return;
-				}
-
-				for(let i=0; i<times.length; i++) {
-						const timeElement = times[i]
-						const dateTime = new Date(timeElement.dateTime);
-
-						if (minTime == null || dateTime.getTime() < minTime.getTime()) {
-								minTime = dateTime;
-						}
-						if (maxTime == null || dateTime.getTime() > maxTime.getTime()) {
-								maxTime = dateTime;
-						}
-				}
-				totalElement.innerText = maxTime.getFullYear() - minTime.getFullYear() + " years";
-		}
-
-		document.addEventListener("DOMContentLoaded", function(){
-				appendDurations();
-				setTotalYears();
-		});
-	</script>
 	<body>
 		<main role="main">
 			<h1>Denis Rechkunov</h1>
@@ -217,7 +217,7 @@
 								<li>Data/Asset Catalog for large organisations to track their data landscape: search, tags, metadata, links, glossary etc.</li>
 								<li>IdP — identity provider for the whole platform: authentication, authorisation, user management, permission management.</li>
 								<li>Data Store — a service that enables uploading data in formats like CSV and integrating it in relational database models, so users are able to combine them with other relational databases using our Spark-based query engine.</li>
-								<li>PGQL — a service that allows to access any SQL-based data source via a GraphQL endpoint.</li>
+								<li>PGQL — a service that allows access to any SQL-based data source via a GraphQL endpoint.</li>
 								<li><a href="https://github.com/contiamo/go-base/tree/main/pkg/queue" rel="nofollow noreferrer">Queue</a> and job system.</li>
 								<li>Notification system</li>
 								<li><a href="https://github.com/contiamo/openapi-generator-go" rel="nofollow noreferrer">Open API spec‐first code generator</a> that we've built our workflow around</li>
@@ -238,7 +238,7 @@
 							<h4>Software Engineer</h4>
  							<div><time datetime="2017-01-01">January, 2017</time> – <time datetime="2018-07-01">July, 2018</time></div>
 						</header>
-						<p>Initially worked on the RESTful API that powers company's mobile apps (Scala, Play Framework).</p>
+						<p>Initially worked on the RESTful API that powers the company's mobile apps (Scala, Play Framework).</p>
 						<p>Then moved to another team and worked on the API gateway for external partners which is an internally used fork of <a href="https://github.com/zalando/skipper" rel="nofollow noreferrer">Skipper</a> (Go/Golang). This gateway solved authorisation, throttling, routing, circuit breakers and other common problems that usually occur on the ingress level.</p>
 					</section>
 				</section>
@@ -255,8 +255,8 @@
 							<h4>Software Engineer</h4>
  							<div><time datetime="2015-12-01">December, 2015</time> – <time datetime="2017-01-01">January, 2017</time></div>
 						</header>
-						<p>First worked on a set of framework agnostic components. Adopting the idea of web‐components we created our own runtime library for using components with several frameworks like Angular, React and GWT. It was used for building AWS consoles using consistent and design guideline‐compliant UI‐components.</p>
-						<p>Then worked on the static website deployment flow in AWS (TypeScript/React). This enabled AWS customers to easily deploy a static web-site seemlessly using underlying AWS services like Route 53, S3 and CloudFront.</p>
+						<p>First worked on a set of framework agnostic components. Adopting the idea of web‐components we created our own runtime library for using components with several frameworks like Angular, React and GWT. It was used for building AWS consoles using consistent and design guidelines‐compliant UI‐components.</p>
+						<p>Then worked on the static website deployment flow in AWS (TypeScript/React). This enabled AWS customers to easily deploy a static web-site seamlessly using underlying AWS services like Route 53, S3 and CloudFront.</p>
 						<p>After that switched to some back-end work and helped to create a platform for running AWS consoles (Java, Spring). This solved common integration issues faced by internal developers when adding new services to the AWS family.</p>
 					</section>
 				</section>
@@ -307,8 +307,8 @@
 						<p>
 							Among them:
 							<ul>
-								<li>Push‐notification service that notifies social network users about beginning of a tournament (node.js, Socket.io).</li>
-								<li>Administration console for a distributed gambling system (bet on sport events, etc). It allowed to view detailed analytics about the bets and to control the system remotely (ASP.net).</li>
+								<li>Push‐notification service that notifies social network users about the beginning of a tournament (node.js, Socket.io).</li>
+								<li>Administration console for a distributed gambling system (bet on sport events, etc). It allowed users to view detailed analytics about the bets and to control the system remotely (ASP.net).</li>
 								<li>Web‐application for the text‐translation workflow. It was used as a tool for managing, assigning and solving tasks among professional translators (Ext JS 4).</li>
 							</ul>
 						</p>
@@ -343,7 +343,7 @@
 							<h4>Software Engineer</h4>
  							<div><time datetime="2010-09-01">September, 2011</time> – <time datetime="2011-07-01">July, 2011</time></div>
 						</header>
-						<p>Worked as a lead developer of a WebSCADA system that made possible to remotely monitor and control water pumps and heating systems (any type of a system in theory).</p>
+						<p>Worked as a lead developer of a WebSCADA system that made it possible to remotely monitor and control water pumps and heating systems (any type of a system in theory).</p>
 						<p>The system worked as a subscription‐based web‐app. The subscription included necessary devices and sensors for the customer.</p>
 						<p>I was responsible for the initial architecture and communication protocols and built:
 							<ul>
@@ -353,7 +353,7 @@
 								<li>management console UI (ExtJS).</li>
 							</ul>
 						</p>
-						<p>Later I used results of this work as my diploma thesis.</p>
+						<p>Later I used the results of this work as my diploma thesis.</p>
 					</section>
 				</section>
 
@@ -370,7 +370,7 @@
  							<div><time datetime="2010-07-05">July, 2010</time> – <time datetime="2010-08-25">September, 2010</time></div>
 						</header>
 						<p>My assignment was to research the influence of a managed runtime environment (MRTE) on the Intel Math Kernel Library performance using JVM and CLR (.NET) as examples.</p>
-						<p>I've created a set of performance benchmarks for FFT‐related functions from MKL and proposed a validation algorithm for MKL FFT that allows to simply compare library‐produced results with the expected correct answer of the transformation.</p>
+						<p>I've created a set of performance benchmarks for FFT‐related functions from MKL and proposed a validation algorithm for MKL FFT that allows us to simply compare library‐produced results with the expected correct answer of the transformation.</p>
 					</section>
 				</section>
 			</section>
