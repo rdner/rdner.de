@@ -18,12 +18,12 @@ We flew to Málaga on September 25th and Ron (the tour company owner and guide) 
 
 This very first day we didn't do much, just went for a walk in the town and had some local food.
 
-<a href="1.jpg" target="_blank">
+<p><a href="1.jpg" target="_blank">
 <figure>
 	<img src="1.jpg" alt="Vélez de Benaudalla">
 	<figcaption>Vélez de Benaudalla where the guest house was. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
 # The first day of the trip
 
@@ -46,47 +46,47 @@ A lot of fun these roads, lots of fun. See it for yourself:
     Sorry, your browser doesn't support embedded videos.
 </video>
 
-<a href="route-1.jpg" target="_blank">
+<p><a href="route-1.jpg" target="_blank">
 <figure>
 	<img src="route-1.jpg" alt="First day route">
 	<figcaption>Our route on the first day of the trip (red line). Click for the full size map.</figcaption>
 </figure>
-</a>
+</a></p>
 
-<a href="2.jpg" target="_blank">
+<p><a href="2.jpg" target="_blank">
 <figure>
 	<img src="2.jpg" alt="first stop">
 	<figcaption>The first stop. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
-<a href="3.jpg" target="_blank">
+<p><a href="3.jpg" target="_blank">
 <figure>
 	<img src="3.jpg" alt="second stop">
 	<figcaption>The second stop. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
-<a href="4.jpg" target="_blank">
+<p><a href="4.jpg" target="_blank">
 <figure>
 	<img src="4.jpg" alt="iron waterfall">
 	<figcaption>What I called an "iron waterfall". Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
-<a href="5.jpg" target="_blank">
+<p><a href="5.jpg" target="_blank">
 <figure>
 	<img src="5.jpg" alt="filming">
 	<figcaption>That's how I filmed the last stop in the first video. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
-<a href="6.jpg" target="_blank">
+<p><a href="6.jpg" target="_blank">
 <figure>
 	<img src="6.jpg" alt="bridge view">
 	<figcaption>The view from the other side of the bridge. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
 # The second day of the trip
 
@@ -101,33 +101,33 @@ Again, see it for yourself:
     Sorry, your browser doesn't support embedded videos.
 </video>
 
-<a href="route-2.jpg" target="_blank">
+<p><a href="route-2.jpg" target="_blank">
 <figure>
 	<img src="route-2.jpg" alt="Second day route">
 	<figcaption>Our route on the second day of the trip (blue line). Click for the full size map.</figcaption>
 </figure>
-</a>
+</a></p>
 
-<a href="7.jpg" target="_blank">
+<p><a href="7.jpg" target="_blank">
 <figure>
 	<img src="7.jpg" alt="somewhere in mountains">
 	<figcaption>Somewhere in mountains, these roads are narrow. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
-<a href="8.jpg" target="_blank">
+<p><a href="8.jpg" target="_blank">
 <figure>
 	<img src="8.jpg" alt="the lake">
 	<figcaption>The view of the lake. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
-<a href="9.jpg" target="_blank">
+<p><a href="9.jpg" target="_blank">
 <figure>
 	<img src="9.jpg" alt="monte ahi de cara">
 	<figcaption>Mirador Monte Ahí de Cara. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
 # To conclude
 
@@ -135,9 +135,9 @@ The trip exceeded our expectations, everything worked out quite well and I enjoy
 
 The last hours before our flight back to Berlin we asked Ron to bring us to the beach which is not too far. There was no sand there just little rocks, so it's not completely pleasant to walk with bare feet there but well, it's a beach can't be bad, ever.
 
-<a href="10.jpg" target="_blank">
+<p><a href="10.jpg" target="_blank">
 <figure>
 	<img src="10.jpg" alt="beach">
 	<figcaption>The beach. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>

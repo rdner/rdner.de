@@ -30,81 +30,81 @@ The goal of our first day was to reach the most northern point of the island and
 * [Cueva de Los Verdes](https://www.cactlanzarote.com/en/cact/cueva-de-los-verdes/)
 * [Jardín de Cactus](https://www.cactlanzarote.com/en/cact/jardin-de-cactus/)
 
-<a href="route-1.png" target="_blank">
+<p><a href="route-1.png" target="_blank">
 <figure>
 	<img src="route-1.png" alt="Lanzarote Northern Route">
 	<figcaption>Our route going North on Lanzarote. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
-<a href="1.jpg" target="_blank">
+<p><a href="1.jpg" target="_blank">
 <figure>
 	<img src="1.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
-<a href="2.jpg" target="_blank">
+<p><a href="2.jpg" target="_blank">
 <figure>
 	<img src="2.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
-<a href="3.jpg" target="_blank">
+<p><a href="3.jpg" target="_blank">
 <figure>
 	<img src="3.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
 ## Jameos del Agua
 
 To be completely honest with you, I was not impressed by Jameos del Agua and we didn't stay there long. It was good that we decided to start with this place though, because if it was our last point it would be even a disappointment. I see how it could be a nice place to have some food there but we were not hungry at that point, hence didn't find that place particularly interesting. There is a good story behind it though.
 
-<a href="4.jpg" target="_blank">
+<p><a href="4.jpg" target="_blank">
 <figure>
 	<img src="4.jpg" alt="Jameos del Agua">
 	<figcaption>View from Jameos del Agua. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
 ## Cueva de Los Verdes
 
 This place, on the other hand, was quite interesting. We took a tour through the long caves and the experience was great. I'd say it requires some level of fitness though: there was not much air in the cave and sometimes we had quite difficult passes. Just a fair warning. The views were great, so were the stories from the guide.
 
-<a href="5.jpg" target="_blank">
+<p><a href="5.jpg" target="_blank">
 <figure>
 	<img src="5.jpg" alt="Cueva de Los Verdes">
 	<figcaption>View from Cueva de Los Verdes. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
 ## Jardín de Cactus
 
 And, finally, The Cactus Garden. And what a beautiful place it was, look at this view!
 
-<a href="6.jpg" target="_blank">
+<p><a href="6.jpg" target="_blank">
 <figure>
 	<img src="6.jpg" alt="Jardín de Cactus">
 	<figcaption>View from Jardín de Cactus. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
 The picture does not really show the scale, don't be fooled, some of the cactuses are giant:
 
-<a href="7.jpg" target="_blank">
+<p><a href="7.jpg" target="_blank">
 <figure>
 	<img src="7.jpg" alt="Jardín de Cactus">
 	<figcaption>A giant cactus. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
 There is also a windmill on the top of the hill in the garden and also a cafe with decent desserts.
 
-<a href="8.jpg" target="_blank">
+<p><a href="8.jpg" target="_blank">
 <figure>
 	<img src="8.jpg" alt="Jardín de Cactus">
 	<figcaption>Windmill on the top. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
 And this place concluded our first day of riding on Lanzarote.
 
@@ -114,56 +114,56 @@ The plan for the second day was to see the volcanic landscapes in [Montañas del
 
 This was our route for the second day:
 
-<a href="route-2.png" target="_blank">
+<p><a href="route-2.png" target="_blank">
 <figure>
 	<img src="route-2.png" alt="Lanzarote Southern Route">
 	<figcaption>Our route going South on Lanzarote. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
-<a href="9.jpg" target="_blank">
+<p><a href="9.jpg" target="_blank">
 <figure>
 	<img src="9.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
-<a href="10.jpg" target="_blank">
+<p><a href="10.jpg" target="_blank">
 <figure>
 	<img src="10.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
-<a href="11.jpg" target="_blank">
+<p><a href="11.jpg" target="_blank">
 <figure>
 	<img src="11.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
-<a href="12.jpg" target="_blank">
+<p><a href="12.jpg" target="_blank">
 <figure>
 	<img src="12.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
 ## Montañas del Fuego
 
 When we reached the volcanos, we faced this security point where we had to wait for quite a while:
 
-<a href="13.jpg" target="_blank">
+<p><a href="13.jpg" target="_blank">
 <figure>
 	<img src="13.jpg" alt="Montañas del Fuego">
 	<figcaption>The security point approaching the volcanos. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
 To my disappointment, it was not allowed to ride/drive through the mountains on your own, so we had to park our Honda and to take the special touristic bus. Later I understood why: the roads in these mountains are straight crazy. I could not believe that the bus driver had so much skill to squeeze his bus into those narrow corners. It seemed truly impossible. This was quite a roller coaster on that bus but it was a lot of fun and the views were amazing. It was my first time to see volcanos in person and I felt like I visited another planet.
 
-<a href="14.jpg" target="_blank">
+<p><a href="14.jpg" target="_blank">
 <figure>
 	<img src="14.jpg" alt="Montañas del Fuego">
 	<figcaption>Planet Montañas del Fuego. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
 And there is a bonus! Turns out there is a [restaurant](https://goo.gl/maps/49qbcZYW4tEKR4qa8) where they claim to cook their food on top of the volcano with its natural heat 🤯. Excuse me, what?! Yep, you read it right. Not sure, it's 100% true though, but the "volcanic chicken" was on the menu and tasted very good.
 
@@ -173,50 +173,50 @@ This time we just decided to ride through the places on the eastern side of the 
 
 So, the route this time was:
 
-<a href="route-3.png" target="_blank">
+<p><a href="route-3.png" target="_blank">
 <figure>
 	<img src="route-3.png" alt="Lanzarote Southern Route">
 	<figcaption>Our route going to Mirador del Río. Click to zoom.</figcaption>
 </figure>
-</a>
+</a></p>
 
 On our way there we also made a few stops at small museums and interesting spots. Even discovered a nudist beach by accident (no pictures made 😀). Nice views, chill atmosphere, looks like this part of the island is not touristic and people just live there.
 
-<a href="15.jpg" target="_blank">
+<p><a href="15.jpg" target="_blank">
 <figure>
 	<img src="15.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
-<a href="16.jpg" target="_blank">
+<p><a href="16.jpg" target="_blank">
 <figure>
 	<img src="16.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
-<a href="17.jpg" target="_blank">
+<p><a href="17.jpg" target="_blank">
 <figure>
 	<img src="17.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
-<a href="18.jpg" target="_blank">
+<p><a href="18.jpg" target="_blank">
 <figure>
 	<img src="18.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
-<a href="19.jpg" target="_blank">
+<p><a href="19.jpg" target="_blank">
 <figure>
 	<img src="19.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
-<a href="20.jpg" target="_blank">
+<p><a href="20.jpg" target="_blank">
 <figure>
 	<img src="20.jpg" alt="Lanzarote View">
 </figure>
-</a>
+</a></p>
 
 When we finally reached Mirador del Río it turned out that we had made a planning mistake. It was absolutely impossible to park our motorbike because of the very strong wind there, it would just fall on its side. So, we could not get inside the actual building and had to move on.
 

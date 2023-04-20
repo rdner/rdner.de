@@ -106,7 +106,7 @@ Obviously, you need to have a pair of GPG encryption keys and a Git remote befor
 
 Once you have your keys generated, it's simple as:
 
-```
+```bash
 pass init <your-email-from-key-uid>
 ```
 
@@ -116,7 +116,7 @@ This command will create `~/.password-store` directory for you which is a Git re
 
 Generate a new password:
 
-```
+```bash
 pass generate -c <name-of-the-service>
 ```
 
@@ -124,7 +124,7 @@ Noticed the `-c` flag? That means you won't see the password itself, it will be 
 
 If you need the password again just:
 
-```
+```bash
 pass -c <name-of-the-service>
 ```
 
@@ -132,7 +132,7 @@ Same here, it's copied to the clipboard for 45 seconds, then erased.
 
 As I said, the password store is a Git repository and each password generation or storage re-encryption is a Git commit. In order to back your storage up you use:
 
-```
+```bash
 pass git push
 ```
 
@@ -140,7 +140,7 @@ So, the command performs some extra operations around Git if needed, therefore i
 
 If you're wondering how the command works just do:
 
-```
+```bash
 less $(which pass)
 ```
 
@@ -231,7 +231,7 @@ GPG can operate in 2 modes:
 
 Let's create a file:
 
-``` bash
+```bash
 echo "The very secret text" > secret
 ```
 

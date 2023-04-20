@@ -8,12 +8,14 @@ enableRobotsTXT = true
 pygmentsCodefences = true
 
 [markup]
-	defaultMarkdownHandler = "blackFriday"
-  [markup.blackFriday]
-		hrefTargetBlank = true
-		nofollowLinks = true
-		noreferrerLinks = true
+	[markup.goldmark.renderer]
+		unsafe = true
+  [markup.highlight]
+    tabWidth = 2
 
+[markup.tableOfContents]
+    endLevel = 3
+    startLevel = 1
 
 [params]
 	UserPicture = "https://www.gravatar.com/avatar/0f18ade06d929797f7c7e418c509a0b1?s=512"
