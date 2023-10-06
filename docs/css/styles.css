@@ -24,6 +24,7 @@ p {
 	justify-content: space-between;
 	align-items: stretch;
 	flex-wrap: nowrap;
+	z-index: 999;
 }
 .site-header .logo {
 	align-self: flex-start;
@@ -405,7 +406,6 @@ hr {
 }
 .article-header {
 	min-height: 40rem;
-	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
