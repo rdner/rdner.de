@@ -9,8 +9,6 @@ tags: ["release"]
 draft: false
 ---
 
-![album cover](https://rdner.fra1.cdn.digitaloceanspaces.com/music/cyber-city/cover.jpeg)
-
 This single was inspired by the [Ghost in the Shell](https://www.imdb.com/title/tt1219827/) movie. I'm a big fan of the anime and went to see the movie. Although I didn't like how the story was changed, I appreciated the visuals and the original soundtrack.
 
 * Guitar: modified [.strandberg* Boden OS7](/posts/music/strandberg-boden-os-7/)
@@ -18,6 +16,6 @@ This single was inspired by the [Ghost in the Shell](https://www.imdb.com/title/
 * Guitar FX: Axe FX II
 
 <div>
-	<a href="https://rdner.fra1.cdn.digitaloceanspaces.com/music/cyber-city/Cyber%20City.wav" target=_blank>Cyber City</a></div>
+	<a href="./Cyber%20City.mp3" target=_blank>Cyber City</a></div>
 
-<audio controls preload="none" src="https://rdner.fra1.cdn.digitaloceanspaces.com/music/cyber-city/Cyber%20City.wav"></audio>
+<audio controls preload="none" src="./Cyber%20City.mp3"></audio>
