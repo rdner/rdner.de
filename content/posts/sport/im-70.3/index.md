@@ -159,7 +159,7 @@ The race I signed up for was their olympic distance:
 
 It was quite warm on the race day and I chose not to take my wetsuit with me. Only at the start line did I realise that this was a very uncommon choice 😀. My wife Julia came to support me and filmed a few videos of me going through the race which I later edited into this:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/871746737?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="2023 Werbellinsee Triathlon"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/871746737?h=e2e2fbcc27&color=5a2673&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 I was very slow out of the water but that was expected, taking into account that I had been swimming for less than a year at that point. Also, due to my lack of confidence in open water I started at the back of the crowd and it was not a rolling start, so I probably lost a lot of time just by doing that.
 
