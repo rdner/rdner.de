@@ -137,7 +137,6 @@
 					const times = document.querySelectorAll("section.work time");
 
 					let minTime = null;
-					let maxTime = null;
 
 					if (times.length == 0) {
 							return;
@@ -150,11 +149,8 @@
 							if (minTime == null || dateTime.getTime() < minTime.getTime()) {
 									minTime = dateTime;
 							}
-							if (maxTime == null || dateTime.getTime() > maxTime.getTime()) {
-									maxTime = dateTime;
-							}
 					}
-					totalElement.innerText = maxTime.getFullYear() - minTime.getFullYear() + " years";
+					totalElement.innerText = (new Date()).getFullYear() - minTime.getFullYear() + " years";
 			}
 
 			document.addEventListener("DOMContentLoaded", function(){
