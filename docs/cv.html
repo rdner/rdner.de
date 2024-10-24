@@ -137,7 +137,6 @@
 					const times = document.querySelectorAll("section.work time");
 
 					let minTime = null;
-					let maxTime = null;
 
 					if (times.length == 0) {
 							return;
@@ -150,11 +149,8 @@
 							if (minTime == null || dateTime.getTime() < minTime.getTime()) {
 									minTime = dateTime;
 							}
-							if (maxTime == null || dateTime.getTime() > maxTime.getTime()) {
-									maxTime = dateTime;
-							}
 					}
-					totalElement.innerText = maxTime.getFullYear() - minTime.getFullYear() + " years";
+					totalElement.innerText = (new Date()).getFullYear() - minTime.getFullYear() + " years";
 			}
 
 			document.addEventListener("DOMContentLoaded", function(){
@@ -203,7 +199,8 @@
 							<li>Added an <a href="https://github.com/elastic/beats/pull/34292" rel="nofollow noreferrer">automated migration flow</a> from "log" input to "filestream", also known as the "take over" mode, that made it easier for our customers to migrate from the deprecated "log" input type.</li>
 							<li>Added a new <a href="https://github.com/elastic/beats/pull/35734" rel="nofollow noreferrer">file identification mechanism based on fingerprinting</a> and wrote a <a href="https://www.elastic.co/blog/introducing-filestream-fingerprint-mode" rel="nofollow noreferrer">blog post</a> about it. This solved a lot of data loss and data duplication cases for our customers.</li>
 							<li>Actively participated in benchmarking and performance optimizations.</li>
-							<li>Was responsible for CI and security-related topics in our team.</li>
+							<li>Drove the effort of making the <a href="https://www.elastic.co/downloads/elastic-agent" rel="nofollow noreferrer">Elastic Agent</a> CI stable and deterministic.</li>
+							<li>Drove the migration to <a href="https://images.chainguard.dev/directory/image/wolfi-base/versions"  rel="nofollow noreferrer">Wolfi</a>-based Docker images in <a href="https://www.elastic.co/downloads/beats" rel="nofollow noreferrer">Beats</a> and <a href="https://www.elastic.co/downloads/elastic-agent" rel="nofollow noreferrer">Elastic Agent</a>.</li>
 						</ul>
 					</section>
 				</section>
