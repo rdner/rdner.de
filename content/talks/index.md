@@ -1,38 +1,11 @@
 ---
-title: "About"
-description: "Some facts about me"
+title: "Talks"
+description: "Presentations on various occasions"
 date: 2019-03-06T00:00:00+01:00
 draft: false
 ---
 
-# Denis Rechkunov
-
-![My photograph](picture.jpg)
-
-
-```sh
-denis@rdner.de:~ % whoami
-```
-
-I'm a principal software engineer based in Germany with more than a decade of experience, ranging from binary protocols and communication with devices to high-scale front-end apps and back-end services. Although I worked on user interfaces in the past, I found my passion in building complex distributed systems.
-
-When I'm not an engineer I [🏊‍♂️🚴‍♂️🏃‍♂️](https://connect.garmin.com/modern/profile/ccb91222-2fcb-4ba6-87c6-efe33b58650e), [🏍](/posts/motorcycle/), [🎸](/posts/music), [📷](https://www.icloud.com/sharedalbum/#B0vJ0DiRHGvpwq9)
-
-# Contacts
-
-* [denis@rdner.de](mailto:denis@rdner.de)
-* [Most recent CV](/cv.html)
-
-# Open Source Projects
-
-* [Elastic Agent](https://github.com/elastic/elastic-agent) — With Elastic Agent you can collect all forms of data from anywhere with a single unified agent per host. One thing to install, configure, and scale. I'm a member of the maintaing team.
-* [Beats](https://github.com/elastic/beats) — The lightweight shippers of the Elastic Stack. I'm actively contributing as a member of the maintaining team.
-* [x509 brute force](https://github.com/rdner/x509bf) — This is a CLI tool that tries out passphrases from a given word list in order to decrypt an encrypted private key with a DEK header. I created it during a CTF challenge.
-* [Catberry.js](https://catberry.github.io/) — isomorphic framework for building universal front-end apps using components, Flux architecture and [progressive rendering](https://youtu.be/aRaQe9n1lPk). Also, lots of plugins and libraries in the related [GitHub organization](https://github.com/catberry). I started it in 2014, used it at work but the project is no longer maintained.
-
-See the full list of my projects on [GitHub](https://github.com/rdner?tab=repositories&type=source)
-
-# Talks
+# Given Talks
 
 All dates are in `yyyy-mm-dd` format.
 
