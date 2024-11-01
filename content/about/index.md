@@ -9,24 +9,26 @@ draft: false
 
 ![My photograph](picture.jpg)
 
-I'm a software engineer based in Berlin, Germany.
 
-My experience is quite diverse: it goes from binary protocols and communication with devices to back-end services and front-end apps. Although I worked on user interfaces in the past, I found my passion in building complex distributed systems.
+```sh
+denis@rdner.de:~ % whoami
+```
 
-When I'm not an engineer I am [🏊‍♂️🚴‍♂️🏃‍♂️](https://connect.garmin.com/modern/profile/ccb91222-2fcb-4ba6-87c6-efe33b58650e), [🏍](/posts/motorcycle/), [🎸](/posts/music), [📷](https://www.icloud.com/sharedalbum/#B0vJ0DiRHGvpwq9)
+I'm a principal software engineer based in Germany with more than a decade of experience, ranging from binary protocols and communication with devices to high-scale front-end apps and back-end services. Although I worked on user interfaces in the past, I found my passion in building complex distributed systems.
 
-When sending sensitive data to me, please, use [this public key](public-key.txt).
+When I'm not an engineer I [🏊‍♂️🚴‍♂️🏃‍♂️](https://connect.garmin.com/modern/profile/ccb91222-2fcb-4ba6-87c6-efe33b58650e), [🏍](/posts/motorcycle/), [🎸](/posts/music), [📷](https://www.icloud.com/sharedalbum/#B0vJ0DiRHGvpwq9)
 
 # Contacts
 
 * [denis@rdner.de](mailto:denis@rdner.de)
 * [Most recent CV](/cv.html)
 
-# Projects
+# Open Source Projects
 
-* [Q3 Telegram Bot](https://github.com/rdner/q3-server-bot) — Telegram bot for Quake 3 server announcements and maintenance. Yes, I still play Quake 3 Arena and admin a server.
-* [x509 brute force](https://github.com/rdner/x509bf) — This is a CLI tool that tries to use multiple passphrases from a given word list to decrypt an encrypted private key that has a DEK header. Was created during a CTF challenge.
-* [Catberry.js](https://catberry.github.io/) — isomorphic framework for building universal front-end apps using components, Flux architecture and progressive rendering. Also, lots of plugins and libraries in the related [GitHub organization](https://github.com/catberry). Was created in 2014 and no longer maintained.
+* [Elastic Agent](https://github.com/elastic/elastic-agent) — With Elastic Agent you can collect all forms of data from anywhere with a single unified agent per host. One thing to install, configure, and scale. I'm a member of the maintaing team.
+* [Beats](https://github.com/elastic/beats) — The lightweight shippers of the Elastic Stack. I'm actively contributing as a member of the maintaining team.
+* [x509 brute force](https://github.com/rdner/x509bf) — This is a CLI tool that tries out passphrases from a given word list in order to decrypt an encrypted private key with a DEK header. I created it during a CTF challenge.
+* [Catberry.js](https://catberry.github.io/) — isomorphic framework for building universal front-end apps using components, Flux architecture and [progressive rendering](https://youtu.be/aRaQe9n1lPk). Also, lots of plugins and libraries in the related [GitHub organization](https://github.com/catberry). I started it in 2014, used it at work but the project is no longer maintained.
 
 See the full list of my projects on [GitHub](https://github.com/rdner?tab=repositories&type=source)
 

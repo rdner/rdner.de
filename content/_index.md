@@ -6,7 +6,7 @@ draft: false
 ---
 # Hello, World!
 
-My name is [Denis](/about) and I'm a software engineer based in Berlin, Germany.
+My name is [Denis](/about) and I'm a principal software engineer based in Germany.
 
 In this blog I publish some thoughts and stories about things I'm interested in, such as:
 
