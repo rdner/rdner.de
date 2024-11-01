@@ -17,7 +17,7 @@ When I'm not an engineer I [🏊‍♂️🚴‍♂️🏃‍♂️](https://con
 
 You can reach me via [denis@rdner.de](mailto:denis@rdner.de) and find my most recent CV [here](/cv.html).
 
-# Open Source Highlights
+# Open Source
 
 * [Elastic Agent](https://github.com/elastic/elastic-agent) — With Elastic Agent you can collect all forms of data from anywhere with a single unified agent per host. I'm a member of the maintaing team.
 * [Beats](https://github.com/elastic/beats) — The lightweight shippers of the Elastic Stack. I'm actively contributing as a member of the maintaining team.
