@@ -8,22 +8,25 @@ enableRobotsTXT = true
 pygmentsCodefences = true
 
 [markup]
-	[markup.goldmark.renderer]
-		unsafe = true
-  [markup.highlight]
-    tabWidth = 2
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+tabWidth = 2
 
 [markup.tableOfContents]
-    endLevel = 3
-    startLevel = 1
+endLevel = 3
+startLevel = 1
 
 [params]
-	UserPicture = "https://www.gravatar.com/avatar/0f18ade06d929797f7c7e418c509a0b1?s=512"
-	AuthorName = "Denis Rechkunov"
-	Description = "Personal stories and thoughts"
-	Github = "rdner"
-	Email = "denis@rdner.de"
-	License = "a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a><a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">&nbsp;<img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"/images/cc-by-nc-sa.png\" /></a>"
+UserPicture = "https://www.gravatar.com/avatar/0f18ade06d929797f7c7e418c509a0b1?s=512"
+AuthorName = "Denis Rechkunov"
+Description = "Personal stories and thoughts"
+Github = "rdner"
+BlueSky = "rdner.de"
+Email = "denis@rdner.de"
+License = "a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a><a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">&nbsp;<img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"/images/cc-by-nc-sa.png\" /></a>"
 
 [menu]
 	[[menu.main]]
