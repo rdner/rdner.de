@@ -28,6 +28,7 @@ Github = "rdner"
 Mastodon = "mastodon.social/@rdner"
 Email = "denis@rdner.de"
 License = "a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a><a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">&nbsp;<img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"/images/cc-by-nc-sa.png\" /></a>"
+CustomHead = "<script defer data-domain=\"rdner.de\" src=\"https://plausible.io/js/script.js\"></script>"
 
 [menu]
 	[[menu.main]]
