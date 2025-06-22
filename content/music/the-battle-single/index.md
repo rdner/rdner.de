@@ -2,22 +2,9 @@
 title: "The Battle"
 date: 2025-06-16T00:00:00+01:00
 description: "The saga of the constant battle."
-coverCredit: ""
-tocEnabled: false
 keywords: ["single", "music", "release"]
-tags: ["release"]
 draft: false
 ---
-
-<div style="display: block;margin-left: auto; margin-right: auto; width:50%">
-	<a href="./The%20Battle.mp3" target=_blank>
-		<div style="text-align:center;">The Battle</div>
-		<img src="./cover.jpeg" alt="Single cover" >
-	</a>
-	<audio controls preload="none" src="./The%20Battle.mp3" style="width:100%"></audio>
-</div>
-
-# The Backstory
 
 This track was very long in the making.
 

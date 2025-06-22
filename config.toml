@@ -38,14 +38,20 @@ CustomHead = "<script defer data-domain=\"rdner.de\" src=\"https://plausible.io/
 		url = "/posts/"
 		weight = -120
 	[[menu.main]]
+		identifier = "music"
+		name = "Music"
+		title = "My original music"
+		url = "/music/"
+		weight = -110
+	[[menu.main]]
 		identifier = "talks"
 		name = "Talks"
 		title = "My talks"
 		url = "/talks/"
-		weight = -110
+		weight = -100
 	[[menu.main]]
 		identifier = "cv"
 		name = "CV"
 		title = "My most recent CV"
 		url = "/cv.html"
-		weight = -100
+		weight = -90

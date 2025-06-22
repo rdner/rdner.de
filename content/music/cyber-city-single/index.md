@@ -2,22 +2,9 @@
 title: "Cyber City"
 date: 2017-04-16T00:00:00+01:00
 description: "Heavy track inspired by the cyber-punk esthetics."
-coverCredit: ""
-tocEnabled: false
 keywords: ["single", "music", "release"]
-tags: ["release"]
 draft: false
 ---
-
-<div style="display: block;margin-left: auto; margin-right: auto; width:50%">
-	<a href="./Cyber%20City.mp3" target=_blank>
-		<div style="text-align:center;">Cyber City</div>
-		<img src="./cover.jpeg" alt="Single cover" >
-	</a>
-	<audio controls preload="none" src="./Cyber%20City.mp3" style="width:100%"></audio>
-</div>
-
-# The Backstory
 
 I've been a big fan of the [Ghost in the Shell](https://www.imdb.com/title/tt0113568/) anime for a long time. I also really liked the [Stand Alone Complex](https://www.imdb.com/title/tt0346314/) show. So, when I learned that there would be a movie, I was very excited. I had so many ideas of what it could be, so many high expectations.
 
