@@ -25,17 +25,11 @@ I ordered my guitar from the European website on December the 9th. This website 
 
 I took a look at 7-string guitars and found a purple Boden OS7 with an almost 400 euro discount. Purple is my favorite color and I always wanted to try 7-string, well, the choice was obvious to me. I got the guitar from Sweden in 7 days on December 16th.
 
-<figure>
-	<img src="1.jpg" alt="Just arrived">
-	<figcaption>Just arrived</figcaption>
-</figure>
+![Just Arrived](1.jpg "Just Arrived")
 
 You would find a very high quality gig bag inside the box and the guitar itself inside the bag. Also, some hex keys and a factory checklist with a signature of the person responsible for quality of your guitar.
 
-<figure>
-	<img src="2.jpg" alt="Got it from the bag">
-	<figcaption>Got it from the bag</figcaption>
-</figure>
+![Got it from the bag](2.jpg "Got it from the bag")
 
 If I got it right, it had a company-branded string set installed but I personally didn’t like it and installed D’Addario [NYXL1164](https://www.amazon.de/gp/product/B00YJJ0K0I) which turned out to be too large gauge and later I switched to 1059 and [Ernie Ball 2620 11–58](https://www.amazon.de/gp/product/B0002PBS8G) (despite the purple wrap color I chose them for their sound) later which turned out a perfect fit for this particular guitar.
 
@@ -45,10 +39,7 @@ If I got it right, it had a company-branded string set installed but I personall
 
 The body shape is perfect for me. It’s convenient to play in any position you can imagine. The output jack is situated in a very convenient place (image below) and I don’t even notice the cable presence when it’s plugged in.
 
-<figure>
-	<img src="3.jpg" alt="Output jack">
-	<figcaption>Output jack</figcaption>
-</figure>
+![Output jack](3.jpg "Output jack")
 
 The body is extremely light-weight, I think, it’s even lighter than my Ibanez S-series guitar.
 
@@ -66,10 +57,7 @@ Locking nut is very easy to use, no problem here. Also, the neck has side dots w
 
 Also, a good part is the truss rod, it’s very well-accessible, I mean you don’t have to do anything to access it in comparison to most guitars where you have to lose a couple of strings and/or remove a plastic shield, +1 to the headless design.
 
-<figure>
-	<img src="4.jpg" alt="Accessing the truss rod">
-	<figcaption>Accessing the truss rod</figcaption>
-</figure>
+![Accessing the truss rod](4.jpg "Accessing the truss rod")
 
 # What I didn’t like
 
@@ -86,36 +74,19 @@ Not a big deal really because you need to do it only once usually, but it was re
 # Changing pickups
 As I mentioned before, the sound was disappointing and I decided to get rid of the active EMG pickups. So, after some research I chose Seymour Duncan Nazgul/Sentient pair and this wiring scheme:
 
-<figure>
-	<img src="5.jpg" alt="Wiring">
-	<figcaption>
-		Wiring. Source: <a href="http://www.seymourduncan.com/wiring-diagrams?meta_params=view-all,humbuckers">www.seymourduncan.com</a>
-	</figcaption>
-</figure>
+![Wiring](5.jpg "Wiring. Source: www.seymourduncan.com")
 
 Which gives us, basically, these switching options:
 
-<figure>
-	<img src="6.png" alt="Switching options">
-	<figcaption>
-		Switching options. Source: <a href="http://www.ibanez.com/products/u_eg_detail.php?year=2016&cat_id=1&series_id=4&data_id=419&color=CL01">www.ibanez.com</a>
-	</figcaption>
-</figure>
-
+![Switching options](6.png "Switching options. Source: www.ibanez.com")
 
 I got the same wiring with my Ibanez SIX6FDFM and very liked it. I don’t really understand why manufactures keep putting tone knobs on their guitars and losing a part of the signal in it. All guitars without tone knobs I’ve heard had nicer sound, especially for djent/metal style of music. But again, it’s my personal preference. So, the plan was to replace the tone knob with the coil-split switch.
 
 After a couple of evenings and with my wife’s help we finished wiring the new circuit replacing almost everything. I’ve installed the [Seymour Duncan Liberator](http://www.seymourduncan.com/accessory/liberator-500k) volume knob. It allows you to re-install pickups in the future without soldering at all. That’s what I’ve got as a result:
 
-<figure>
-	<img src="7.jpg" alt="Result 1">
-</figure>
-<figure>
-	<img src="8.jpg" alt="Result 2">
-	<figcaption>
-		Sentient and Nazgul pickups/3-way blade switch/volume knob/coil-split switch
-	</figcaption>
-</figure>
+![Result 1](7.jpg)
+
+![Result 2](8.jpg "Sentient and Nazgul pickups/3-way blade switch/volume knob/coil-split switch")
 
 The new sound amazed me. Turns out the EMG pickups were hiding the true potential of this guitar, the sound is outstanding nothing to compare with what it had before. In fact, this is the best sound I’ve ever heard and it became my favorite instrument after all. Maybe I’m a little biased, of course, but I love it and that’s what important to me.
 

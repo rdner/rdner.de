@@ -118,12 +118,7 @@ What I personally learned from my observations: if people stop moving and being 
 
 Just to give you an inspiring example:
 
-<p><a href="1.jpg" target="_blank">
-<figure>
-	<img src="1.jpg" alt="Lynda finishes IRONMAN 140.6">
-	<figcaption>Lynda finishes her first full IRONMAN at the age of 64.</figcaption>
-</figure>
-</a></p>
+![Lynda finishes IRONMAN 140.6](1.jpg "Lynda finishes her first full IRONMAN at the age of 64.")
 
 This picture is taken from the [video on YouTube](https://youtu.be/qUHsIMhe0qQ?t=708), I highly recommend you watch it.
 

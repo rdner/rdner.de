@@ -17,12 +17,7 @@ A guitar or its sound is a very subjective topic, I don’t claim that I know th
 
 Can’t remember exactly, when my parents bought me my first guitar but I have this picture from May 20th, 2005 where I play my first guitar ever.
 
-<figure>
-	<img src="1.jpg" alt="First acustic guitar">
-	<figcaption>
-		Learning some power chord tabs on my first acoustic guitar (May, 2005)
-	</figcaption>
-</figure>
+![First acustic guitar](1.jpg "Learning some power chord tabs on my first acoustic guitar (May, 2005)")
 
 I just turned 16 here but had been having this guitar for about a year already, even bought a pickup (sensor) for it to record and apply effects. So, it was very low price range acoustic guitar but at that point I was not sure if I wanted to start learning how to play guitar, it was just a probe.
 
@@ -30,12 +25,7 @@ I just turned 16 here but had been having this guitar for about a year already, 
 
 After some learnt tabs of popular songs I decided for myself that I liked electric guitar much more and asked parents to buy me one for my birthday. But turned out that an electric guitar is much more expensive and needs some additional gear, like amplifier, we could not spend much money on it and bought some of those Gio Ibanez Jumpstart sets that had an e-guitar, gigbag, tuner, strap and amplifier included. I have this awkward picture of me playing a metal riff using this guitar when we were trying to write a song with my friend we had created a band with.
 
-<figure>
-	<img src="2.jpg" alt="Playing metal">
-	<figcaption>
-		Awkward picture of me playing metal (Feb, 2006)
-	</figcaption>
-</figure>
+![Playing metal](2.jpg "Awkward picture of me playing metal (Feb, 2006)")
 
 To be honest, the guitar was awful, it had a lot of background noise — the only possible option to play was using a noise gate, not aligned frets which caused a lot of buzzing with a low action height, I did my best to adjust everything but it was not enough: either you had no buzzing and 5–7 mm action height or you had buzzing and a playable instrument. The amplifier stopped working after a year. This guitar is still somewhere at my mom’s balcony, dead after my experiments with electronics and adjustments.
 
@@ -43,12 +33,7 @@ On the picture you can also notice that I used very large gauge strings because 
 
 Another picture of me playing with a band in a studio, sorry for the quality, we didn’t have a good camera in our phones at that time.
 
-<figure>
-	<img src="3.jpg" alt="Playing with a band">
-	<figcaption>
-		Playing with a band (Feb, 2006)
-	</figcaption>
-</figure>
+![Playing with a band](3.jpg "Playing with a band (Feb, 2006)")
 
 We were renting the place with the equipment which included a Vox amplifier with a built-in noise gate which I liked very much and it was the only thing that made my guitar sound better than usual.
 
@@ -60,12 +45,7 @@ When I turned 18, I started studying at university and didn’t have enough time
 
 After graduating from university I decided to try again and bought a new guitar with an amplifier. I had been working for a year at that point and could afford a better instrument than I had before but still was not sure if I could play again. So, I bought some Ibanez with active pickups and a solid state Marshal amp which had a reasonable price. Unfortunately, I can’t remember the exact model names (especially for Ibanez guitar, it’s almost impossible) but I have a picture:
 
-<figure>
-	<img src="4.jpg" alt="Second Ibanez. First Marshal">
-	<figcaption>
-		My second Ibanez, also the first Marshal amplifier
-	</figcaption>
-</figure>
+![Second Ibanez. First Marshal](4.jpg "My second Ibanez, also the first Marshal amplifier")
 
 After the previous “jumpstart” model this guitar was wonderful but it turned out that I lost all my skills after 6 years of studying at university. Well, my playing was not going well, I was demotivated and burnt out. Also, my wife and I decided to move to another city in 2013 and I sold the guitar and amplifier because didn’t want to bring them there. I thought everything was over at that point.
 
@@ -75,12 +55,7 @@ In December 2015 we moved to Berlin, Germany and here instruments are much more 
 
 Just after moving I bought [Ibanez S521](http://www.ibanez.com/products/eg_detail.php?data_id=354&color=CL02&area_id=3&year=2016&cat_id=1&series_id=4) and I still love this instrument even though I sold it but not because it was not good (read further).
 
-<figure>
-	<img src="5.jpg" alt="Ibanez S521">
-	<figcaption>
-		Ibanez S521
-	</figcaption>
-</figure>
+![Ibanez S521](5.jpg "Ibanez S521")
 
 It was my first experience with S-series by Ibanez and I was amazed how light it was and what a great tone it produced with its mahogany body. The neck was perfect for me, all the frets were perfectly aligned, I used a very low action with large gauge strings (D’Addario NYXL1156) and had the sound I always wanted. Didn’t buy an amplifier this time because it would not be practical for playing at home, especially in Germany, people used to being quite in here (which I very like, by the way). So, as my friend suggested, I bought the [Zoom G3](https://www.zoom.co.jp/products/guitar/g3-guitar-effects-amp-simulator-pedal) processor which is a great device for its money and size (currently I use [BOSS GT-100](https://www.boss.info/us/products/gt-100/), which is huge but very powerful).
 
@@ -113,12 +88,7 @@ My next guitar was Ibanez [RG921WZC-NTF Premium](http://www.ibanez.com/products/
 
 Next was Ibanez [SIX6DFM-DCB Iron Label](http://www.ibanez.com/products/u_eg_detail.php?year=2016&cat_id=1&series_id=4&data_id=419&color=CL01).
 
-<figure>
-	<img src="6.jpg" alt="Ibanez SIX6DFM-DCB Iron Label">
-	<figcaption>
-	    Ibanez SIX6DFM-DCB Iron Label
-	</figcaption>
-</figure>
+![Ibanez SIX6DFM-DCB Iron Label](6.jpg "Ibanez SIX6DFM-DCB Iron Label")
 
 I had some positive experience with S-series before, also played some Iron Label guitars at the local store. So, it was reasonable choice for me. There are two models: [SIX6DFM](http://www.ibanez.com/products/u_eg_detail.php?year=2016&cat_id=1&series_id=4&data_id=419&color=CL01) and [SIX6FDFM](http://www.ibanez.com/products/u_eg_detail.php?year=2016&cat_id=1&series_id=4&data_id=420&color=CL01) (additional “F” letter). The only difference they have is the bridge: the first has a floyd-like floating tremolo system from Ibanez and the second has a fixed one. I had never had any experience with floating tremolo systems when decided to try this guitar. I thought “why not?”.
 
@@ -138,12 +108,7 @@ Also, this time I switched to a different gauge of strings for both guitars. I i
 
 # Found perfect guitars, is that over?
 
-<figure>
-	<img src="7.jpg" alt="Current set of guitars">
-	<figcaption>
-		My current guitar stand including the bass guitar Ibanez SR300EB-CA
-	</figcaption>
-</figure>
+![Current set of guitars](7.jpg "My current guitar stand including the bass guitar Ibanez SR300EB-CA")
 
 No, it’s not. I will definitely keep [SIX6FDFM](http://www.ibanez.com/products/u_eg_detail.php?year=2016&cat_id=1&series_id=4&data_id=420&color=CL01) and [FRIX6FEAH-CSF](http://www.ibanez.com/products/eg_detail.php?year=2016&area_id=2&cat_id=1&series_id=6&data_id=432&color=CL01), they are perfect for me but recently I started looking at [.strandberg\*](https://strandbergguitars.eu/) guitars mostly because of [Sarah Longfield](https://www.youtube.com/watch?v=ztHILrfiRhQ) videos and got very curious to try such instrument. It’s completely different from what I’ve held in my hands before. Unfortunately, I could not find any .strandberg* guitar in Berlin and I could not try it. The official online store is out of stock for [Boden OS 6](https://strandbergguitars.eu/product/boden-os-6/) model. So, I ordered a purple [Boden OS 7](https://strandbergguitars.eu/product/boden-os-7/) model, which would allow me to try a 7-string guitar at the same time. I’m currently waiting for the delivery. But this guitar deserves a separate post.
 

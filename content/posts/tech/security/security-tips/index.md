@@ -33,10 +33,7 @@ So, the requirements in March 2019 are:
 
 [The recent benchmark](https://twitter.com/TinkerSec/status/1096046635593928704) showed that a random 9 character long password can be guessed within 4 days using the AWS cloud GPUs. In comparison, just around a month before this [another benchmark was published](https://twitter.com/TinkerSec/status/1096046635593928704) where it claimed that 8 character long passwords can be cracked in ~2.5 hours with modern desktop hardware.
 
-<figure>
-	<img src="1.jpg" alt="tweet screenshot">
-	<figcaption><a href="https://twitter.com/TinkerSec/status/1109202630830637056" rel="nofollow noreferrer" target="_blank">Tweet</a></figcaption>
-</figure>
+![Tweet screenshot](1.jpg)
 
 ### Can not contain words, must be random
 
@@ -166,10 +163,7 @@ All 3 options require you to set it up first, of course, and you can remove it a
 
 ## In the future we won't need passwords
 
-<figure>
-	<img src="2.jpg" alt="future">
-	<figcaption><a href="https://www.imdb.com/title/tt0096874/" rel="nofollow noreferrer" target="_blank">Back to the Future Part II (1989)</a></figcaption>
-</figure>
+![The future](2.jpg "Back to the Future Part II (1989)")
 
 Recently the [WebAuthn specification](https://w3c.github.io/webauthn/) was finalized and it's a big deal because this is a type of web authentication based on [asymmetric cryptography](https://en.wikipedia.org/wiki/Public-key_cryptography) (public/private key pair).
 
@@ -406,10 +400,7 @@ gpg -k --with-keygrip
 
 A short disclaimer: I'm not sponsored by or affiliated with Yubico. So, all I write here I do because I really like their product and sincerely recommend to use it.
 
-<figure>
-	<img src="3.jpg" alt="yubikey">
-	<figcaption><a href="https://www.yubico.com/products/yubikey-hardware/" rel="nofollow noreferrer" target="_blank">Yubico products page</a></figcaption>
-</figure>
+![Yubikey](3.jpg "Yubico products page")
 
 So, what is it exactly?
 
@@ -434,10 +425,7 @@ Fortunately again, there is a very simple solution to this problem, use a **data
 
 For instance, this device from PortaPow:
 
-<figure>
-	<img src="4.jpg" alt="PortaPow Data Blocker">
-	<figcaption><a href="https://portablepowersupplies.co.uk/home/portapow-data-blocker-usb-adaptor" rel="nofollow noreferrer" target="_blank">PortaPow. Data security and charging accessories</a></figcaption>
-</figure>
+![PortaPow Data Blocker](4.jpg "PortaPow. Data security and charging accessories")
 
 This device has only charging contacts, so all the USB data lanes are stripped off and you're totally safe using it with any USB charging outlet.
 

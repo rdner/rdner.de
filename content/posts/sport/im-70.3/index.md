@@ -48,12 +48,7 @@ Finishing an IRONMAN race was a very ambitious goal and I had a few problems to 
 
 ## Weight
 
-<p><a href="2018_appearance.jpg" target="_blank">
-<figure>
-	<img src="2018_appearance.jpg" alt="My appearance in 2018">
-	<figcaption>This is how I looked like in July 2018</figcaption>
-</figure>
-</a></p>
+![My appearance in 2018](2018_appearance.jpg "This is how I looked like in July 2018")
 
 Actually, I didn't think I was overweight back then until a few friends and family members commented on my appearance. I didn't take it seriously, but when I tried to go for my first run in winter of 2018 it went horribly. I felt very heavy, like half of my body was bouncing on each stride. My ribs hurt after this run just because of all this bouncing. This is how I set my first goal -- first I need to lose weight.
 
@@ -65,12 +60,7 @@ It took me about 2 months to lose 10 kg and to get down to 76 kg. Then I adjuste
 
 After I got rid of those 10 kg, running became a breeze. I found a simple training plan and set myself a goal to run a [Berlin City Night 10K race](https://www.berlin-citynight.de) in August 2019. I don't remember if I skipped a single workout and it worked! I finished my very first 10K race with a time of 0:49:02.
 
-<p><a href="2019_10k.jpg" target="_blank">
-<figure>
-	<img src="2019_10k.jpg" alt="My first ever race">
-	<figcaption>August 2019. Berlin City Night 10K</figcaption>
-</figure>
-</a></p>
+![My first ever race](2019_10k.jpg "August 2019. Berlin City Night 10K")
 
 I liked running. Especially after a long day at work it was mentally relaxing, almost meditative. I had time to think about a lot of things, to plan my nearest future and when my workout duration increased to multiple hours, I started listening to audiobooks which completely changed my experience.
 
@@ -86,21 +76,11 @@ In May 2020 I went for a [170 km bike ride](https://connect.garmin.com/modern/ac
 
 Later, in September 2020, I joined my friends for [another ~170 km ride](https://connect.garmin.com/modern/activity/5526460704) to follow the [Mauerweg course](https://www.berlin.de/mauer/mauerweg/) and it was a lot of fun. Given we didn't care about the time, it was very relaxed and I really enjoyed the trip.
 
-<p><a href="2020_Mauerweg.jpg" target="_blank">
-<figure>
-	<img src="2020_Mauerweg.jpg" alt="The Mauerweg ride">
-	<figcaption>September 2020. Mauerweg 170k</figcaption>
-</figure>
-</a></p>
+![The Mauerweg ride](2020_Mauerweg.jpg "September 2020. Mauerweg 170k")
 
 After these rides I gained some confidence in my cycling. It was no longer a question if I needed it in my life, and in the same month I bought my first road bike -- Canyon Endurace CF SL Disc 8.0.
 
-<p><a href="2020_Canyon_Endurace.jpg" target="_blank">
-<figure>
-	<img src="2020_Canyon_Endurace.jpg" alt="My first road bike">
-	<figcaption>First Road Bike. Canyon Endurace CF SL Disc 8.0</figcaption>
-</figure>
-</a></p>
+![My first road bike](2020_Canyon_Endurace.jpg "First Road Bike. Canyon Endurace CF SL Disc 8.0")
 
 I also purchased an indoor trainer and started training on [Zwift](https://www.zwift.com/eu/athlete/170b2559-f53e-43a7-8968-ea335dd845ee). Even joined and graduated from their Zwift Academy in 2020.
 
@@ -186,19 +166,9 @@ I think people don't realise how much planning a race of this kind requires from
 * Do final preparations in the race morning
 * Finally, put your wetsuit on and tremble from nerves at the start line.
 
-<p><a href="2023_IM_Bike_Bag.jpg" target="_blank">
-<figure>
-	<img src="2023_IM_Bike_Bag.jpg" alt="Bike Bag">
-	<figcaption>Bike Bag</figcaption>
-</figure>
-</a></p>
+![Bike bag](2023_IM_Bike_Bag.jpg "Bike Bag")
 
-<p><a href="2023_IM_Run_Bag.jpg" target="_blank">
-<figure>
-	<img src="2023_IM_Run_Bag.jpg" alt="Run Bag">
-	<figcaption>Run Bag</figcaption>
-</figure>
-</a></p>
+![Run bag](2023_IM_Run_Bag.jpg "Run Bag")
 
 Also, imagine all the logistics around it. Although Erkner is near Berlin, it's still a train from the station which is 2 km away from the place where I live. The bags are large and it's very nice to have someone to help you.
 
@@ -226,34 +196,19 @@ I had 3 new problems to solve:
 
 So, here I am, days before my IM 70.3 race with a new bike, new position, magically fixed brakes and tubeless setup that I have not tried before. This was going to be interesting.
 
-<p><a href="2023_Canyon_Speedmax.jpg" target="_blank">
-<figure>
-	<img src="2023_Canyon_Speedmax.jpg" alt="My new triathlon bike">
-	<figcaption>My Canyon Speedmax CF 8 Disc</figcaption>
-</figure>
-</a></p>
+![My new triathlon bike](2023_Canyon_Speedmax.jpg "My Canyon Speedmax CF 8 Disc")
 
 ## Before the Race Day
 
 I was one of the first people in line for the bike check-in, so the transition zone was almost empty.
 
-<p><a href="2023_IM_Transition_Zone.jpg" target="_blank">
-<figure>
-	<img src="2023_IM_Transition_Zone.jpg" alt="Transition Zone">
-	<figcaption>Transition Zone</figcaption>
-</figure>
-</a></p>
+![Transition Zone](2023_IM_Transition_Zone.jpg "Transition Zone")
 
 I noticed that my saddle is much higher than the bike rack and I had to lean my bike almost 45 degrees in order to hook the bike with the saddle nose. It was surprising but I didn't pay too much attention to this fact.
 
 I put my transition bags on the hooks and planned to put on nutrition and hydration the next morning before the race.
 
-<p><a href="2023_IM_Transition_Bags.jpg" target="_blank">
-<figure>
-	<img src="2023_IM_Transition_Bags.jpg" alt="Transition Bags">
-	<figcaption>Transition Bags</figcaption>
-</figure>
-</a></p>
+![Transition Bags](2023_IM_Transition_Bags.jpg "Transition Bags")
 
 ## Race Day
 
@@ -273,28 +228,13 @@ I could not do anything about the first problem, it's not allowed by the rules t
 
 ### Swim
 
-<p><a href="2023_IM_Swim_1.jpg" target="_blank">
-<figure>
-	<img src="2023_IM_Swim_1.jpg" alt="Before the start">
-	<figcaption>Nervous before the start.</figcaption>
-</figure>
-</a></p>
+![Before the start](2023_IM_Swim_1.jpg "Nervous before the start")
 
-<p><a href="2023_IM_Swim_2.jpg" target="_blank">
-<figure>
-	<img src="2023_IM_Swim_2.jpg" alt="Start line">
-	<figcaption>Start line.</figcaption>
-</figure>
-</a></p>
+![Start line](2023_IM_Swim_2.jpg "Start line")
 
 This time I was wearing my wetsuit and it also was a rolling start which was so much better. The only thing I struggled with was the distance between buoys. Sometimes they were too far from each other and I simply didn't see the next one. When this happened, I just followed other people and it worked out just fine.
 
-<p><a href="2023_IM_Swim_3.jpg" target="_blank">
-<figure>
-	<img src="2023_IM_Swim_3.jpg" alt="Exiting the water">
-	<figcaption>Exiting the water.</figcaption>
-</figure>
-</a></p>
+![Exiting the water](2023_IM_Swim_3.jpg "Exiting the water")
 
 ### Bike
 
@@ -308,12 +248,7 @@ Besides the road being very narrow in places and referees not catching that craz
 
 One unfortunate thing that happened to me at ~70 km in: a bolt on my front hydration system got unscrewed after hitting a pothole and the whole thing started disintegrating. I caught some parts but also lost some and now I cannot use it anymore.
 
-<p><a href="2023_IM_Bike.jpg" target="_blank">
-<figure>
-	<img src="2023_IM_Bike.jpg" alt="Bike leg">
-	<figcaption>Bike leg.</figcaption>
-</figure>
-</a></p>
+![Bike leg](2023_IM_Bike.jpg "Bike Leg")
 
 The closer to the transition zone we got, the more supporters surrounded us, the louder it got. It was a very nice experience. I finished the bike with, as I thought, fresh legs and was looking forward to the run.
 
@@ -325,12 +260,7 @@ The run consisted of 4 loops. On each loop the volunteers gave you a hair tie of
 
 I initially planned for a 4:30 min/km pace but because of the heat I had to adjust and lower my expectations. So, the total average was around 4:43 min/km instead. I would not call that run steady though.
 
-<p><a href="2023_IM_Run.jpg" target="_blank">
-<figure>
-	<img src="2023_IM_Run.jpg" alt="Run leg">
-	<figcaption>Run.</figcaption>
-</figure>
-</a></p>
+![Run leg](2023_IM_Run.jpg "Run Leg")
 
 ### Finish
 
@@ -338,23 +268,13 @@ Only after collecting the last hair tie did I realise: "wait, am I finishing now
 
 I had never looked at my total time during the race, I focused on the current leg which helped me mentally. Now approaching the finish line I looked at the screen on the finish arch and I saw my time -- 5:08:48. I could not believe it. My goal was around 5:30:00 with a better half marathon pace. Looks like my last moment bike purchase gamble really did make a difference.
 
-<p><a href="cover.jpg" target="_blank">
-<figure>
-	<img src="cover.jpg" alt="Finish">
-	<figcaption>Finish.</figcaption>
-</figure>
-</a></p>
+![Finish](cover.jpg "Finish")
 
 The finish area, or "athletes garten" as they call it, was great: they had a couple of open cold showers, water, fruits, cakes and a lot of happy triathletes.
 
 I went to have a proper shower, met my wife, picked my bike and went to find our friend who offered his help getting back home.
 
-<p><a href="2023_IM_Finisher.jpg" target="_blank">
-<figure>
-	<img src="2023_IM_Finisher.jpg" alt="Finisher">
-	<figcaption>Finisher.</figcaption>
-</figure>
-</a></p>
+![Finisher](2023_IM_Finisher.jpg "Finisher")
 
 # Bragging Section
 
