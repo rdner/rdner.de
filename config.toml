@@ -33,6 +33,8 @@ CustomHead = "<script defer data-domain=\"rdner.de\" src=\"https://plausible.io/
 [privacy]
   [privacy.vimeo]
     enableDNT = true
+  [privacy.youTube]
+    privacyEnhanced = true
 
 [menu]
 	[[menu.main]]
