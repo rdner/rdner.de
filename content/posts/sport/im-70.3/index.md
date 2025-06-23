@@ -10,7 +10,7 @@ draft: false
 
 It was a typical weekend of 2018 when I went to see a new movie. As usual, the movie theatre played a few commercials and trailers before the actual movie started. This was one of the played commercials:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/304263309?h=327740ba45&color=5a2673&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+{{< vimeo 304263309 >}}
 
 First, you see a woman who is training for a triathlon race and apparently her family, particularly her daughter, does not really understand why she is wasting so much time on it instead of being with her family. But then the story unfolds: we start seeing that this woman was in a tragic accident where she barely survived and lost her leg. Eventually, her daughter understands the "why" and realises how important it is for her mum and how important it is to support her.
 
@@ -138,7 +138,7 @@ The race I signed up for was their olympic distance:
 
 It was quite warm on the race day and I chose not to take my wetsuit with me. Only at the start line did I realise that this was a very uncommon choice 😀. My wife Julia came to support me and filmed a few videos of me going through the race which I later edited into this:
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/871746737?h=e2e2fbcc27&color=5a2673&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+{{< vimeo 871746737 >}}
 
 I was very slow out of the water but that was expected, taking into account that I had been swimming for less than a year at that point. Also, due to my lack of confidence in open water I started at the back of the crowd and it was not a rolling start, so I probably lost a lot of time just by doing that.
 
