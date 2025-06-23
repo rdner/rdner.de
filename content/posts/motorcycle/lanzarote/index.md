@@ -4,7 +4,6 @@ date: 2018-12-25T00:00:00+01:00
 description: "When it gets dark and wet in winter here in Berlin one of the ways to escape this is going to Spain that is always warm and sunny. This time my wife and I decided to go for a motorbike trip on Lanzarote island."
 tocEnabled: true
 keywords: ["spain", "rides", "motorbike", ]
-tags: ["rides", "traveling"]
 draft: false
 ---
 

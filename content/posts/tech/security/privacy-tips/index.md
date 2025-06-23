@@ -5,7 +5,6 @@ description: "This is another write up of my recent talk where I share some info
 coverCredit: "https://www.imdb.com/title/tt0268978/"
 tocEnabled: true
 keywords: ["Privacy", "Surveillance", "Tracking", "GDPR", "Google", "Facebook"]
-tags: ["privacy", "talks"]
 draft: false
 ---
 

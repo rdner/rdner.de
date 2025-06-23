@@ -5,7 +5,6 @@ description: "I want to share my experience how I started playing guitar, had ve
 coverCredit: ""
 tocEnabled: true
 keywords: ["guitar", "ibanez", "music"]
-tags: ["guitar"]
 draft: false
 ---
 

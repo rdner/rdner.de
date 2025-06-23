@@ -5,7 +5,6 @@ coverCredit: "The bank vault in NoMad Downtown LA. Image by Benoit Linero."
 tocEnabled: true
 date: 2019-12-08
 keywords: ["security", "encryption", "backup", "s3", "aws", "bash", "infosec"]
-tags: ["privacy", "encryption"]
 draft: false
 ---
 

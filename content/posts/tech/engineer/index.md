@@ -5,7 +5,6 @@ coverCredit: ""
 tocEnabled: true
 date: 2016-09-25
 keywords: ["engineer", "engineering", "education", "hiring", "software engineering", "software development"]
-tags: ["education", "society"]
 draft: false
 ---
 

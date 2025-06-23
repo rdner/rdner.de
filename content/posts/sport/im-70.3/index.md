@@ -5,7 +5,6 @@ coverCredit: "https://connect.garmin.com/modern/activity/11990565134"
 tocEnabled: true
 date: 2023-10-01
 keywords: ["sport", "triathlon", "ironman"]
-tags: ["sport", "triathlon"]
 draft: false
 ---
 

@@ -4,7 +4,6 @@ date: 2019-12-29T00:00:00+01:00
 description: "This year comes to its end and it's time to summarize. The best thing that happened to me this year was the motorbike trip in Spain, I'd like to share what was so amazing about it. Videos included."
 tocEnabled: true
 keywords: ["spain", "rides", "motorbike", ]
-tags: ["rides", "traveling"]
 draft: false
 ---
 

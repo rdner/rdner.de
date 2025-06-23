@@ -5,7 +5,6 @@ description: "This is a write up of my recent (if can call October 2018 recent) 
 coverCredit: "https://github.com/dmahlow"
 tocEnabled: true
 keywords: ["Web", "SQL", "XSS", "CSRF", "CSP", "CORS", "vulnerability"]
-tags: ["web", "talks"]
 draft: false
 ---
 # Disclaimer

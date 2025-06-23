@@ -5,7 +5,6 @@ description: "This is another write up of my recent talk where I share what tool
 coverCredit: ""
 tocEnabled: true
 keywords: ["SSH", "GPG", "PGP", "YubiKey", "Authentication", "Phishing", "USB", "Networking", "Hacking", "Cracking", "Passwords"]
-tags: ["privacy", "talks", "encryption"]
 draft: false
 ---
 

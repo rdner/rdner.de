@@ -5,7 +5,6 @@ coverCredit: "https://connect.garmin.com/modern/activity/9799792004"
 tocEnabled: true
 date: 2022-11-11
 keywords: ["sport", "running"]
-tags: ["sport", "running"]
 draft: false
 ---
 

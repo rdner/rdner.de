@@ -5,7 +5,6 @@ description: "In my previous post I promised to write about the .strandberg* gui
 coverCredit: ""
 tocEnabled: true
 keywords: ["strandberg", "guitar", "music", "DIY"]
-tags: ["guitar"]
 draft: false
 ---
 
