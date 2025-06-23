@@ -6,6 +6,7 @@ relativeURLs = true
 sectionPagesMenu = "main"
 enableRobotsTXT = true
 pygmentsCodefences = true
+copyright = 'Unless indicated otherwise, the content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow noreferrer" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.<br><a xmlns:cc="http://creativecommons.org/ns#" href="https://rdner.de/about" property="cc:attributionName" rel="cc:attributionURL">Denis Rechkunov</a>&nbsp;(<a href="mailto:denis@rdner.de">denis@rdner.de</a>)'
 
 [markup]
 
@@ -27,8 +28,11 @@ LinkedIn = "rdner"
 Github = "rdner"
 Mastodon = "mastodon.social/@rdner"
 Email = "denis@rdner.de"
-License = "a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a><a rel=\"license\" href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">&nbsp;<img alt=\"Creative Commons License\" style=\"border-width:0\" src=\"/images/cc-by-nc-sa.png\" /></a>"
 CustomHead = "<script defer data-domain=\"rdner.de\" src=\"https://plausible.io/js/script.js\"></script>"
+
+[privacy]
+  [privacy.vimeo]
+    enableDNT = true
 
 [menu]
 	[[menu.main]]
