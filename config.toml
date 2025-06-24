@@ -61,3 +61,21 @@ CustomHead = "<script defer data-domain=\"rdner.de\" src=\"https://plausible.io/
 		title = "My most recent CV"
 		url = "/cv.html"
 		weight = -90
+	[[menu.main]]
+		identifier = "linkedin"
+		name = "LinkedIn"
+		title = "My LinkedIn profile"
+		url = "https://www.linkedin.com/in/rdner"
+		weight = -80
+	[[menu.main]]
+		identifier = "github"
+		name = "Github"
+		title = "My Github profile"
+		url = "https://github.com/rdner"
+		weight = -70
+	[[menu.main]]
+		identifier = "mastodon"
+		name = "Mastodon"
+		title = "My Mastodon profile"
+		url = "https://mastodon.social/@rdner"
+		weight = -60
