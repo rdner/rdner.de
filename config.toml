@@ -6,7 +6,7 @@ relativeURLs = true
 sectionPagesMenu = "main"
 enableRobotsTXT = true
 pygmentsCodefences = true
-copyright = 'Unless indicated otherwise, the content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow noreferrer" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.<br><a xmlns:cc="http://creativecommons.org/ns#" href="https://rdner.de/about" property="cc:attributionName" rel="cc:attributionURL">Denis Rechkunov</a>&nbsp;(<a href="mailto:denis@rdner.de">denis@rdner.de</a>)'
+copyright = 'Denis Rechkunov'
 
 [markup]
 
@@ -21,14 +21,13 @@ endLevel = 3
 startLevel = 1
 
 [params]
-UserPicture = "https://www.gravatar.com/avatar/0f18ade06d929797f7c7e418c509a0b1?s=512"
+UserPictureURL = "/images/rdner.jpg"
 AuthorName = "Denis Rechkunov"
 Description = "Personal stories and thoughts"
-LinkedIn = "rdner"
-Github = "rdner"
-Mastodon = "mastodon.social/@rdner"
 Email = "denis@rdner.de"
+LicenseURL = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
 CustomHead = "<script defer data-domain=\"rdner.de\" src=\"https://plausible.io/js/script.js\"></script>"
+CustomFooter = 'Unless indicated otherwise, the content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow noreferrer" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.<br>Denis Rechkunov&nbsp;(<a href="mailto:denis@rdner.de">denis@rdner.de</a>)'
 
 [privacy]
   [privacy.vimeo]
