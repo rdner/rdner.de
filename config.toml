@@ -1,37 +1,44 @@
 baseURL = "https://rdner.de/"
-languageCode = "en-us"
+languageCode = "en-US"
 title = "rdner's blog"
-theme = "dark-pragma"
-relativeURLs = true
+theme = "darker-pragma"
 sectionPagesMenu = "main"
 enableRobotsTXT = true
 pygmentsCodefences = true
 copyright = 'Denis Rechkunov'
 
 [markup]
-
-[markup.goldmark.renderer]
-unsafe = true
-
-[markup.highlight]
-tabWidth = 2
-
-[markup.tableOfContents]
-endLevel = 3
-startLevel = 1
+  [markup.goldmark]
+    [markup.goldmark.parser]
+			attribute = true
+	[markup.highlight]
+		tabWidth = 2
+	  style = 'vulcan'
+	[markup.tableOfContents]
+		endLevel = 3
+		startLevel = 1
 
 [params]
-UserPictureURL = "/images/rdner.jpg"
-AuthorName = "Denis Rechkunov"
-Description = "Personal stories and thoughts"
-Email = "denis@rdner.de"
-LicenseURL = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
-CustomHead = "<script defer data-domain=\"rdner.de\" src=\"https://plausible.io/js/script.js\"></script>"
-CustomFooter = 'Unless indicated otherwise, the content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow noreferrer" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.<br>Denis Rechkunov&nbsp;(<a href="mailto:denis@rdner.de">denis@rdner.de</a>)'
+	licenseURL = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+	userPictureURL = "/images/rdner.jpg"
+	authorName = "Denis Rechkunov"
+	[params.contact]
+		email = "denis@rdner.de"
+	[params.customHTML]
+		# head = '<meta name="fediverse:creator" content="@rdner@mastodon.social"><script defer data-domain=\"rdner.de\" src=\"https://plausible.io/js/script.js\"></script>'
+		footer = 'Unless indicated otherwise, the content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow noreferrer" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.<a style="display:none;" rel="me" href="https://mastodon.social/@rdner"></a><script type="text/javascript">w=document.getElementById("whoami");if(w){w.onclick=()=>eval(atob("ZG9jdW1lbnQubG9jYXRpb249J2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9ZFF3NHc5V2dYY1En"))}</script>'
 
 [privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
   [privacy.vimeo]
     enableDNT = true
+  [privacy.x]
+    disable = true
   [privacy.youTube]
     privacyEnhanced = true
 
