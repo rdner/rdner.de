@@ -1,0 +1,78 @@
+baseURL: https://rdner.de/
+languageCode: en-US
+title: rdner's blog
+theme: darker-pragma
+sectionPagesMenu: main
+enableRobotsTXT: true
+copyright: Denis Rechkunov
+markup:
+  goldmark:
+    parser:
+      attribute: true
+  highlight:
+    tabWidth: 2
+    style: vulcan
+  tableOfContents:
+    endLevel: 3
+    startLevel: 1
+params:
+  licenseURL: http://creativecommons.org/licenses/by-nc-sa/4.0/
+  author:
+    pictureURL: /images/rdner.jpg
+    name: Denis Rechkunov
+    email: denis@rdner.de
+  contact:
+    email: denis@rdner.de
+  customHTML:
+    # head: '<meta name="fediverse:creator" content="@rdner@mastodon.social"><script defer data-domain="rdner.de" src="https://plausible.io/js/script.js"></script>'
+    footer: 'Unless indicated otherwise, the content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="nofollow noreferrer" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)</a>.<a style="display:none;" rel="me" href="https://mastodon.social/@rdner"></a><script type="text/javascript">w=document.getElementById("whoami");if(w){w.onclick=()=>eval(atob("ZG9jdW1lbnQubG9jYXRpb249J2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9ZFF3NHc5V2dYY1En"))}</script>'
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
+  instagram:
+    disable: true
+  vimeo:
+    enableDNT: true
+  x:
+    disable: true
+  youTube:
+    privacyEnhanced: true
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      title: My blog posts
+      url: /posts/
+      weight: -120
+    - identifier: music
+      name: Music
+      title: My original music
+      url: /music/
+      weight: -110
+    - identifier: talks
+      name: Talks
+      title: My talks
+      url: /talks/
+      weight: -100
+    - identifier: cv
+      name: CV
+      title: My most recent CV
+      url: /cv.html
+      weight: -90
+    - identifier: linkedin
+      name: LinkedIn
+      title: My LinkedIn profile
+      url: https://www.linkedin.com/in/rdner
+      weight: -80
+    - identifier: github
+      name: Github
+      title: My Github profile
+      url: https://github.com/rdner
+      weight: -70
+    - identifier: mastodon
+      name: Mastodon
+      title: My Mastodon profile
+      url: https://mastodon.social/@rdner
+      weight: -60
