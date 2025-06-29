@@ -1,6 +1,6 @@
 ---
 title: "My road to IRONMAN 70.3"
-description: "This is a story of a big life change."
+description: "This is a story of a big life change. One commercial inspired my to take on one of the hardest challenges of my life."
 coverCredit: "https://connect.garmin.com/modern/activity/11990565134"
 tocEnabled: true
 date: 2023-10-01
