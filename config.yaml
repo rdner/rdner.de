@@ -2,7 +2,6 @@ baseURL: https://rdner.de/
 languageCode: en-US
 title: rdner's blog
 theme: darker-pragma
-sectionPagesMenu: main
 enableRobotsTXT: true
 copyright: Denis Rechkunov
 markup:
@@ -41,38 +40,28 @@ privacy:
     privacyEnhanced: true
 menu:
   main:
-    - identifier: posts
-      name: Posts
-      title: My blog posts
-      url: /posts/
-      weight: -120
-    - identifier: music
-      name: Music
-      title: My original music
-      url: /music/
-      weight: -110
     - identifier: talks
       name: Talks
       title: My talks
       url: /talks/
-      weight: -100
+      weight: 20
     - identifier: cv
       name: CV
       title: My most recent CV
       url: /cv.html
-      weight: -90
+      weight: 21
     - identifier: linkedin
       name: LinkedIn
       title: My LinkedIn profile
       url: https://www.linkedin.com/in/rdner
-      weight: -80
+      weight: 22
     - identifier: github
       name: Github
       title: My Github profile
       url: https://github.com/rdner
-      weight: -70
+      weight: 23
     - identifier: mastodon
       name: Mastodon
       title: My Mastodon profile
       url: https://mastodon.social/@rdner
-      weight: -60
+      weight: 24
