@@ -3,6 +3,8 @@ title: "Cyber City"
 date: 2017-04-16T00:00:00+01:00
 description: "Heavy track inspired by the cyber-punk esthetics."
 keywords: ["single", "music", "release", "cyberpunk"]
+params:
+  artist: rdner
 ---
 
 I've been a big fan of the [Ghost in the Shell](https://www.imdb.com/title/tt0113568/) anime for a long time. I also really liked the [Stand Alone Complex](https://www.imdb.com/title/tt0346314/) show. So, when I learned that there would be a movie, I was very excited. I had so many ideas of what it could be, so many high expectations.

@@ -3,6 +3,8 @@ title: "Inside The Machine"
 date: 2015-02-01T00:00:00+01:00
 description: "My first album with some experimental electronic music."
 keywords: ["album", "music", "release"]
+params:
+  artist: rdner
 ---
 
 This album is my first ever experiment with producing music. The idea was to express in music how one would feel inside a busy computer processing signals and working hard. The focus was definitely on the percussion.

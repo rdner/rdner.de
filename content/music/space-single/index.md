@@ -3,6 +3,8 @@ title: "Space"
 date: 2016-10-24T00:00:00+01:00
 description: "My first public work with live instruments"
 keywords: ["single", "music", "release"]
+params:
+  artist: rdner
 ---
 
 This single is my first ever finished work with live guitars.
