@@ -34,7 +34,7 @@ When people ask me about my profession I usually have this conversation:
 > Me: Currently, I’m working on a UI-components library most of the time.
 > X: Got it, you’re a front-end developer.
 > Me: Nope, I’m a software engineer, just working on this project at the moment.
-> X: Dunno, what you mean, dude.
+> X: Ehm, okay...
 
 And for me it sounds really insulting because my engineer qualification has been just shrinked to the ability of creating front-end web-apps. My scope is much wider and who knows what I would be doing in a year, it’s just an interesting thing to me at the moment and the only word that I know for describing this condition — engineer.
 
