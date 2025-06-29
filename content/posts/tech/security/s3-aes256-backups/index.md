@@ -4,8 +4,7 @@ description: "I'm very paranoid when it comes to my data. For me, the only backu
 coverCredit: "The bank vault in NoMad Downtown LA. Image by Benoit Linero."
 tocEnabled: true
 date: 2019-12-08
-keywords: ["security", "encryption", "backup", "s3", "aws", "bash", "infosec"]
-draft: false
+keywords: ["security", "encryption", "backup", "s3", "aws", "bash"]
 ---
 
 # What I was looking for. Requirements

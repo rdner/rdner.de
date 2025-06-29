@@ -1,11 +1,9 @@
 ---
 title: ".strandberg* Boden OS7 — my perfect guitar"
 date: 2017-01-15T00:00:00+01:00
-description: "In my previous post I promised to write about the .strandberg* guitar I had ordered because it definitely deserved a separate post. Well, here we go! I’m going to share all my thoughts on .strandberg* Boden OS7, all the up/down sides I found and how I fixed what I didn’t like and eventually got a perfect guitar for myself."
-coverCredit: ""
+description: "In my previous post I promised to write about the .strandberg* guitar I had ordered. It definitely deserved a separate post. Well, here we are! I’m going to share all my thoughts on .strandberg* Boden OS7, all the up/down sides I found and how I fixed what I didn’t like and eventually got a perfect guitar for myself."
 tocEnabled: true
 keywords: ["strandberg", "guitar", "music", "DIY"]
-draft: false
 ---
 
 Hey, everyone! In [my previous](../chasing-perfect-guitar) post I promised to write about the [.strandberg\*](https://strandbergguitars.com/) guitar I had ordered because it definitely deserved a separate post. Well, here we go! I’m going to share all my thoughts on .strandberg* Boden OS7, all the up/down sides I found and how I fixed what I didn’t like and eventually got a perfect guitar for myself.

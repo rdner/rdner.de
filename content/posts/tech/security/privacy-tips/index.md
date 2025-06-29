@@ -1,11 +1,10 @@
 ---
 title: "Paranoid Habits. Privacy Tips"
 date: 2021-03-10T12:01:16+01:00
-description: "This is another write up of my recent talk where I share some information about the modern era of data collection and how you can keep your privacy at least partially."
+description: "This is another write up of my recent talk where I share some information about the modern era of data collection and how you can keep your privacy. At least partially."
 coverCredit: "https://www.imdb.com/title/tt0268978/"
 tocEnabled: true
-keywords: ["Privacy", "Surveillance", "Tracking", "GDPR", "Google", "Facebook"]
-draft: false
+keywords: ["privacy", "surveillance", "tracking", "gdpr", "google", "facebook"]
 ---
 
 Recently I gave a talk to my colleagues where I shared some information about the modern state of data collection and privacy violation. It's impossible to avoid all of the tracking but one can take some steps to minimize the amount of collected data.

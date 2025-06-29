@@ -3,8 +3,7 @@ title: "Riding on Lanzarote, Spain"
 date: 2018-12-25T00:00:00+01:00
 description: "When it gets dark and wet in winter here in Berlin one of the ways to escape this is going to Spain that is always warm and sunny. This time my wife and I decided to go for a motorbike trip on Lanzarote island."
 tocEnabled: true
-keywords: ["spain", "rides", "motorbike", ]
-draft: false
+keywords: ["spain", "rides", "motorbike", "lanzarote" ]
 ---
 
 This is the first time we went somewhere after I got my motorbike license, so "why not rent a bike and explore the whole island by riding together" we thought. Now, looking back, I'd say it was a bit sketchy because I had not have enough experience riding in mountains before but, in the end, it went well, I was very careful and didn't try to ride above my abilities.

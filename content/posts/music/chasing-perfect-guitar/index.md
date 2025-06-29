@@ -1,11 +1,9 @@
 ---
 title: "Chasing a perfect guitar"
 date: 2016-12-15T00:00:00+01:00
-description: "I want to share my experience how I started playing guitar, had very hard time after a big break and how struggled picking a perfect guitar for myself recently. I hope for someone it would be an interesting read for building their own path."
-coverCredit: ""
+description: "I want to share my experience how I started playing guitar, had very hard time after a big break and how struggled picking a perfect guitar for myself recently. I hope for someone it would be an interesting read for their own path ahead."
 tocEnabled: true
 keywords: ["guitar", "ibanez", "music"]
-draft: false
 ---
 
 # Disclaimer

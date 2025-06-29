@@ -4,9 +4,9 @@ date: 2019-03-10T10:05:39+01:00
 description: "This is a write up of my recent (if can call October 2018 recent) talk that I gave for my colleagues. It's about typical attack vectors used against web-apps and how to decrease the attack surface of the apps."
 coverCredit: "https://github.com/dmahlow"
 tocEnabled: true
-keywords: ["Web", "SQL", "XSS", "CSRF", "CSP", "CORS", "vulnerability"]
-draft: false
+keywords: ["web", "sql", "xss", "csrf", "csp", "cors", "vulnerability"]
 ---
+
 # Disclaimer
 
 I'm not a security expert, please check every word I write.

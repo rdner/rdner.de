@@ -5,7 +5,6 @@ coverCredit: "https://connect.garmin.com/modern/activity/11990565134"
 tocEnabled: true
 date: 2023-10-01
 keywords: ["sport", "triathlon", "ironman"]
-draft: false
 ---
 
 It was a typical weekend of 2018 when I went to see a new movie. As usual, the movie theatre played a few commercials and trailers before the actual movie started. This was one of the played commercials:

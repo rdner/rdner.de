@@ -2,7 +2,6 @@
 title: "Talks"
 description: "Presentations on various occasions"
 date: 2019-03-06T00:00:00+01:00
-draft: false
 ---
 
 All dates are in `yyyy-mm-dd` format.
@@ -12,7 +11,7 @@ All dates are in `yyyy-mm-dd` format.
 * 📇 -- slides
 * 📎 -- related code/demo/attachment
 
-## In English 🇬🇧
+# In English 🇬🇧
 
 * `2020-03-10` Thursday Talk @ [Contiamo](https://www.contiamo.com/): Paranoid Habits. Privacy Tips [📝](/posts/tech/security/privacy-tips/ "post") [📇](/posts/tech/security/privacy-tips/slides.pdf "slides")
 * `2019-03-21` Thursday Talk @ [Contiamo](https://www.contiamo.com/): Paranoid Habits. Security Tips [📝](/posts/tech/security/security-tips/ "post") [📇](/posts/tech/security/security-tips/slides.pdf "slides")
@@ -20,7 +19,7 @@ All dates are in `yyyy-mm-dd` format.
 * `2016-08-26` [JSConf Iceland 2016](https://2016.jsconf.is/speakers/denis-rechkunov/): Progressive rendering – how to make your apps to render sooner [🎬](https://youtu.be/aRaQe9n1lPk "video") [📇](/slides/jsconf/progressive-rendering "slides")
 * `2016-03-17` [BerlinJS](http://berlinjs.org/): Progressive rendering with Catberry.js [📇](/slides/berlinjs/progressive-rendering-with-catberry "slides") [📎](https://github.com/rdner/berlinjs-demo "code")
 
-## По-русски 🇷🇺
+# По-русски 🇷🇺
 
 * `2015-05-22` В гостях у компании [Enterra](http://www.enterra.ru/): Зачем изоморфный JavaScript? Почему Catberry.js? [🎬](https://youtu.be/tVjf2s_n4_g "видео") [📇](/slides/others/why-isomorphic-javascript "слайды")
 * `2015-03-28` [CodeFest 2015](http://2015.codefest.ru/lecture/1006): Изоморфный JavaScript – Будущее уже здесь [🎬](https://youtu.be/MPGt7Tef83Y "видео") [📇](/slides/codefest/isomorphic-javascript "слайды")

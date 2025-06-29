@@ -3,7 +3,6 @@ title: "The Battle"
 date: 2025-06-16T00:00:00+01:00
 description: "The saga of the constant battle."
 keywords: ["single", "music", "release"]
-draft: false
 ---
 
 This track was very long in the making.

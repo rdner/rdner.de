@@ -1,11 +1,9 @@
 ---
-title: "People don’t remember what the word “engineer” means anymore and I think they should."
-description: "Nowadays we have X-developers (replace X with a tech) everywhere. Most people forgot what engineering means what exactly stands behind the word engineer. This post is to remind what it actually is and that we need more engineers than X-developers."
-coverCredit: ""
+title: "People don’t remember what the word \"engineer\" means anymore and I think they should."
+description: "Nowadays we have X-developers everywhere (replace X with a tech). Most people forgot what engineering means and what exactly stands behind the word engineer. This post is to remind what it actually is and that we need more engineers than X-developers."
 tocEnabled: true
 date: 2016-09-25
 keywords: ["engineer", "engineering", "education", "hiring", "software engineering", "software development"]
-draft: false
 ---
 
 # What “engineer” means to me?

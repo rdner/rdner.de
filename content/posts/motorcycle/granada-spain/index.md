@@ -3,8 +3,7 @@ title: "Riding in Granada, Spain"
 date: 2019-12-29T00:00:00+01:00
 description: "This year comes to its end and it's time to summarize. The best thing that happened to me this year was the motorbike trip in Spain, I'd like to share what was so amazing about it. Videos included."
 tocEnabled: true
-keywords: ["spain", "rides", "motorbike", ]
-draft: false
+keywords: ["spain", "rides", "motorbike", "granada"]
 ---
 
 I like traveling. Bragging facts: at the moment I've visited 15 countries and 32 places, spent in total 102 days traveling. Since I got my motorbike license, I had 2 trips that went particularly well: [Lanzarote](/posts/motorbike/lanzarote) and this one – Granada in Spain. What's different? This time my wife and I rented a motorbike and went exploring. In fact, it went so well with Lanzarote that in Granada we even took a guided tour from a local company (details later) and started filming our trip on camera (only pictures before). What a beautiful footage's come out! It was totally worth doing.

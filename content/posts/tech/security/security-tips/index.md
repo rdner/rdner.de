@@ -1,11 +1,9 @@
 ---
 title: "Paranoid Habits. Security Tips"
 date: 2019-03-23T12:01:16+01:00
-description: "This is another write up of my recent talk where I share what tools and techniques I use to protect myself from being hacked."
-coverCredit: ""
+description: "This is another write up of my recent talk where I shared what tools and techniques I use to protect myself from being hacked."
 tocEnabled: true
-keywords: ["SSH", "GPG", "PGP", "YubiKey", "Authentication", "Phishing", "USB", "Networking", "Hacking", "Cracking", "Passwords"]
-draft: false
+keywords: ["ssh", "gpg", "pgp", "yubikey", "authentication", "phishing", "usb", "networking", "hacking", "cracking", "passwords"]
 ---
 
 Recently I gave a talk to my colleagues where I shared some tools I use to secure my online presence and communication. Some of the listed things can be very technical but some of them I believe are crucial to know as a part of the daily life in the modern world.
