@@ -7,12 +7,6 @@
 	--border-thickness: 0.1rem;
 	--max-width: 56rem;
 }
-@media screen and (max-width: 600px) {
-	:root {
-		--font-size: 1rem;
-	}
-}
-
 html {
   scroll-padding-top: calc(var(--header-height) + 1rem);
 }
@@ -149,11 +143,6 @@ a.undecorated[target=_blank]::after,
 	margin: 0;
 	gap: 0.5rem;
 	padding-right: 0.3rem;
-}
-@media screen and (max-width: 600px) {
-	.site-nav ul {
-		gap: 0;
-	}
 }
 .site-nav ul li {
 	display: flex;
@@ -442,4 +431,51 @@ a.undecorated[target=_blank]::after,
 .music audio {
 	width: 100%;
 	margin-top: 1rem;
+}
+
+@media print {
+		:root {
+				--main-color: #FFF;
+				--bg-color: #FFF;
+				--border-color: #000;
+				--card-bg-color: #C0C0C0;
+				--card-overlay-color: rgba(255,255,255,0.8);
+				--text-color: #000;
+				--secondary-text-color: #000;
+				--highlight-text-color: #000;
+				--font-size: 0.9rem;
+		}
+		main {
+				padding: 0 1rem;
+				min-height: unset;
+		}
+		.site-header, .breadcrumbs, aside, audio, video {
+				display: none;
+		}
+		.post-header {
+				background: none;
+		}
+		.shadowed {
+				text-shadow: none;
+		}
+		.content code {
+				background-color: #000;
+				color: #FFF;
+		}
+		.post-header.with-cover {
+				background: unset !important;
+				min-height: 0;
+		}
+		.post-summary-card {
+				background: unset;
+		}
+}
+
+@media screen and (max-width: 600px) {
+	:root {
+		--font-size: 1rem;
+	}
+	.site-nav ul {
+		gap: 0;
+	}
 }
