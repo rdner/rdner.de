@@ -433,6 +433,29 @@ a.undecorated[target=_blank]::after,
 	margin-top: 1rem;
 }
 
+/* built-in list pagination */
+.pagination {
+		list-style: none;
+		display: flex;
+		padding: 0;
+		gap: 0.5rem;
+}
+.pagination .page-item a {
+		padding: 0 0.4rem;
+}
+.pagination .active a,
+.pagination .disabled a {
+		text-decoration: none;
+}
+.pagination .active a {
+		border: var(--border-thickness) solid var(--text-color);
+}
+.pagination .active:hover a,
+.pagination .disabled:hover a {
+		background: unset;
+}
+
+/* additional style sets */
 @media print {
 		:root {
 				--main-color: #FFF;
@@ -449,7 +472,7 @@ a.undecorated[target=_blank]::after,
 				padding: 0 1rem;
 				min-height: unset;
 		}
-		.site-header, .breadcrumbs, aside, audio, video {
+		.site-header, .breadcrumbs, aside, audio, video, .pagination {
 				display: none;
 		}
 		.post-header {
