@@ -14,6 +14,8 @@ markup:
   tableOfContents:
     endLevel: 3
     startLevel: 1
+pagination:
+  pagerSize: 20
 params:
   licenseURL: http://creativecommons.org/licenses/by-nc-sa/4.0/
   author:
