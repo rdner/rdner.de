@@ -6,6 +6,7 @@
 	--small-font-size: calc(var(--font-size) - 0.25rem);
 	--border-thickness: 0.1rem;
 	--max-width: 56rem;
+	--link-padding: 0 0.1rem;
 }
 html {
   scroll-padding-top: calc(var(--header-height) + 1rem);
@@ -35,7 +36,7 @@ a {
   text-decoration-line: underline;
   text-decoration-style: dashed;
   text-decoration-color: var(--highlight-text-color);
-	padding: 0 0.1rem;
+	padding: var(--link-padding);
 }
 a:hover {
 	background-color: var(--highlight-color);
@@ -164,14 +165,17 @@ a.undecorated[target=_blank]::after,
 
 /* breadcrumbs */
 .breadcrumbs {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	gap: 0.2rem;
 	margin: 0.5rem 0 0.5rem 0;
-}
-.breadcrumb {
-	font-size: var(--small-font-size);
 	font-weight: bold;
+	font-size: var(--small-font-size);
 }
-.breadcrumb:not(:last-child)::after {
-	content: '→';
+.breadcrumb.final {
+	/* keep it consistent with the rest padded links */
+	padding: var(--link-padding);
 }
 
 /* content styling */
