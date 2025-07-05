@@ -436,6 +436,23 @@ a.undecorated[target=_blank]::after,
 	width: 100%;
 	margin-top: 1rem;
 }
+.music .title {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.music .formats {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 1rem;
+}
+.music .formats li {
+	padding: 0;
+}
+.music .formats *:not(:first-child)::before {
+	content: ", ";
+}
+
 
 /* built-in list pagination */
 .pagination {
