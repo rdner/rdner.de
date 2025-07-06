@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Technology on rdner's blog</title><link>https://rdner.de/posts/tech/</link><description>Recent content in Technology on rdner's blog</description><generator>Hugo</generator><language>en-US</language><managingEditor>denis@rdner.de (Denis Rechkunov)</managingEditor><webMaster>denis@rdner.de (Denis Rechkunov)</webMaster><copyright>Denis Rechkunov</copyright><lastBuildDate>Sun, 25 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://rdner.de/posts/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>People don’t remember what the word "engineer" means anymore and I think they should.</title><link>https://rdner.de/posts/tech/engineer/</link><pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/tech/engineer/</guid><description>&lt;h2 id="what-engineer-means-to-me">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Technology on rdner's blog</title><link>https://rdner.de/posts/tech/</link><description>Recent content in Technology on rdner's blog</description><generator>Hugo</generator><language>en-US</language><managingEditor>denis@rdner.de (Denis Rechkunov)</managingEditor><webMaster>denis@rdner.de (Denis Rechkunov)</webMaster><copyright>Denis Rechkunov</copyright><lastBuildDate>Sat, 05 Jul 2025 18:19:58 +0200</lastBuildDate><atom:link href="https://rdner.de/posts/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Code Maintainability Is Not Always a Technical Problem</title><link>https://rdner.de/posts/tech/code-maintainability-is-not-always-a-technical-problem/</link><pubDate>Sat, 05 Jul 2025 18:19:58 +0200</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/tech/code-maintainability-is-not-always-a-technical-problem/</guid><description>&lt;h2 id="context">
+ Context&amp;nbsp;&lt;a class="undecorated heading-anchor" href="#context">#&lt;/a>
+&lt;/h2>
+&lt;p>First, who am I to even talk about it? What is my background?&lt;/p>
+&lt;p>I&amp;rsquo;ve been building software for the last 15 years. I&amp;rsquo;ve worked at 8 companies ranging from small startups to one of the biggest tech companies in the world.&lt;/p>
+&lt;p>At the moment I primarily work on 
+&lt;a href="https://github.com/elastic/beats" rel="nofollow noreferrer" target="_blank" title="Elastic Beats">Beats&lt;/a>
+. A few facts about this repository (July 2025):&lt;/p>
+&lt;ul>
+&lt;li>~15 teams work on it&lt;/li>
+&lt;li>918 unique contributors (including external ones)&lt;/li>
+&lt;li>4,183 Go files&lt;/li>
+&lt;li>653,168 lines of code&lt;/li>
+&lt;li>45,205 pull requests&lt;/li>
+&lt;/ul>
+&lt;p>So, it&amp;rsquo;s a relatively big project with quite a few people working on it. Let&amp;rsquo;s take my path from onboarding to the present day as an example for this article.&lt;/p></description></item><item><title>People don’t remember what the word "engineer" means anymore and I think they should.</title><link>https://rdner.de/posts/tech/engineer/</link><pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/tech/engineer/</guid><description>&lt;h2 id="what-engineer-means-to-me">
  What “engineer” means to me?&amp;nbsp;&lt;a class="undecorated heading-anchor" href="#what-engineer-means-to-me">#&lt;/a>
 &lt;/h2>
 &lt;p>When I was studying at Altay State Technical University in the small town Barnaul in Russia we used to think about ourselves as engineers not just developers.&lt;/p>
