@@ -4,8 +4,7 @@
 &lt;p>First, who am I to even talk about it? What is my background?&lt;/p>
 &lt;p>I&amp;rsquo;ve been building software for the last 15 years. I&amp;rsquo;ve worked at 8 companies ranging from small startups to one of the biggest tech companies in the world.&lt;/p>
 &lt;p>At the moment I primarily work on 
-&lt;a href="https://github.com/elastic/beats" rel="nofollow noreferrer" target="_blank" title="Elastic Beats">Beats&lt;/a>
-. A few facts about this repository (July 2025):&lt;/p>
+&lt;a href="https://github.com/elastic/beats" rel="nofollow noreferrer" target="_blank" title="Elastic Beats">Beats&lt;/a>. A few facts about this repository (July 2025):&lt;/p>
 &lt;ul>
 &lt;li>~15 teams work on it&lt;/li>
 &lt;li>918 unique contributors (including external ones)&lt;/li>
@@ -49,8 +48,7 @@
 	&lt;span>&amp;ldquo;&lt;/span>
  &lt;blockquote>
 		&lt;p>Why should I care?&lt;br>I have nothing to hide, I obey the law.&lt;/p></description></item><item><title>Riding in Granada, Spain</title><link>https://rdner.de/posts/motorcycle/granada-spain/</link><pubDate>Sun, 29 Dec 2019 00:00:00 +0100</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/motorcycle/granada-spain/</guid><description>&lt;p>I like traveling. Bragging facts: at the moment I&amp;rsquo;ve visited 15 countries and 32 places, spent in total 102 days traveling. Since I got my motorbike license, I had 2 trips that went particularly well: 
-&lt;a href="https://rdner.de/posts/motorbike/lanzarote">Lanzarote&lt;/a>
- and this one – Granada in Spain. What&amp;rsquo;s different? This time my wife and I rented a motorbike and went exploring. In fact, it went so well with Lanzarote that in Granada we even took a guided tour from a local company (details later) and started filming our trip on camera (only pictures before). What a beautiful footage&amp;rsquo;s come out! It was totally worth doing.&lt;/p></description></item><item><title>My automated backups to AWS S3 with client-side AES256</title><link>https://rdner.de/posts/tech/security/s3-aes256-backups/</link><pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/tech/security/s3-aes256-backups/</guid><description>&lt;h2 id="what-i-was-looking-for-requirements">
+&lt;a href="https://rdner.de/posts/motorbike/lanzarote">Lanzarote&lt;/a> and this one – Granada in Spain. What&amp;rsquo;s different? This time my wife and I rented a motorbike and went exploring. In fact, it went so well with Lanzarote that in Granada we even took a guided tour from a local company (details later) and started filming our trip on camera (only pictures before). What a beautiful footage&amp;rsquo;s come out! It was totally worth doing.&lt;/p></description></item><item><title>My automated backups to AWS S3 with client-side AES256</title><link>https://rdner.de/posts/tech/security/s3-aes256-backups/</link><pubDate>Sun, 08 Dec 2019 00:00:00 +0000</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/tech/security/s3-aes256-backups/</guid><description>&lt;h2 id="what-i-was-looking-for-requirements">
  What I was looking for. Requirements&amp;nbsp;&lt;a class="undecorated heading-anchor" href="#what-i-was-looking-for-requirements">#&lt;/a>
 &lt;/h2>
 &lt;p>The reason I didn&amp;rsquo;t just start using some backup software with built-in encryption is a pure lack of trust. So, if you&amp;rsquo;re fine with someone managing your backups, you might think the approach described here is a total overkill. And it&amp;rsquo;s okay. But there are some people out there who have the same trust issues that I do and they might find this article useful, so I write it for them. And also for myself, as a write-up what I did.&lt;/p></description></item><item><title>Paranoid Habits. Security Tips</title><link>https://rdner.de/posts/tech/security/security-tips/</link><pubDate>Sat, 23 Mar 2019 12:01:16 +0100</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/tech/security/security-tips/</guid><description>&lt;p>Recently I gave a talk to my colleagues where I shared some tools I use to secure my online presence and communication. Some of the listed things can be very technical but some of them I believe are crucial to know as a part of the daily life in the modern world.&lt;/p>
@@ -59,14 +57,12 @@
 &lt;/h2>
 &lt;p>I&amp;rsquo;m not a security expert, please check every word I write.&lt;/p>
 &lt;p>Although, I have some experience in basic pen-testing and I have exposed some vulnerabilities in the past, I don&amp;rsquo;t consider myself an expert in this area. There are people out there whose full-time job is information security and I&amp;rsquo;m not going to pretend I&amp;rsquo;m one of them. I just do some 
-&lt;a href="https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security" rel="nofollow noreferrer" target="_blank">CTFs&lt;/a>
- as a hobby and build software as my daily job, so it gives me enough knowledge to write such articles and give such talks but does not make me an expert.&lt;/p></description></item><item><title>How to secure your web apps (at least a little bit)</title><link>https://rdner.de/posts/tech/security/secure-web-apps/</link><pubDate>Sun, 10 Mar 2019 10:05:39 +0100</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/tech/security/secure-web-apps/</guid><description>&lt;h2 id="disclaimer">
+&lt;a href="https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security" rel="nofollow noreferrer" target="_blank">CTFs&lt;/a> as a hobby and build software as my daily job, so it gives me enough knowledge to write such articles and give such talks but does not make me an expert.&lt;/p></description></item><item><title>How to secure your web apps (at least a little bit)</title><link>https://rdner.de/posts/tech/security/secure-web-apps/</link><pubDate>Sun, 10 Mar 2019 10:05:39 +0100</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/tech/security/secure-web-apps/</guid><description>&lt;h2 id="disclaimer">
  Disclaimer&amp;nbsp;&lt;a class="undecorated heading-anchor" href="#disclaimer">#&lt;/a>
 &lt;/h2>
 &lt;p>I&amp;rsquo;m not a security expert, please check every word I write.&lt;/p>
 &lt;p>Although, I have some experience in basic pen-testing and I have exposed some vulnerabilities in the past, I don&amp;rsquo;t consider myself an expert in this area. There are people out there whose full-time job is information security and I&amp;rsquo;m not going to pretend I&amp;rsquo;m one of them. I just do some 
-&lt;a href="https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security" rel="nofollow noreferrer" target="_blank">CTFs&lt;/a>
- as a hobby and build software as my daily job, so it gives me enough knowledge to write such articles and give such talks but does not make me an expert.&lt;/p></description></item><item><title>Talks</title><link>https://rdner.de/talks/</link><pubDate>Wed, 06 Mar 2019 00:00:00 +0100</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/talks/</guid><description>&lt;p>All dates are in &lt;code>yyyy-mm-dd&lt;/code> format.&lt;/p>
+&lt;a href="https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security" rel="nofollow noreferrer" target="_blank">CTFs&lt;/a> as a hobby and build software as my daily job, so it gives me enough knowledge to write such articles and give such talks but does not make me an expert.&lt;/p></description></item><item><title>Talks</title><link>https://rdner.de/talks/</link><pubDate>Wed, 06 Mar 2019 00:00:00 +0100</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/talks/</guid><description>&lt;p>All dates are in &lt;code>yyyy-mm-dd&lt;/code> format.&lt;/p>
 &lt;ul>
 &lt;li>📝 &amp;ndash; write up post&lt;/li>
 &lt;li>🎬 &amp;ndash; video&lt;/li>
@@ -78,106 +74,67 @@
 &lt;/h2>
 &lt;ul>
 &lt;li>&lt;code>2020-03-10&lt;/code> Thursday Talk @ 
-&lt;a href="https://www.contiamo.com/" rel="nofollow noreferrer" target="_blank">Contiamo&lt;/a>
-: Paranoid Habits. Privacy Tips 
-&lt;a href="https://rdner.de/posts/tech/security/privacy-tips/" title="Post">📝&lt;/a>
- 
-&lt;a href="https://rdner.de/posts/tech/security/privacy-tips/slides.pdf" title="Slides">📇&lt;/a>
-&lt;/li>
+&lt;a href="https://www.contiamo.com/" rel="nofollow noreferrer" target="_blank">Contiamo&lt;/a>: Paranoid Habits. Privacy Tips 
+&lt;a href="https://rdner.de/posts/tech/security/privacy-tips/" title="Post">📝&lt;/a> 
+&lt;a href="https://rdner.de/posts/tech/security/privacy-tips/slides.pdf" title="Slides">📇&lt;/a>&lt;/li>
 &lt;li>&lt;code>2019-03-21&lt;/code> Thursday Talk @ 
-&lt;a href="https://www.contiamo.com/" rel="nofollow noreferrer" target="_blank">Contiamo&lt;/a>
-: Paranoid Habits. Security Tips 
-&lt;a href="https://rdner.de/posts/tech/security/security-tips/" title="Post">📝&lt;/a>
- 
-&lt;a href="https://rdner.de/posts/tech/security/security-tips/slides.pdf" title="Slides">📇&lt;/a>
-&lt;/li>
+&lt;a href="https://www.contiamo.com/" rel="nofollow noreferrer" target="_blank">Contiamo&lt;/a>: Paranoid Habits. Security Tips 
+&lt;a href="https://rdner.de/posts/tech/security/security-tips/" title="Post">📝&lt;/a> 
+&lt;a href="https://rdner.de/posts/tech/security/security-tips/slides.pdf" title="Slides">📇&lt;/a>&lt;/li>
 &lt;li>&lt;code>2018-10-11&lt;/code> Thursday Talk @ 
-&lt;a href="https://www.contiamo.com/" rel="nofollow noreferrer" target="_blank">Contiamo&lt;/a>
-: How to secure your web-app 
-&lt;a href="https://rdner.de/posts/tech/security/secure-web-apps/" title="Post">📝&lt;/a>
- 
-&lt;a href="https://rdner.de/posts/tech/security/secure-web-apps/slides.pdf" title="Slides">📇&lt;/a>
- 
-&lt;a href="https://github.com/rdner/security-nightmare" rel="nofollow noreferrer" target="_blank" title="Code">📎&lt;/a>
-&lt;/li>
+&lt;a href="https://www.contiamo.com/" rel="nofollow noreferrer" target="_blank">Contiamo&lt;/a>: How to secure your web-app 
+&lt;a href="https://rdner.de/posts/tech/security/secure-web-apps/" title="Post">📝&lt;/a> 
+&lt;a href="https://rdner.de/posts/tech/security/secure-web-apps/slides.pdf" title="Slides">📇&lt;/a> 
+&lt;a href="https://github.com/rdner/security-nightmare" rel="nofollow noreferrer" target="_blank" title="Code">📎&lt;/a>&lt;/li>
 &lt;li>&lt;code>2016-08-26&lt;/code> 
-&lt;a href="https://2016.jsconf.is/speakers/denis-rechkunov/" rel="nofollow noreferrer" target="_blank">JSConf Iceland 2016&lt;/a>
-: Progressive rendering – how to make your apps to render sooner 
-&lt;a href="https://youtu.be/aRaQe9n1lPk" rel="nofollow noreferrer" target="_blank" title="Video">🎬&lt;/a>
- 
-&lt;a href="https://rdner.de/slides/jsconf/progressive-rendering" title="Slides">📇&lt;/a>
-&lt;/li>
+&lt;a href="https://2016.jsconf.is/speakers/denis-rechkunov/" rel="nofollow noreferrer" target="_blank">JSConf Iceland 2016&lt;/a>: Progressive rendering – how to make your apps to render sooner 
+&lt;a href="https://youtu.be/aRaQe9n1lPk" rel="nofollow noreferrer" target="_blank" title="Video">🎬&lt;/a> 
+&lt;a href="https://rdner.de/slides/jsconf/progressive-rendering" title="Slides">📇&lt;/a>&lt;/li>
 &lt;li>&lt;code>2016-03-17&lt;/code> 
-&lt;a href="http://berlinjs.org/" rel="nofollow noreferrer" target="_blank">BerlinJS&lt;/a>
-: Progressive rendering with Catberry.js 
-&lt;a href="https://rdner.de/slides/berlinjs/progressive-rendering-with-catberry" title="Slides">📇&lt;/a>
- 
-&lt;a href="https://github.com/rdner/berlinjs-demo" rel="nofollow noreferrer" target="_blank" title="Code">📎&lt;/a>
-&lt;/li>
+&lt;a href="http://berlinjs.org/" rel="nofollow noreferrer" target="_blank">BerlinJS&lt;/a>: Progressive rendering with Catberry.js 
+&lt;a href="https://rdner.de/slides/berlinjs/progressive-rendering-with-catberry" title="Slides">📇&lt;/a> 
+&lt;a href="https://github.com/rdner/berlinjs-demo" rel="nofollow noreferrer" target="_blank" title="Code">📎&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="по-русски-">
  По-русски 🇷🇺&amp;nbsp;&lt;a class="undecorated heading-anchor" href="#%d0%bf%d0%be-%d1%80%d1%83%d1%81%d1%81%d0%ba%d0%b8-">#&lt;/a>
 &lt;/h2>
 &lt;ul>
 &lt;li>&lt;code>2015-05-22&lt;/code> В гостях у компании 
-&lt;a href="http://www.enterra.ru/" rel="nofollow noreferrer" target="_blank">Enterra&lt;/a>
-: Зачем изоморфный JavaScript? Почему Catberry.js? 
-&lt;a href="https://youtu.be/tVjf2s_n4_g" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a>
- 
-&lt;a href="https://rdner.de/slides/others/why-isomorphic-javascript" title="Слайды">📇&lt;/a>
-&lt;/li>
+&lt;a href="http://www.enterra.ru/" rel="nofollow noreferrer" target="_blank">Enterra&lt;/a>: Зачем изоморфный JavaScript? Почему Catberry.js? 
+&lt;a href="https://youtu.be/tVjf2s_n4_g" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a> 
+&lt;a href="https://rdner.de/slides/others/why-isomorphic-javascript" title="Слайды">📇&lt;/a>&lt;/li>
 &lt;li>&lt;code>2015-03-28&lt;/code> 
-&lt;a href="http://2015.codefest.ru/lecture/1006" rel="nofollow noreferrer" target="_blank">CodeFest 2015&lt;/a>
-: Изоморфный JavaScript – Будущее уже здесь 
-&lt;a href="https://youtu.be/MPGt7Tef83Y" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a>
- 
-&lt;a href="https://rdner.de/slides/codefest/isomorphic-javascript" title="Слайды">📇&lt;/a>
-&lt;/li>
+&lt;a href="http://2015.codefest.ru/lecture/1006" rel="nofollow noreferrer" target="_blank">CodeFest 2015&lt;/a>: Изоморфный JavaScript – Будущее уже здесь 
+&lt;a href="https://youtu.be/MPGt7Tef83Y" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a> 
+&lt;a href="https://rdner.de/slides/codefest/isomorphic-javascript" title="Слайды">📇&lt;/a>&lt;/li>
 &lt;li>
-&lt;a href="https://vk.com/jsibnsk" rel="nofollow noreferrer" target="_blank">JSib&lt;/a>
- — сообщество JavaScript-разработчиков в Новосибирске
+&lt;a href="https://vk.com/jsibnsk" rel="nofollow noreferrer" target="_blank">JSib&lt;/a> — сообщество JavaScript-разработчиков в Новосибирске
 &lt;ul>
 &lt;li>&lt;code>2015-01-17&lt;/code> Знакомство и амбициозные планы 
-&lt;a href="https://youtu.be/sQRWblPHrMs" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a>
- 
-&lt;a href="https://rdner.de/slides/jsib/2015-01-17-0-intro" title="Слайды">📇&lt;/a>
-&lt;/li>
+&lt;a href="https://youtu.be/sQRWblPHrMs" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a> 
+&lt;a href="https://rdner.de/slides/jsib/2015-01-17-0-intro" title="Слайды">📇&lt;/a>&lt;/li>
 &lt;li>&lt;code>2015-01-17&lt;/code> Распространённые ошибки в JavaScript 
-&lt;a href="https://youtu.be/lJxkPKtl-SQ" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a>
- 
-&lt;a href="https://rdner.de/slides/jsib/2015-01-17-1-common-mistakes" title="Слайды">📇&lt;/a>
-&lt;/li>
+&lt;a href="https://youtu.be/lJxkPKtl-SQ" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a> 
+&lt;a href="https://rdner.de/slides/jsib/2015-01-17-1-common-mistakes" title="Слайды">📇&lt;/a>&lt;/li>
 &lt;li>&lt;code>2015-03-21&lt;/code> Изоморфный фреймворк Catberry 
-&lt;a href="https://youtu.be/TY3JFFp1fJI" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a>
- 
-&lt;a href="https://rdner.de/slides/jsib/2015-03-21-isomorphic-framework-catberry" title="Слайды">📇&lt;/a>
-&lt;/li>
+&lt;a href="https://youtu.be/TY3JFFp1fJI" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a> 
+&lt;a href="https://rdner.de/slides/jsib/2015-03-21-isomorphic-framework-catberry" title="Слайды">📇&lt;/a>&lt;/li>
 &lt;li>&lt;code>2015-04-25&lt;/code> Многообещающий JavaScript – Promises 
-&lt;a href="https://youtu.be/LWaXbrLQid0" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a>
- 
-&lt;a href="https://rdner.de/slides/jsib/2015-04-25-promising-javascript" title="Слайды">📇&lt;/a>
-&lt;/li>
+&lt;a href="https://youtu.be/LWaXbrLQid0" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a> 
+&lt;a href="https://rdner.de/slides/jsib/2015-04-25-promising-javascript" title="Слайды">📇&lt;/a>&lt;/li>
 &lt;li>&lt;code>2015-09-19&lt;/code> Отзывчивый UI без блокировки Event Loop 
-&lt;a href="https://youtu.be/Wp0rvEBZU-c" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a>
- 
-&lt;a href="https://rdner.de/slides/jsib/2015-09-19-blocking-event-loop" title="Слайды">📇&lt;/a>
- 
-&lt;a href="https://rdner.de/slides/jsib/2015-09-19-blocking-event-loop/bubble-sort/" title="Демо">📎&lt;/a>
-&lt;/li>
+&lt;a href="https://youtu.be/Wp0rvEBZU-c" rel="nofollow noreferrer" target="_blank" title="Видео">🎬&lt;/a> 
+&lt;a href="https://rdner.de/slides/jsib/2015-09-19-blocking-event-loop" title="Слайды">📇&lt;/a> 
+&lt;a href="https://rdner.de/slides/jsib/2015-09-19-blocking-event-loop/bubble-sort/" title="Демо">📎&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul></description></item><item><title>Riding on Lanzarote, Spain</title><link>https://rdner.de/posts/motorcycle/lanzarote/</link><pubDate>Tue, 25 Dec 2018 00:00:00 +0100</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/motorcycle/lanzarote/</guid><description>&lt;p>This is the first time we went somewhere after I got my motorbike license, so &amp;ldquo;why not rent a bike and explore the whole island by riding together&amp;rdquo; we thought. Now, looking back, I&amp;rsquo;d say it was a bit sketchy because I had not have enough experience riding in mountains before but, in the end, it went well, I was very careful and didn&amp;rsquo;t try to ride above my abilities.&lt;/p></description></item><item><title>Cyber City</title><link>https://rdner.de/music/cyber-city-single/</link><pubDate>Sun, 16 Apr 2017 00:00:00 +0100</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/music/cyber-city-single/</guid><description>&lt;p>I&amp;rsquo;ve been a big fan of the 
-&lt;a href="https://www.imdb.com/title/tt0113568/" rel="nofollow noreferrer" target="_blank">Ghost in the Shell&lt;/a>
- anime for a long time. I also really liked the 
-&lt;a href="https://www.imdb.com/title/tt0346314/" rel="nofollow noreferrer" target="_blank">Stand Alone Complex&lt;/a>
- show. So, when I learned that there would be a movie, I was very excited. I had so many ideas of what it could be, so many high expectations.&lt;/p>
+&lt;a href="https://www.imdb.com/title/tt0113568/" rel="nofollow noreferrer" target="_blank">Ghost in the Shell&lt;/a> anime for a long time. I also really liked the 
+&lt;a href="https://www.imdb.com/title/tt0346314/" rel="nofollow noreferrer" target="_blank">Stand Alone Complex&lt;/a> show. So, when I learned that there would be a movie, I was very excited. I had so many ideas of what it could be, so many high expectations.&lt;/p>
 &lt;p>I went to see the movie and got very disappointed in the story the filmmakers chose to tell in 
-&lt;a href="https://www.imdb.com/title/tt1219827/" rel="nofollow noreferrer" target="_blank">Ghost in the Shell&lt;/a>
- movie. Instead of taking a risk and telling a new story in that universe, they just took the best things from the original anime and the show I mentioned above and created a monster. Oh, well. At least visually, it was great.&lt;/p></description></item><item><title>.strandberg* Boden OS7 — my perfect guitar</title><link>https://rdner.de/posts/music/strandberg-boden-os-7/</link><pubDate>Sun, 15 Jan 2017 00:00:00 +0100</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/music/strandberg-boden-os-7/</guid><description>&lt;p>Hey, everyone! In 
-&lt;a href="../chasing-perfect-guitar">my previous&lt;/a>
- post I promised to write about the 
-&lt;a href="https://strandbergguitars.com/" rel="nofollow noreferrer" target="_blank">.strandberg*&lt;/a>
- guitar I had ordered because it definitely deserved a separate post. Well, here we go! I’m going to share all my thoughts on .strandberg* Boden OS7, all the up/down sides I found and how I fixed what I didn’t like and eventually got a perfect guitar for myself.&lt;/p>
+&lt;a href="https://www.imdb.com/title/tt1219827/" rel="nofollow noreferrer" target="_blank">Ghost in the Shell&lt;/a> movie. Instead of taking a risk and telling a new story in that universe, they just took the best things from the original anime and the show I mentioned above and created a monster. Oh, well. At least visually, it was great.&lt;/p></description></item><item><title>.strandberg* Boden OS7 — my perfect guitar</title><link>https://rdner.de/posts/music/strandberg-boden-os-7/</link><pubDate>Sun, 15 Jan 2017 00:00:00 +0100</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/music/strandberg-boden-os-7/</guid><description>&lt;p>Hey, everyone! In 
+&lt;a href="../chasing-perfect-guitar">my previous&lt;/a> post I promised to write about the 
+&lt;a href="https://strandbergguitars.com/" rel="nofollow noreferrer" target="_blank">.strandberg*&lt;/a> guitar I had ordered because it definitely deserved a separate post. Well, here we go! I’m going to share all my thoughts on .strandberg* Boden OS7, all the up/down sides I found and how I fixed what I didn’t like and eventually got a perfect guitar for myself.&lt;/p>
 &lt;p>A short disclaimer: this post is my personal opinion and nobody paid me for this.&lt;/p></description></item><item><title>Chasing a perfect guitar</title><link>https://rdner.de/posts/music/chasing-perfect-guitar/</link><pubDate>Thu, 15 Dec 2016 00:00:00 +0100</pubDate><author>denis@rdner.de (Denis Rechkunov)</author><guid>https://rdner.de/posts/music/chasing-perfect-guitar/</guid><description>&lt;h2 id="disclaimer">
  Disclaimer&amp;nbsp;&lt;a class="undecorated heading-anchor" href="#disclaimer">#&lt;/a>
 &lt;/h2>
