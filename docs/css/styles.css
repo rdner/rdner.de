@@ -193,15 +193,10 @@ a.undecorated[target=_blank]::after,
 	padding-bottom: 0.5rem;
 	margin: 2.5rem 0 0.5rem 0;
 }
-.content h2:hover .heading-anchor,
-.content h3:hover .heading-anchor,
-.content h4:hover .heading-anchor,
-.content h5:hover .heading-anchor,
-.content h6:hover .heading-anchor {
-	display: inline-block;
-}
 .content .heading-anchor {
-	display: none;
+	display: inline-block;
+	color: var(--secondary-text-color);
+	font-weight: 100;
 }
 .content table {
 	margin: 1rem 0;
