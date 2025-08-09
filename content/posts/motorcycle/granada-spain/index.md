@@ -1,36 +1,41 @@
 ---
 title: "Riding in Granada, Spain"
 date: 2019-12-29T00:00:00+01:00
-description: "This year comes to its end and it's time to summarize. The best thing that happened to me this year was the motorbike trip in Spain, I'd like to share what was so amazing about it. Videos included."
+description: "This year comes to its end, and it's time to summarize. The best thing that happened to me this year was the motorbike trip in Spain. I'd like to share how it went and why I liked it so much. Videos included."
 tocEnabled: true
 keywords: ["spain", "rides", "motorbike", "granada"]
 ---
 
-I like traveling. Bragging facts: at the moment I've visited 15 countries and 32 places, spent in total 102 days traveling. Since I got my motorbike license, I had 2 trips that went particularly well: [Lanzarote](/posts/motorbike/lanzarote) and this one – Granada in Spain. What's different? This time my wife and I rented a motorbike and went exploring. In fact, it went so well with Lanzarote that in Granada we even took a guided tour from a local company (details later) and started filming our trip on camera (only pictures before). What a beautiful footage's come out! It was totally worth doing.
+I like traveling. Bragging facts:
+* I've visited 15 countries
+* I've been to 32 places
+* I've spent a total of 102 days in traveling.
+
+Since I got my motorbike license, I've had 2 big trips that went particularly well: [Lanzarote](/posts/motorbike/lanzarote) and this one – Granada in Spain. It went so well with Lanzarote that in Granada we even took a guided tour from a local company (details later), and I filmed our trip on camera (only pictures before). What beautiful footage has come out! It was totally worth doing.
 
 # Arriving
 
-Everything started very spontaneously in September 2019, I found this tour from [www.motorcycletouringspain.net](https://www.motorcycletouringspain.net/) in Spain. It was relatively inexpensive and included a lift from/to the airport, accommodation and breakfasts. Julia (my wife) didn't mind to join me as a passenger and we booked the whole thing.
+Everything started very spontaneously. In September 2019 I found this guided tour from [www.motorcycletouringspain.net](https://www.motorcycletouringspain.net/) in Spain. It was relatively inexpensive and included a lift from/to the airport. Accommodation and breakfasts were also included. Julia (my wife) didn't mind joining me as a passenger, and we booked the whole thing.
 
-We flew to Málaga on September 25th and Ron (the tour company owner and guide) met us at the airport. What a lovely person to talk to. We always found an interesting topic to talk about and he knows the area very well I guess because he has been living there for more than 10 years. After we met another tour member from Ireland — David, we went to the guest house in Vélez de Benaudalla, the trip normally takes around 1h 15m (110 km).
+We flew to Málaga on September 25th, and Ron (the tour company owner and guide) met us at the airport. What a lovely person to talk to. We always found an interesting topic to talk about, and he knew the area very well. He has been living there for more than a decade years and is practically local. After we met another tour member from Ireland — David, we went to the guest house in Vélez de Benaudalla. The trip from the airport normally takes around 1h 15m (110 km).
 
-This very first day we didn't do much, just went for a walk in the town and had some local food.
+On the first day we didn't do much, just went for a walk in the town and had some local food.
 
 ![Vélez de Benaudalla](1.jpg "Vélez de Benaudalla where the guest house was. Click to zoom.")
 
 # The first day of the trip
 
-The next day, I got a big BMW GS with a boxer engine (can't remember the exact model and year, but it was quite old) and first we went to the gas station. It was very unusual for me to have a different turn signals layout. The left turn signal was on the left side and the right one was on the right side. Nowadays motorbike manufacturers agreed on having the both turn signal controls in one button on the left. So, it took me some time to adjust.
+The next day, I got a big BMW GS with a boxer engine (can't remember the exact model and year, but it looked quite old), and first we went to the gas station. This BMW had a very unusual (for me) turn signal layout. The left turn signal was on the left side, and the right turn signal was on the right side of the handlebars. Nowadays motorbikes have the both turn signal buttons on the left. So, it took me some time to adjust.
 
-Then at the gas station I spilled gas all over the bike because the pump pistol was not functioning properly. Normally, it should stop itself when the fuel tank is almost full but this one didn't. Well, nice start, hah? Surprisingly, the smell of gas disappeared quite quickly and we started our trip.
+Then, at the gas station, I spilled gas all over the bike because the pump pistol was not functioning as I expected. Normally, it should stop itself when the fuel tank is almost full, but this one didn't. Local difference? Well, nice start, hah? Surprisingly, the smell of the gas disappeared quite quickly, and we started our trip.
 
-If I'm honest, I was quite nervous because the roads in that area are very twisty and the other 2 riders had decades of riding experience. Also, I was riding with a passenger on a motorcycle which I never rode before. It was quite tough the first half an hour or so, but once I got used to the bike, I managed to keep up and really enjoy the ride.
+If I'm honest, I was quite nervous because the roads in that area were very twisty and the other 2 riders had decades of riding experience. Also, I was riding with a passenger on a motorcycle, which I had never ridden before. The first half an hour or so was tough, but once I got used to the bike, I managed to keep up and to really enjoy the ride.
 
-Make no mistake, if you're not a confident rider and you've never ridden in mountains before it might be too much for you. Ron told me some stories about his clients in the past when they could not continue the trip anymore because of their lack of skill and they had to stop and return to the house. Fortunately, nobody ever died or got seriously injured. I had a couple of close calls, like over-steering once and having oncoming traffic after a blind corner on a very narrow road but nothing serious, I was careful where it was necessary. Once we had a ~270 degree spiral turn which was so weird, you feel like the turn should have stopped like seconds ago but it goes and goes and goes.
+Make no mistake, if you're not a confident rider and you've never ridden in mountains before, it might be too much for you. Ron told me some stories about his past clients: some of them could not continue the trip because of their lack of skill, and they had to stop and return to the house. Fortunately, nobody ever died or got seriously injured. I myself had a couple of close calls, like oversteering once and having oncoming traffic after a blind corner on a very narrow road, but I managed. I was careful where it was necessary. Once we also had a ~270-degree spiral turn which was so weird. You feel like the turn should have stopped like seconds ago but it goes and goes and goes.
 
-Besides the cool twisty roads in the mountains, on that day we went to see an "iron waterfall" (the water is reach of iron, and the rock around it turned orange). The highest altitude we reached that day was ~1,512 m.
+Besides the cool twisty roads in the mountains, on that day we went to see the "iron waterfall" (the water is rich in iron, and the surrounding rock turned orange). The highest altitude we reached that day was ~1,512 m.
 
-A lot of fun these roads, lots of fun. See it for yourself:
+I had a lot of fun on these roads. See it for yourself:
 
 {{< vimeo 871753579 >}}
 
@@ -48,7 +53,7 @@ A lot of fun these roads, lots of fun. See it for yourself:
 
 # The second day of the trip
 
-I think, the first day was just a warm up for the second day because the second day felt more intense but also had absolutely fantastic views. Some parts of the route had really narrow roads with a cliff on the side, so it was quite a lot of adrenaline. We went to a beautiful lake and we reached the altitude of ~2,560 m at Monte Ahí de Cara, from where we could see the whole region.
+I'd say the first day was just a warm-up for the second day. The second day felt more intense (riding difficulty-wise) but also had absolutely fantastic views. Some sections of the route had really narrow roads right next to a cliff. So, it was quite a lot of adrenaline. On that day we went to see a beautiful lake, and we reached ~2,560 m of altitude at Monte Ahí de Cara. We could see the entire region from that spot. Great view!
 
 Again, see it for yourself:
 
@@ -56,7 +61,7 @@ Again, see it for yourself:
 
 ![Second day route](route-2.jpg "Our route on the second day of the trip (blue line). Click for the full size map.")
 
-![Somewhere in mountains](7.jpg "Somewhere in mountains, these roads are narrow. Click to zoom.")
+![Somewhere in mountains](7.jpg "Somewhere in the mountains, these roads are narrow. Click to zoom.")
 
 ![The lake](8.jpg "The view of the lake. Click to zoom.")
 
@@ -64,8 +69,8 @@ Again, see it for yourself:
 
 # To conclude
 
-The trip exceeded our expectations, everything worked out quite well and I enjoyed every single second of it. I even consider to come back some day and maybe take some other tracks in Granada, I'm pretty sure we have not seen all of it just yet. It's also a quite attractive idea to come and live there. The real estate is not that expensive, you can enjoy the view and the roads any time on a motorbike, people seemed friendly and the food was great.
+The trip exceeded our expectations. Everything worked out quite well, and I enjoyed every single second of it. I even consider coming back some day and maybe visiting some other places in Granada. I'm pretty sure we have not seen all of it just yet.
 
-The last hours before our flight back to Berlin we asked Ron to bring us to the beach which is not too far. There was no sand there just little rocks, so it's not completely pleasant to walk with bare feet there but well, it's a beach can't be bad, ever.
+In our final hours before our flight back to Berlin, we asked Ron to bring us to the beach which was not too far away. There was no sand there, just gravel, so it's not entirely pleasant to walk there barefoot, but it's a beach, and it can never be bad.
 
 ![Beach](10.jpg "The beach. Click to zoom.")
