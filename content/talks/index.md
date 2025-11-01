@@ -13,6 +13,7 @@ All dates are in `yyyy-mm-dd` format.
 
 # In English 🇬🇧
 
+* `2025-08-15` [Maintainable Software Podcast: When Consistency Becomes a Culture](https://maintainable.fm/episodes/denis-rechkunov-when-consistency-becomes-a-culture)
 * `2020-03-10` Thursday Talk @ [Contiamo](https://www.contiamo.com/): Paranoid Habits. Privacy Tips [📝](/posts/tech/security/privacy-tips/ "post") [📇](/posts/tech/security/privacy-tips/slides.pdf "slides")
 * `2019-03-21` Thursday Talk @ [Contiamo](https://www.contiamo.com/): Paranoid Habits. Security Tips [📝](/posts/tech/security/security-tips/ "post") [📇](/posts/tech/security/security-tips/slides.pdf "slides")
 * `2018-10-11` Thursday Talk @ [Contiamo](https://www.contiamo.com/): How to secure your web-app [📝](/posts/tech/security/secure-web-apps/ "post") [📇](/posts/tech/security/secure-web-apps/slides.pdf "slides") [📎](https://github.com/rdner/security-nightmare "code")
